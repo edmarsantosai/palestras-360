@@ -1,0 +1,72 @@
+{
+  "setembro-amarelo": {
+    "hero_base": "palestra-setembro-amarelo-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Conversa de apoio e escuta entre dois profissionais em escritorio iluminado, representando acolhimento"
+  },
+  "outubro-rosa": {
+    "hero_base": "palestra-outubro-rosa-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Mulheres profissionais reunidas em ambiente corporativo moderno, representando solidariedade e saude da mulher"
+  },
+  "novembro-azul": {
+    "hero_base": "palestra-novembro-azul-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Homens em ambiente corporativo contemporaneo, representando cuidado e saude masculina"
+  },
+  "sipat": {
+    "hero_base": "palestra-sipat-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Colaboradores atentos em sessao de seguranca do trabalho em ambiente industrial moderno"
+  },
+  "saude-mental": {
+    "hero_base": "palestra-saude-mental-trabalho-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional em ambiente de trabalho tranquilo, com sensacao de equilibrio e bem-estar"
+  }
+}

@@ -8,6 +8,9 @@ desktop.ini
 .vscode/
 .idea/
 
+# Imagens brutas (originais de câmera/entrega — não commitar)
+_raw-img/
+
 # Dependências / build (se um dia usar)
 node_modules/
 dist/
