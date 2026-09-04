@@ -1,0 +1,119 @@
+/* =============================================================================
+   TOKENS STARTER — Web Design Pro
+   Cole em assets/css/tokens.css. Ajuste as cores de MARCA (bloco 1) e, se
+   quiser, a razão da escala tipográfica. Componentes devem usar os SEMÂNTICOS
+   (bloco "SEMÂNTICOS"), nunca os primitivos crus nem valores soltos.
+   ========================================================================== */
+
+:root {
+  /* 1) CORES DE MARCA — troque pelos hex extraídos do logo do cliente ---------
+     brand   = cor institucional
+     action  = A ÚNICA cor de ação (CTA). Escolha a de melhor contraste. */
+  --brand-900: #0D2137;
+  --brand-700: #1B3A6A;   /* --brand base */
+  --brand-500: #2C5AA0;
+  --brand-300: #7FA2CE;
+
+  --action-600: #00A5BB;  /* hover (mais escuro) */
+  --action-500: #00BCD4;  /* CTA base */
+  --action-300: #6FE0EE;
+
+  /* Neutros (cinzas com leve temperatura da marca) --------------------------- */
+  --n-0:   #FFFFFF;
+  --n-50:  #F4F7FB;
+  --n-100: #E9EEF5;
+  --n-200: #D6DEE9;
+  --n-300: #B4C0D0;
+  --n-400: #8A97A8;
+  --n-500: #5E6B7C;
+  --n-600: #3E4a5a;
+  --n-700: #29323F;
+  --n-800: #182029;
+  --n-900: #0B1017;
+
+  /* Estados semânticos ------------------------------------------------------- */
+  --success-500: #16A34A;
+  --warning-500: #D97706;
+  --danger-500:  #DC2626;
+  --info-500:    #2563EB;
+
+  /* 2) SEMÂNTICOS — use ESTES nos componentes -------------------------------- */
+  --color-bg:            var(--n-0);
+  --color-surface:       var(--n-50);
+  --color-surface-2:     var(--n-100);
+  --color-border:        var(--n-200);
+  --color-text:          #101828;
+  --color-muted:         var(--n-500);
+
+  --color-brand:         var(--brand-700);
+  --color-brand-strong:  var(--brand-900);
+  --color-on-brand:      var(--n-0);
+
+  --color-action:        var(--action-500);
+  --color-action-hover:  var(--action-600);
+  --color-on-action:     #04222A;   /* garanta contraste ≥ 4,5:1 sobre --color-action */
+
+  --color-success: var(--success-500);
+  --color-warning: var(--warning-500);
+  --color-danger:  var(--danger-500);
+  --color-info:    var(--info-500);
+
+  /* 3) TIPOGRAFIA ------------------------------------------------------------ */
+  --font-display: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-body:    "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Escala fluida (base ~16px, razão ~1.25) — clamp evita CLS e ajuda LCP */
+  --text-xs:   clamp(.75rem,  .72rem + .15vw, .8125rem);
+  --text-sm:   clamp(.875rem, .84rem + .18vw, .9375rem);
+  --text-base: clamp(1rem,    .96rem + .2vw,  1.0625rem);
+  --text-lg:   clamp(1.125rem,1.06rem + .3vw, 1.25rem);
+  --text-xl:   clamp(1.375rem,1.25rem + .6vw, 1.75rem);
+  --text-2xl:  clamp(1.75rem, 1.5rem  + 1.2vw, 2.5rem);
+  --text-3xl:  clamp(2.25rem, 1.8rem  + 2.2vw, 3.5rem);
+  --text-4xl:  clamp(2.75rem, 2rem    + 3.6vw, 4.5rem);
+
+  --leading-tight: 1.1;
+  --leading-snug:  1.3;
+  --leading-body:  1.6;
+  --weight-normal: 400;
+  --weight-medium: 600;
+  --weight-bold:   700;
+  --weight-black:  800;
+  --tracking-tight: -.015em;
+
+  /* 4) ESPAÇAMENTO (base 4px / múltiplos de 8) ------------------------------- */
+  --space-1: .25rem;  --space-2: .5rem;  --space-3: .75rem; --space-4: 1rem;
+  --space-5: 1.5rem;  --space-6: 2rem;   --space-7: 3rem;   --space-8: 4rem;
+  --space-9: 6rem;    --space-10: 8rem;
+  --space-section: clamp(3rem, 8vw, 8rem);   /* padding vertical de seção */
+
+  /* 5) RAIO (hierarquia — não use um só valor em tudo) ----------------------- */
+  --radius-sm: .375rem; --radius-md: .625rem; --radius-lg: 1rem;
+  --radius-xl: 1.5rem;  --radius-full: 9999px;
+
+  /* 6) SOMBRA (elevação em camadas) ------------------------------------------ */
+  --shadow-sm: 0 1px 2px rgba(16,24,40,.06);
+  --shadow-md: 0 4px 12px rgba(16,24,40,.08);
+  --shadow-lg: 0 12px 32px rgba(16,24,40,.12);
+
+  /* 7) MOVIMENTO ------------------------------------------------------------- */
+  --duration-fast: 120ms; --duration-base: 200ms; --duration-slow: 320ms;
+  --ease-out: cubic-bezier(.16,1,.3,1);
+  --ease-in-out: cubic-bezier(.65,0,.35,1);
+
+  /* 8) LAYOUT ---------------------------------------------------------------- */
+  --container: 1200px;
+  --container-narrow: 720px;   /* largura de leitura confortável (~65ch) */
+  --z-header: 100; --z-overlay: 200; --z-modal: 300; --z-toast: 400;
+}
+
+/* Exemplo de remap para SEÇÃO ESCURA (aplique a classe no <section>) --------- */
+.section--dark {
+  --color-bg: var(--brand-900);
+  --color-surface: var(--brand-700);
+  --color-text: var(--n-100);
+  --color-muted: var(--n-300);
+  --color-border: rgba(255,255,255,.12);
+  background: var(--color-bg);
+  color: var(--color-text);
+}

@@ -1,0 +1,13 @@
+# Zips de distribuição — não commitar
+*.zip
+
+# Sistema operacional / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Dependências / build (se um dia usar)
+node_modules/
+dist/
