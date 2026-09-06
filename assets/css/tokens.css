@@ -70,8 +70,8 @@
   --color-info:    var(--info-500);
 
   /* 3) TIPOGRAFIA ============================================================= */
-  --font-display: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --font-body:    "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display: "Montserrat", "Montserrat Fallback", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-body:    "Open Sans", "Open Sans Fallback",   system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
   /* Escala fluida — base ~16px, razão ~1.25 */
   --text-xs:   clamp(.75rem,   .72rem  + .15vw, .8125rem);

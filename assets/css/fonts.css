@@ -1,0 +1,56 @@
+/* =============================================================================
+   PALESTRAS 360 — Self-hosted web fonts (latin subset)
+   Fontes servidas localmente para eliminar RTT ao CDN externo e reduzir LCP.
+   Métricas de fallback calculadas das fontes reais (fontTools) para minimizar
+   CLS durante o swap (ascent/descent/line-gap em % do UPM real).
+   ============================================================================= */
+
+/* ── Montserrat (variable 700–800, latin) ─────────────────────────────────── */
+@font-face {
+  font-family: 'Montserrat';
+  font-style:  normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url('/assets/fonts/montserrat-700-800-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+                 U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F,
+                 U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Fallback métrico — Arial renderiza com as mesmas dimensões de linha que
+   Montserrat, eliminando o reflow visível no font-swap.
+   Montserrat UPM=1000, hhea ascent=968, descent=251, lineGap=0 */
+@font-face {
+  font-family: 'Montserrat Fallback';
+  font-style:  normal;
+  font-weight: 700 800;
+  src: local('Arial Bold'), local('Arial');
+  ascent-override:   96.80%;
+  descent-override:  25.10%;
+  line-gap-override: 0%;
+  size-adjust:       100%;
+}
+
+/* ── Open Sans (variable 400–600, latin) ──────────────────────────────────── */
+@font-face {
+  font-family: 'Open Sans';
+  font-style:  normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('/assets/fonts/open-sans-400-600-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+                 U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F,
+                 U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Fallback métrico — Open Sans UPM=2048, hhea ascent=2189, descent=600 */
+@font-face {
+  font-family: 'Open Sans Fallback';
+  font-style:  normal;
+  font-weight: 400 600;
+  src: local('Arial');
+  ascent-override:   106.88%;
+  descent-override:  29.30%;
+  line-gap-override: 0%;
+  size-adjust:       100%;
+}

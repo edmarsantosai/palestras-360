@@ -527,6 +527,8 @@ ${GTM_HEAD}
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Palestras 360">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
   ${preloadHero(talk.slug, imgData)}
   <link rel="stylesheet" href="/assets/css/main.css">
   <script type="application/ld+json">
@@ -634,6 +636,8 @@ ${GTM_HEAD}
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Palestras 360">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/main.css">
   <script type="application/ld+json">
 ${jsonLdHome()}
