@@ -48,9 +48,11 @@ PALESTRAS_JSON = DATA_DIR / "palestras.json"
 IMAGES_JSON    = DATA_DIR / "images.json"
 
 # ── Configuração do pipeline ──────────────────────────────────────────────────
-WIDTHS  = [1920, 1280, 768]
-QUALITY = 80
-ASPECT  = (16, 9)
+WIDTHS       = [1920, 1280, 768]
+QUALITY      = 80
+ASPECT       = (16, 9)
+THUMB_WIDTHS = [640, 480, 320]
+THUMB_ASPECT = (4, 3)
 
 # Mapa: slug → (arquivo de origem, nome-final).
 # Confirmado com o cliente. Nomes finais sem sufixo de dimensão nem ano.
@@ -92,6 +94,22 @@ def load_alts() -> dict:
         if "hero_alt" in img:
             alts[p["slug"]] = img["hero_alt"]
     return alts
+
+
+def crop_center_4x3(im: Image.Image) -> Image.Image:
+    """Corta o retângulo central com proporção 4:3 (thumbnail de card)."""
+    w, h = im.size
+    target = THUMB_ASPECT[0] / THUMB_ASPECT[1]
+    current = w / h
+    if current > target:
+        new_w = int(round(h * target))
+        left = (w - new_w) // 2
+        box = (left, 0, left + new_w, h)
+    else:
+        new_h = int(round(w / target))
+        top = (h - new_h) // 2
+        box = (0, top, w, top + new_h)
+    return im.crop(box)
 
 
 def crop_center_16x9(im: Image.Image) -> Image.Image:
@@ -206,14 +224,31 @@ def main() -> int:
                      f"{w}x{h}", kb(jpg_path))
                 )
 
+        # ── Thumbnails 4:3 ───────────────────────────────────────────────────
+        thumb_dir  = out_slug_dir / "thumb"
+        thumb_dir.mkdir(exist_ok=True)
+        thumb_name = f"{final_name}-thumb"
+        thumb_cropped = crop_center_4x3(graded)
+        thumb_formats: list = []
+        for tw in THUMB_WIDTHS:
+            th_h = int(round(tw * THUMB_ASPECT[1] / THUMB_ASPECT[0]))
+            resized_thumb = thumb_cropped.resize((tw, th_h), Image.LANCZOS)
+            out_thumb_base = thumb_dir / f"{thumb_name}-{tw}w"
+            thumb_formats = export(resized_thumb, out_thumb_base)
+
         images_manifest[slug] = {
             "hero_base": final_name,
             "larguras": WIDTHS,
             "formatos": formats_final,
             "alt": alt,
+            "thumb": {
+                "base": thumb_name,
+                "larguras": THUMB_WIDTHS,
+                "formatos": thumb_formats,
+            },
         }
         print(f"[ok] {slug}: {len(WIDTHS)} larguras × {len(formats_final)} formatos "
-              f"({', '.join(formats_final)})")
+              f"({', '.join(formats_final)}) + thumb {len(THUMB_WIDTHS)}w")
 
     # Escreve o manifesto.
     IMAGES_JSON.write_text(

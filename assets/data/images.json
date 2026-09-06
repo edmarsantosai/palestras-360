@@ -11,7 +11,20 @@
       "webp",
       "jpg"
     ],
-    "alt": "Conversa de apoio e escuta entre dois profissionais em escritorio iluminado, representando acolhimento"
+    "alt": "Conversa de apoio e escuta entre dois profissionais em escritorio iluminado, representando acolhimento",
+    "thumb": {
+      "base": "palestra-setembro-amarelo-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
   },
   "outubro-rosa": {
     "hero_base": "palestra-outubro-rosa-empresas-hero",
@@ -25,7 +38,20 @@
       "webp",
       "jpg"
     ],
-    "alt": "Mulheres profissionais reunidas em ambiente corporativo moderno, representando solidariedade e saude da mulher"
+    "alt": "Mulheres profissionais reunidas em ambiente corporativo moderno, representando saude da mulher",
+    "thumb": {
+      "base": "palestra-outubro-rosa-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
   },
   "novembro-azul": {
     "hero_base": "palestra-novembro-azul-empresas-hero",
@@ -39,7 +65,20 @@
       "webp",
       "jpg"
     ],
-    "alt": "Homens em ambiente corporativo contemporaneo, representando cuidado e saude masculina"
+    "alt": "Homens em ambiente corporativo contemporaneo, representando cuidado e saude masculina",
+    "thumb": {
+      "base": "palestra-novembro-azul-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
   },
   "sipat": {
     "hero_base": "palestra-sipat-empresas-hero",
@@ -53,7 +92,20 @@
       "webp",
       "jpg"
     ],
-    "alt": "Colaboradores atentos em sessao de seguranca do trabalho em ambiente industrial moderno"
+    "alt": "Colaboradores atentos em sessao de seguranca do trabalho em ambiente industrial moderno",
+    "thumb": {
+      "base": "palestra-sipat-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
   },
   "saude-mental": {
     "hero_base": "palestra-saude-mental-trabalho-hero",
@@ -67,6 +119,19 @@
       "webp",
       "jpg"
     ],
-    "alt": "Profissional em ambiente de trabalho tranquilo, com sensacao de equilibrio e bem-estar"
+    "alt": "Profissional em ambiente de trabalho tranquilo, com sensacao de equilibrio e bem-estar",
+    "thumb": {
+      "base": "palestra-saude-mental-trabalho-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
   }
 }

@@ -62,6 +62,27 @@ para novas páginas.
   mantenha o 0800 como telefone alternativo. Plano B: se não houver WhatsApp,
   usar formulário de baixa fricção como CTA.
 
+## Regras visuais obrigatórias (registradas pelo cliente)
+
+### Botões — `--radius-btn: 10px`
+**TODOS** os CTAs e botões usam `border-radius: var(--radius-btn)`. **NUNCA** pill/redondo em botão.
+Aplica-se a: hero CTA, CTAs de meio e final, sticky mobile, botões de cards, filtros de categoria.
+
+### Cards — `--radius-card: 14px`
+Cards de conteúdo (`.talk-card`, `.related-card`) usam `border-radius: var(--radius-card)`.
+Hover: `translateY(-4px)` + `shadow-lg` + zoom lento da imagem (`scale(1.06)`, `~600ms ease`).
+Overlay premium: `linear-gradient(to top, rgba(13,33,55,.72) → transparent)` sobre a foto.
+No hover o overlay intensifica. Cards "Em breve" têm o mesmo overlay e movimento.
+Somente `transform/opacity`. Respeitar `prefers-reduced-motion`.
+
+### Motion premium (com propósito — nunca exagerado)
+- **Header elástico:** ao rolar — `backdrop-filter: blur`, bg semi-transparente, `padding` menor, logo sutilmente menor.
+- **Hero Ken Burns:** zoom muito sutil na foto (`scale(1.04) → scale(1)`, ~14s, `forwards`).
+- **Reveal on scroll:** `IntersectionObserver`, UMA vez, fade + `translateY(16px → 0)`, só `opacity/transform`.
+- **Microinterações:** hover de card, estados hover/focus dos CTAs, acordeão FAQ, sticky CTA deslizante.
+- **PROIBIDO:** animar todo elemento, parallax pesado, carrossel automático, partículas, contadores.
+- **Sempre:** `prefers-reduced-motion` respeitado; sem prejuízo de LCP/INP/CLS.
+
 ## Rastreamento
 
 Usar a **taxonomia de `web-design-pro`** (mesmos nomes em todas as páginas):

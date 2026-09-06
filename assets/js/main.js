@@ -169,6 +169,32 @@ const P360 = (() => {
     });
   }
 
+  /* ── Scroll reveal (IntersectionObserver) ───────────────────────────────── */
+
+  function initScrollReveal() {
+    if (!('IntersectionObserver' in window)) return;
+
+    document.body.classList.add('js-reveal');
+
+    const targets = document.querySelectorAll(
+      '.section, .topic-card, .audience-card, .format-card, .faq__item, .related-card, .talk-card'
+    );
+
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-revealed');
+            obs.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: '0px 0px -48px 0px' }
+    );
+
+    targets.forEach((el) => obs.observe(el));
+  }
+
   /* ── Inicialização pública ───────────────────────────────────────────────── */
 
   function init(theme) {
@@ -183,6 +209,7 @@ const P360 = (() => {
     initHeader();
     initSmoothScroll();
     initThemeCards();
+    initScrollReveal();
   }
 
   return { init, buildWALink, track };
