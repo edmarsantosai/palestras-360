@@ -288,8 +288,7 @@ ${bg}
           <span class="breadcrumb__current">${esc(talk.titulo)}</span>
         </nav>
         <div class="hero__badge" aria-hidden="true">
-          <span class="hero__badge-icon">✦</span>
-          PALESTRAS CORPORATIVAS · NACIONAL
+          ${esc(catNome)}
         </div>
         <h1 class="hero__h1">${esc(talk.h1)}</h1>
         <p class="hero__subtitle">${esc(meta.hero_padrao.subtitulo)}</p>
@@ -325,7 +324,7 @@ function sectionSobre(talk) {
 
 function sectionTopicos(talk) {
   const cards = talk.topicos.map((t, i) => `        <div class="topic-card" role="listitem">
-          <span class="topic-card__num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
+          <span class="topic-card__num" aria-hidden="true">—</span>
           <span class="topic-card__text">${esc(t)}</span>
         </div>`).join('\n');
 
@@ -654,8 +653,7 @@ ${buildHeader()}
       <div class="container">
         <div class="hero__content">
           <div class="hero__badge" aria-hidden="true">
-            <span class="hero__badge-icon">✦</span>
-            PALESTRAS CORPORATIVAS · MAIS DE 40 TEMAS
+            Palestras Corporativas
           </div>
           <h1 class="hero__h1">Palestras Corporativas para Empresas de Todo o Brasil</h1>
           <p class="hero__subtitle">Presencial ou online. Temas de saúde, segurança, campanhas e muito mais — atendimento nacional o ano inteiro.</p>

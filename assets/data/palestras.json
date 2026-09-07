@@ -6,8 +6,12 @@
     "padrao_url": "/palestra-<slug>/",
     "hero_padrao": {
       "titulo": "Palestra <Tema> para Empresas",
-      "subtitulo": "Leve uma palestra profissional para sua empresa, presencial ou online, em qualquer regiao do Brasil.",
-      "checks": ["Presencial ou online", "Mais de 40 temas disponiveis", "Atendimento para empresas de todo o Brasil"],
+      "subtitulo": "Leve uma palestra profissional para sua empresa, presencial ou online, em qualquer região do Brasil.",
+      "checks": [
+        "Presencial ou online",
+        "Mais de 40 temas disponiveis",
+        "Atendimento para empresas de todo o Brasil"
+      ],
       "cta": "SOLICITAR ORCAMENTO PELO WHATSAPP"
     },
     "value_props_home": [
@@ -17,7 +21,7 @@
       "Palestras online",
       "Palestras para SIPAT",
       "Palestras para convencoes",
-      "Palestras com dinamicas",
+      "Palestras com dinâmicas",
       "Palestras teatralizadas",
       "Palestras produzidas para o seu objetivo"
     ],
@@ -27,185 +31,709 @@
       "status_whatsapp": "CONFIRMADO por teste em api.whatsapp.com (abriu a conversa).",
       "conflito": "O resumo enviado pelo Jackson cita 0800 484 1234, mas o WhatsApp testado e confirmado e o 0800 605 5544. Usando 5508006055544. Confirmar com o cliente qual e o oficial."
     },
-    "eventos_tracking": ["view_page", "view_talk", "select_theme", "scroll_depth", "click_whatsapp", "generate_lead"],
+    "eventos_tracking": [
+      "view_page",
+      "view_talk",
+      "select_theme",
+      "scroll_depth",
+      "click_whatsapp",
+      "generate_lead"
+    ],
     "legenda_status": {
-      "publicar": "Conteudo real do Jackson, pronto para gerar a LP.",
+      "publicar": "Conteúdo real do Jackson, pronto para gerar a LP.",
       "catalogo": "Stub com resumo real; expandir ao gerar a LP."
     }
   },
-
   "categorias": [
-    { "id": "campanhas", "nome": "Campanhas e Datas do Ano" },
-    { "id": "saude-mental", "nome": "Saude Mental e Emocional" },
-    { "id": "seguranca", "nome": "Seguranca do Trabalho" },
-    { "id": "saude-qualidade", "nome": "Saude e Qualidade de Vida" },
-    { "id": "ergonomia", "nome": "Ergonomia" },
-    { "id": "lideranca", "nome": "Lideranca, Gestao e Comportamento" },
-    { "id": "diversidade", "nome": "Diversidade, Inclusao e Cultura" }
+    {
+      "id": "campanhas",
+      "nome": "Campanhas e Datas do Ano"
+    },
+    {
+      "id": "saúde-mental",
+      "nome": "Saúde Mental e Emocional"
+    },
+    {
+      "id": "segurança",
+      "nome": "Segurança do Trabalho"
+    },
+    {
+      "id": "saúde-qualidade",
+      "nome": "Saúde e Qualidade de Vida"
+    },
+    {
+      "id": "ergonomia",
+      "nome": "Ergonomia"
+    },
+    {
+      "id": "liderança",
+      "nome": "Liderança, Gestão e Comportamento"
+    },
+    {
+      "id": "diversidade",
+      "nome": "Diversidade, Inclusão e Cultura"
+    }
   ],
-
   "palestras": [
     {
-      "slug": "setembro-amarelo", "categoria": "campanhas", "status": "publicar", "prioridade": 1,
-      "titulo": "Setembro Amarelo", "frase": "Falar e a melhor solucao: reconhecer sinais, acolher e buscar ajuda sao atos de coragem e cuidado com a vida.",
+      "slug": "setembro-amarelo",
+      "categoria": "campanhas",
+      "status": "publicar",
+      "prioridade": 1,
+      "titulo": "Setembro Amarelo",
+      "frase": "Falar e a melhor solução: reconhecer sinais, acolher e buscar ajuda são atos de coragem e cuidado com a vida.",
       "h1": "Palestra Setembro Amarelo para Empresas",
       "meta_title": "Palestra Setembro Amarelo para Empresas | Presencial e Online",
-      "meta_description": "Palestra de Setembro Amarelo para empresas, presencial ou online, em todo o Brasil. Valorizacao da vida e saude emocional. Solicite orcamento pelo WhatsApp.",
-      "intro": "Uma palestra que estimula as pessoas a reconhecerem a importancia da saude emocional e a compreenderem que falar sobre sentimentos, dificuldades e momentos de crise e um passo importante para buscar ajuda.",
-      "sobre": "Alinhada ao movimento Setembro Amarelo, a palestra mostra como identificar sinais de sofrimento emocional, como acolher alguem que apresenta mudancas de comportamento e quais atitudes ajudam diante de ansiedade, tristeza e desesperanca. Reforca a importancia de ouvir sem julgamentos, fortalecer redes de apoio e buscar ajuda profissional quando necessario - lembrando que pedir ajuda e um ato de coragem.",
+      "meta_description": "Palestra de Setembro Amarelo para empresas, presencial ou online, em todo o Brasil. Valorização da vida e saúde emocional. Solicite orçamento pelo WhatsApp.",
+      "intro": "Uma palestra que estimula as pessoas a reconhecerem a importância da saúde emocional e a compreenderem que falar sobre sentimentos, dificuldades e momentos de crise é um passo importante para buscar ajuda.",
+      "sobre": "Alinhada ao movimento Setembro Amarelo, a palestra mostra como identificar sinais de sofrimento emocional, como acolher alguém que apresenta mudanças de comportamento e quais atitudes ajudam diante de ansiedade, tristeza e desesperança. Reforca a importância de ouvir sem julgamentos, fortalecer redes de apoio e buscar ajuda profissional quando necessario - lembrando que pedir ajuda é um ato de coragem.",
       "topicos": [
-        "A importancia de falar sobre saude emocional",
+        "A importância de falar sobre saúde emocional",
         "Como identificar sinais de sofrimento emocional",
-        "Como acolher alguem com mudancas de comportamento",
-        "Atitudes diante de ansiedade, tristeza e desesperanca",
+        "Como acolher alguém com mudanças de comportamento",
+        "Atitudes diante de ansiedade, tristeza e desesperança",
         "Como fortalecer redes de apoio",
         "Ouvir sem julgamentos e buscar ajuda profissional"
       ],
-      "para_quem": ["Empresas na campanha Setembro Amarelo", "Equipes e liderancas", "RH, CIPA e programas de QVT", "SIPAT, convencoes e eventos corporativos", "Semana interna de saude emocional"],
-      "formatos": ["presencial", "online", "personalizada"],
-      "faq": [
-        { "q": "A palestra pode ser adaptada a nossa empresa?", "a": "Sim. O conteudo e ajustado ao perfil da equipe e ao objetivo da campanha." },
-        { "q": "O tema e tratado de forma responsavel?", "a": "Sim. Abordagem acolhedora e responsavel, de carater educativo, com orientacao para buscar ajuda profissional. Nao substitui atendimento." },
-        { "q": "Atende presencial e online em todo o Brasil?", "a": "Sim, atendimento nacional, presencial ou online ao vivo." },
-        { "q": "Como solicitar um orcamento?", "a": "Pelo botao de WhatsApp, com a mensagem ja preenchida com o tema." }
+      "para_quem": [
+        "Empresas na campanha Setembro Amarelo",
+        "Equipes e liderancas",
+        "RH, CIPA e programas de QVT",
+        "SIPAT, convencoes e eventos corporativos",
+        "Semana interna de saúde emocional"
       ],
-      "keywords": ["palestra setembro amarelo empresa", "palestra setembro amarelo preco", "palestra setembro amarelo online", "palestra setembro amarelo colaboradores", "palestra setembro amarelo corporativa"],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "A palestra pode ser adaptada à nossa empresa?",
+          "a": "Sim. O conteúdo é ajustado ao perfil da equipe e ao objetivo da campanha."
+        },
+        {
+          "q": "O tema e tratado de forma responsável?",
+          "a": "Sim. Abordagem acolhedora e responsável, de carater educativo, com orientação para buscar ajuda profissional. Não substitui atendimento."
+        },
+        {
+          "q": "Atende presencial e online em todo o Brasil?",
+          "a": "Sim, atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botao de WhatsApp, com a mensagem ja preenchida com o tema."
+        }
+      ],
+      "keywords": [
+        "palestra setembro amarelo empresa",
+        "palestra setembro amarelo preco",
+        "palestra setembro amarelo online",
+        "palestra setembro amarelo colaboradores",
+        "palestra setembro amarelo corporativa"
+      ],
       "tema_whatsapp": "Setembro Amarelo",
-      "relacionadas": ["saude-mental", "ansiedade-e-depressao", "burnout"],
-      "imagens": { "hero": "palestra-setembro-amarelo-empresas-hero", "hero_alt": "Conversa de apoio e escuta entre dois profissionais em escritorio iluminado, representando acolhimento" }
+      "relacionadas": [
+        "saúde-mental",
+        "ansiedade-e-depressão",
+        "burnout"
+      ],
+      "imagens": {
+        "hero": "palestra-setembro-amarelo-empresas-hero",
+        "hero_alt": "Conversa de apoio e escuta entre dois profissionais em escritorio iluminado, representando acolhimento"
+      }
     },
-
     {
-      "slug": "outubro-rosa", "categoria": "campanhas", "status": "publicar", "prioridade": 2,
-      "titulo": "Outubro Rosa", "frase": "Cuidar da saude e um ato de amor proprio: conhecer o corpo, reconhecer sinais e buscar cuidado e viver mais e melhor.",
+      "slug": "outubro-rosa",
+      "categoria": "campanhas",
+      "status": "publicar",
+      "prioridade": 2,
+      "titulo": "Outubro Rosa",
+      "frase": "Cuidar da saúde é um ato de amor próprio: conhecer o corpo, reconhecer sinais e buscar cuidado e viver mais e melhor.",
       "h1": "Palestra Outubro Rosa para Empresas",
       "meta_title": "Palestra Outubro Rosa para Empresas | Presencial e Online",
-      "meta_description": "Palestra de Outubro Rosa para empresas, com profissional de saude, presencial ou online. Saude da mulher e prevencao. Solicite orcamento pelo WhatsApp.",
-      "intro": "Conduzida por profissional da area da saude: uma exposicao sobre a saude da mulher e seus cuidados preventivos, com dicas para viver mais e melhor nas esferas biopsicossocial.",
-      "sobre": "Comeca pela saude da mulher e cuidados preventivos, aponta como Viver Mais e Melhor com dicas de qualidade de vida e bem-estar feminino e encerra em roda de conversa, respondendo perguntas e desmistificando mitos e verdades do universo da saude feminina.",
-      "topicos": ["Saude da mulher e cuidados preventivos", "Viver Mais e Melhor: qualidade de vida", "Bem-estar feminino (biopsicossocial)", "Autocuidado nao e egoismo", "Saude emocional da mulher", "Roda de conversa: mitos e verdades"],
-      "para_quem": ["Empresas na campanha Outubro Rosa", "Equipes e colaboradoras", "RH, CIPA e programas de QVT", "Convencoes, SIPAT e eventos corporativos", "Acoes de endomarketing"],
-      "formatos": ["presencial", "online", "personalizada"],
-      "faq": [
-        { "q": "E conduzida por profissional de saude?", "a": "Sim, com linguagem acessivel e responsavel." },
-        { "q": "Da para adaptar ao nosso publico?", "a": "Sim. Conteudo e dinamica ajustados ao perfil e ao objetivo da acao." },
-        { "q": "Atende em todo o Brasil?", "a": "Sim, presencial ou online ao vivo." },
-        { "q": "Como funciona o orcamento?", "a": "Clique no WhatsApp e envie a mensagem ja preenchida com o tema." }
+      "meta_description": "Palestra de Outubro Rosa para empresas, com profissional de saúde, presencial ou online. Saúde da mulher e prevenção. Solicite orçamento pelo WhatsApp.",
+      "intro": "Conduzida por profissional da area da saúde: uma exposicao sobre a saúde da mulher e seus cuidados preventivos, com dicas para viver mais e melhor nas esferas biopsicossocial.",
+      "sobre": "Comeca pela saúde da mulher e cuidados preventivos, aponta como Viver Mais e Melhor com dicas de qualidade de vida e bem-estar feminino e encerra em roda de conversa, respondendo perguntas e desmistificando mitos e verdades do universo da saúde feminina.",
+      "topicos": [
+        "Saúde da mulher e cuidados preventivos",
+        "Viver Mais e Melhor: qualidade de vida",
+        "Bem-estar feminino (biopsicossocial)",
+        "Autocuidado não é egoísmo",
+        "Saúde emocional da mulher",
+        "Roda de conversa: mitos e verdades"
       ],
-      "keywords": ["palestra outubro rosa empresa", "palestra outubro rosa preco", "palestra outubro rosa online", "palestra outubro rosa colaboradores", "palestra outubro rosa corporativa"],
+      "para_quem": [
+        "Empresas na campanha Outubro Rosa",
+        "Equipes e colaboradoras",
+        "RH, CIPA e programas de QVT",
+        "Convencoes, SIPAT e eventos corporativos",
+        "Acoes de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É conduzida por profissional de saúde?",
+          "a": "Sim, com linguagem acessível e responsável."
+        },
+        {
+          "q": "Da para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e dinâmica ajustados ao perfil e ao objetivo da ação."
+        },
+        {
+          "q": "Atende em todo o Brasil?",
+          "a": "Sim, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como funciona o orçamento?",
+          "a": "Clique no WhatsApp e envie a mensagem ja preenchida com o tema."
+        }
+      ],
+      "keywords": [
+        "palestra outubro rosa empresa",
+        "palestra outubro rosa preco",
+        "palestra outubro rosa online",
+        "palestra outubro rosa colaboradores",
+        "palestra outubro rosa corporativa"
+      ],
       "tema_whatsapp": "Outubro Rosa",
-      "relacionadas": ["novembro-azul", "saude-mental", "qualidade-de-vida"],
-      "imagens": { "hero": "palestra-outubro-rosa-empresas-hero", "hero_alt": "Mulheres profissionais reunidas em ambiente corporativo moderno, representando saude da mulher" }
+      "relacionadas": [
+        "novembro-azul",
+        "saúde-mental",
+        "qualidade-de-vida"
+      ],
+      "imagens": {
+        "hero": "palestra-outubro-rosa-empresas-hero",
+        "hero_alt": "Mulheres profissionais reunidas em ambiente corporativo moderno, representando saúde da mulher"
+      }
     },
-
     {
-      "slug": "novembro-azul", "categoria": "campanhas", "status": "publicar", "prioridade": 3,
-      "titulo": "Novembro Azul", "frase": "Cuidar da saude tambem e atitude de homem: prevenir, acompanhar e pedir ajuda sao sinais de responsabilidade.",
+      "slug": "novembro-azul",
+      "categoria": "campanhas",
+      "status": "publicar",
+      "prioridade": 3,
+      "titulo": "Novembro Azul",
+      "frase": "Cuidar da saúde também e atitude de homem: prevenir, acompanhar e pedir ajuda são sinais de responsabilidade.",
       "h1": "Palestra Novembro Azul para Empresas",
       "meta_title": "Palestra Novembro Azul para Empresas | Presencial e Online",
-      "meta_description": "Palestra de Novembro Azul para empresas, com profissional de saude, presencial ou online. Saude do homem e prevencao. Solicite orcamento pelo WhatsApp.",
-      "intro": "Trata da prevencao do cancer de prostata e de outros cuidados com a saude masculina, com exposicao sobre a saude do homem e dicas para viver mais e melhor.",
-      "sobre": "Aborda a importancia da prevencao do cancer de prostata e amplia para a saude masculina como um todo. Aponta como Viver Mais e Melhor e encerra em roda de conversa, respondendo perguntas e desmistificando mitos e verdades do universo da saude do homem.",
-      "topicos": ["Prevencao do cancer de prostata", "Cuidados com a saude masculina", "Viver Mais e Melhor: qualidade de vida", "Vencer a resistencia em procurar atendimento", "Saude emocional masculina", "Roda de conversa: mitos e verdades"],
-      "para_quem": ["Empresas na campanha Novembro Azul", "Equipes e colaboradores", "RH, CIPA e programas de QVT", "Convencoes, SIPAT e eventos corporativos", "Acoes de endomarketing"],
-      "formatos": ["presencial", "online", "personalizada"],
-      "faq": [
-        { "q": "E conduzida por profissional de saude?", "a": "Sim, de forma clara e sem alarmismo." },
-        { "q": "Da para adaptar ao nosso publico?", "a": "Sim. Conteudo e dinamica ajustados a equipe e ao evento." },
-        { "q": "Atende em todo o Brasil?", "a": "Sim, presencial ou online ao vivo." },
-        { "q": "Como pedir um orcamento?", "a": "Pelo botao de WhatsApp, com a mensagem ja preenchida com o tema." }
+      "meta_description": "Palestra de Novembro Azul para empresas, com profissional de saúde, presencial ou online. Saúde do homem e prevenção. Solicite orçamento pelo WhatsApp.",
+      "intro": "Trata da prevenção do câncer de próstata e de outros cuidados com a saúde masculina, com exposicao sobre a saúde do homem e dicas para viver mais e melhor.",
+      "sobre": "Aborda a importância da prevenção do câncer de próstata e amplia para a saúde masculina como um todo. Aponta como Viver Mais e Melhor e encerra em roda de conversa, respondendo perguntas e desmistificando mitos e verdades do universo da saúde do homem.",
+      "topicos": [
+        "Prevenção do câncer de próstata",
+        "Cuidados com a saúde masculina",
+        "Viver Mais e Melhor: qualidade de vida",
+        "Vencer a resistência em procurar atendimento",
+        "Saúde emocional masculina",
+        "Roda de conversa: mitos e verdades"
       ],
-      "keywords": ["palestra novembro azul empresa", "palestra novembro azul preco", "palestra novembro azul online", "palestra novembro azul colaboradores", "palestra novembro azul corporativa"],
+      "para_quem": [
+        "Empresas na campanha Novembro Azul",
+        "Equipes e colaboradores",
+        "RH, CIPA e programas de QVT",
+        "Convencoes, SIPAT e eventos corporativos",
+        "Acoes de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É conduzida por profissional de saúde?",
+          "a": "Sim, de forma clara e sem alarmismo."
+        },
+        {
+          "q": "Da para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e dinâmica ajustados a equipe e ao evento."
+        },
+        {
+          "q": "Atende em todo o Brasil?",
+          "a": "Sim, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como pedir um orçamento?",
+          "a": "Pelo botao de WhatsApp, com a mensagem ja preenchida com o tema."
+        }
+      ],
+      "keywords": [
+        "palestra novembro azul empresa",
+        "palestra novembro azul preco",
+        "palestra novembro azul online",
+        "palestra novembro azul colaboradores",
+        "palestra novembro azul corporativa"
+      ],
       "tema_whatsapp": "Novembro Azul",
-      "relacionadas": ["outubro-rosa", "saude-mental", "qualidade-de-vida"],
-      "imagens": { "hero": "palestra-novembro-azul-empresas-hero", "hero_alt": "Homens em ambiente corporativo contemporaneo, representando cuidado e saude masculina" }
-    },
-
-    {
-      "slug": "saude-mental", "categoria": "saude-mental", "status": "publicar", "prioridade": 4,
-      "titulo": "Saude Mental", "frase": "Cuidar da mente e desenvolver recursos para enfrentar as adversidades com mais equilibrio e esperanca.",
-      "h1": "Palestra de Saude Mental para Empresas",
-      "meta_title": "Palestra de Saude Mental para Empresas | Presencial e Online",
-      "meta_description": "Palestra corporativa de saude mental, presencial ou online, em todo o Brasil, com conteudo adaptado a sua equipe. Solicite um orcamento pelo WhatsApp.",
-      "intro": "Ajuda as pessoas a lidarem com as adversidades e a buscarem o bem-estar emocional: entender os sentimentos, lidar com ansiedade, depressao e tristeza e superar crises.",
-      "sobre": "Estimula uma relacao mais consciente com pensamentos, sentimentos e emocoes. Trata dos principais fatores que impedem a saude mental, das terapias e tratamentos acessiveis hoje e de como enfrentar momentos de crise - com informacao e acolhimento, sem transformar o tema em diagnostico.",
-      "topicos": ["Como entender os proprios sentimentos", "Fatores que impedem a saude mental", "Como lidar com ansiedade e depressao", "Como lidar com a tristeza", "Como superar crises", "Terapias e tratamentos acessiveis hoje"],
-      "para_quem": ["Empresas de todos os portes e setores", "Equipes e liderancas", "Programas de QVT", "SIPAT, convencoes e eventos", "Campanhas internas (Setembro Amarelo, Janeiro Branco)"],
-      "formatos": ["presencial", "online", "personalizada"],
-      "faq": [
-        { "q": "A palestra pode ser adaptada ao nosso publico?", "a": "Sim. O conteudo e ajustado ao perfil da equipe, ao setor e ao objetivo do evento." },
-        { "q": "Atende presencialmente em todo o Brasil?", "a": "Sim, presencial ou online ao vivo, em todo o pais." },
-        { "q": "Substitui acompanhamento psicologico?", "a": "Nao. Tem carater educativo; nao realiza diagnosticos nem substitui atendimento profissional." },
-        { "q": "Como solicitar um orcamento?", "a": "Clique no WhatsApp e envie a mensagem ja preenchida com o tema." }
+      "relacionadas": [
+        "outubro-rosa",
+        "saúde-mental",
+        "qualidade-de-vida"
       ],
-      "keywords": ["palestra saude mental empresa", "palestra saude mental preco", "palestra saude mental online", "palestra saude mental colaboradores", "palestra saude mental corporativa"],
-      "tema_whatsapp": "Saude Mental",
-      "relacionadas": ["ansiedade-e-depressao", "burnout", "inteligencia-emocional"],
-      "imagens": { "hero": "palestra-saude-mental-trabalho-hero", "hero_alt": "Profissional em ambiente de trabalho tranquilo, com sensacao de equilibrio e bem-estar" }
+      "imagens": {
+        "hero": "palestra-novembro-azul-empresas-hero",
+        "hero_alt": "Homens em ambiente corporativo contemporaneo, representando cuidado e saúde masculina"
+      }
     },
-
     {
-      "slug": "sipat", "categoria": "seguranca", "status": "publicar", "prioridade": 5, "tipo": "programa",
-      "titulo": "SIPAT", "frase": "Uma SIPAT que engaja de verdade: seguranca, saude e bem-estar em um programa sob medida para a sua empresa.",
+      "slug": "saúde-mental",
+      "categoria": "saúde-mental",
+      "status": "publicar",
+      "prioridade": 4,
+      "titulo": "Saúde Mental",
+      "frase": "Cuidar da mente e desenvolver recursos para enfrentar as adversidades com mais equilibrio e esperança.",
+      "h1": "Palestra de Saúde Mental para Empresas",
+      "meta_title": "Palestra de Saúde Mental para Empresas | Presencial e Online",
+      "meta_description": "Palestra corporativa de saúde mental, presencial ou online, em todo o Brasil, com conteúdo adaptado a sua equipe. Solicite um orçamento pelo WhatsApp.",
+      "intro": "Ajuda as pessoas a lidarem com as adversidades e a buscarem o bem-estar emocional: entender os sentimentos, lidar com ansiedade, depressão e tristeza e superar crises.",
+      "sobre": "Estimula uma relação mais consciente com pensamentos, sentimentos e emoções. Trata dos principais fatores que impedem a saúde mental, das terapias e tratamentos acessíveis hoje e de como enfrentar momentos de crise - com informação e acolhimento, sem transformar o tema em diagnóstico.",
+      "topicos": [
+        "Como entender os próprios sentimentos",
+        "Fatores que impedem a saúde mental",
+        "Como lidar com ansiedade e depressão",
+        "Como lidar com a tristeza",
+        "Como superar crises",
+        "Terapias e tratamentos acessíveis hoje"
+      ],
+      "para_quem": [
+        "Empresas de todos os portes e setores",
+        "Equipes e liderancas",
+        "Programas de QVT",
+        "SIPAT, convencoes e eventos",
+        "Campanhas internas (Setembro Amarelo, Janeiro Branco)"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "A palestra pode ser adaptada ao nosso público?",
+          "a": "Sim. O conteúdo é ajustado ao perfil da equipe, ao setor e ao objetivo do evento."
+        },
+        {
+          "q": "Atende presencialmente em todo o Brasil?",
+          "a": "Sim, presencial ou online ao vivo, em todo o pais."
+        },
+        {
+          "q": "Substitui acompanhamento psicológico?",
+          "a": "Não. Tem carater educativo; não realiza diagnósticos nem substitui atendimento profissional."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Clique no WhatsApp e envie a mensagem ja preenchida com o tema."
+        }
+      ],
+      "keywords": [
+        "palestra saúde mental empresa",
+        "palestra saúde mental preco",
+        "palestra saúde mental online",
+        "palestra saúde mental colaboradores",
+        "palestra saúde mental corporativa"
+      ],
+      "tema_whatsapp": "Saúde Mental",
+      "relacionadas": [
+        "ansiedade-e-depressão",
+        "burnout",
+        "inteligencia-emocional"
+      ],
+      "imagens": {
+        "hero": "palestra-saúde-mental-trabalho-hero",
+        "hero_alt": "Profissional em ambiente de trabalho tranquilo, com sensacao de equilibrio e bem-estar"
+      }
+    },
+    {
+      "slug": "sipat",
+      "categoria": "segurança",
+      "status": "publicar",
+      "prioridade": 5,
+      "tipo": "programa",
+      "titulo": "SIPAT",
+      "frase": "Uma SIPAT que engaja de verdade: segurança, saúde e bem-estar em um programa sob medida para a sua empresa.",
       "h1": "Palestras para SIPAT em Todo o Brasil",
-      "meta_title": "Palestras para SIPAT | Programacao para Empresas - Brasil",
-      "meta_description": "Palestras e programacao completa para a SIPAT da sua empresa, presencial ou online: seguranca, saude e qualidade de vida. Solicite orcamento pelo WhatsApp.",
-      "intro": "Programacao de palestras para a Semana Interna de Prevencao de Acidentes do Trabalho, combinando seguranca, saude e bem-estar de forma dinamica e envolvente.",
-      "sobre": "Montamos uma grade sob medida para a sua SIPAT, combinando temas do catalogo (comportamento seguro, saude mental, ergonomia, qualidade de vida, trajeto seguro, entre outros), com palestras dinamicas, interativas e ate teatralizadas que engajam os colaboradores e reforcam a cultura de prevencao.",
-      "topicos": ["Programacao personalizada para a sua SIPAT", "Combinacao de temas: seguranca, saude e bem-estar", "Palestras dinamicas, interativas e teatralizadas", "Engajamento e cultura de prevencao", "Presencial ou online, em todo o Brasil", "Adaptacao as Regras de Ouro e diretrizes da empresa"],
-      "para_quem": ["Empresas que realizam a SIPAT", "CIPA, SESMT e RH", "Equipes operacionais e administrativas", "Industrias e empresas de todos os setores"],
-      "formatos": ["presencial", "online", "personalizada"],
-      "faq": [
-        { "q": "Voces montam a programacao completa da SIPAT?", "a": "Sim, uma grade sob medida com os temas mais relevantes para a sua empresa." },
-        { "q": "Da para combinar varios temas na mesma semana?", "a": "Sim, e a proposta: seguranca, saude e bem-estar em uma programacao envolvente." },
-        { "q": "Atende em todo o Brasil?", "a": "Sim, presencial ou online ao vivo." },
-        { "q": "Como solicitar um orcamento?", "a": "Pelo botao de WhatsApp; retornamos com a proposta de programacao." }
+      "meta_title": "Palestras para SIPAT | Programação para Empresas - Brasil",
+      "meta_description": "Palestras e programação completa para a SIPAT da sua empresa, presencial ou online: segurança, saúde e qualidade de vida. Solicite orçamento pelo WhatsApp.",
+      "intro": "Programação de palestras para a Semana Interna de Prevenção de Acidentes do Trabalho, combinando segurança, saúde e bem-estar de forma dinâmica e envolvente.",
+      "sobre": "Montamos uma grade sob medida para a sua SIPAT, combinando temas do catalogo (comportamento seguro, saúde mental, ergonomia, qualidade de vida, trajeto seguro, entre outros), com palestras dinâmicas, interativas e ate teatralizadas que engajam os colaboradores e reforcam a cultura de prevenção.",
+      "topicos": [
+        "Programação personalizada para a sua SIPAT",
+        "Combinação de temas: segurança, saúde e bem-estar",
+        "Palestras dinâmicas, interativas e teatralizadas",
+        "Engajamento e cultura de prevenção",
+        "Presencial ou online, em todo o Brasil",
+        "Adaptação às Regras de Ouro e diretrizes da empresa"
       ],
-      "keywords": ["palestra para sipat", "palestra sipat empresa", "palestra sipat preco", "palestra sipat online", "programacao sipat"],
+      "para_quem": [
+        "Empresas que realizam a SIPAT",
+        "CIPA, SESMT e RH",
+        "Equipes operacionais e administrativas",
+        "Industrias e empresas de todos os setores"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Vocês montam a programação completa da SIPAT?",
+          "a": "Sim, uma grade sob medida com os temas mais relevantes para a sua empresa."
+        },
+        {
+          "q": "Da para combinar varios temas na mesma semana?",
+          "a": "Sim, e a proposta: segurança, saúde e bem-estar em uma programação envolvente."
+        },
+        {
+          "q": "Atende em todo o Brasil?",
+          "a": "Sim, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botao de WhatsApp; retornamos com a proposta de programação."
+        }
+      ],
+      "keywords": [
+        "palestra para sipat",
+        "palestra sipat empresa",
+        "palestra sipat preco",
+        "palestra sipat online",
+        "programação sipat"
+      ],
       "tema_whatsapp": "SIPAT",
-      "relacionadas": ["comportamento-seguro", "pare-pense-aja", "ergonomia-operacional"],
-      "imagens": { "hero": "palestra-sipat-empresas-hero", "hero_alt": "Colaboradores atentos em sessao de seguranca do trabalho em ambiente industrial moderno" }
+      "relacionadas": [
+        "comportamento-seguro",
+        "pare-pense-aja",
+        "ergonomia-operacional"
+      ],
+      "imagens": {
+        "hero": "palestra-sipat-empresas-hero",
+        "hero_alt": "Colaboradores atentos em sessao de segurança do trabalho em ambiente industrial moderno"
+      }
     },
-
-    { "slug": "comportamento-seguro", "categoria": "seguranca", "status": "catalogo", "titulo": "Comportamento Seguro", "resumo": "Abordagem motivacional para um dia a dia mais seguro: Regras de Ouro, Cuidado Ativo, uso de EPIs, analise de riscos e quase acidentes, riscos do celular e trabalho em equipe.", "tema_whatsapp": "Comportamento Seguro" },
-    { "slug": "burnout", "categoria": "saude-mental", "status": "catalogo", "titulo": "Burnout Previna-se", "resumo": "Conscientizacao sobre a sindrome do esgotamento profissional: sintomas principais e sinais da fronteira entre estresse cronico e disturbio emocional.", "tema_whatsapp": "Burnout Previna-se" },
-    { "slug": "assedio-zero", "categoria": "diversidade", "status": "catalogo", "titulo": "Assedio Zero", "resumo": "Como prevenir, detectar e lidar com assedio moral e sexual no trabalho, unindo a equipe por um ambiente mais saudavel e seguro.", "tema_whatsapp": "Assedio Zero" },
-    { "slug": "gestao-do-tempo", "categoria": "lideranca", "status": "catalogo", "titulo": "Gestao do Tempo", "resumo": "Aproveitar o tempo de forma equilibrada com organizacao e planejamento, sem cair na ansiedade e na adiccao tecnologica que sabotam a produtividade.", "tema_whatsapp": "Gestao do Tempo" },
-    { "slug": "ansiedade-e-depressao", "categoria": "saude-mental", "status": "catalogo", "titulo": "Ansiedade e Depressao", "resumo": "Com profissional de Psicologia: abordagem introdutoria e roda de conversa desmistificando mitos e verdades sobre ansiedade e depressao.", "tema_whatsapp": "Ansiedade e Depressao" },
-    { "slug": "ergonomia-no-dia-a-dia", "categoria": "ergonomia", "status": "catalogo", "titulo": "Ergonomia no Dia a Dia", "resumo": "Dicas para posicoes de trabalho em pe (operacional) ou sentada (escritorio): postura, mobiliario e equipamentos para evitar desconfortos e lesoes.", "tema_whatsapp": "Ergonomia no Dia a Dia" },
-    { "slug": "nutricao-e-saude", "categoria": "saude-qualidade", "status": "catalogo", "titulo": "A Nutricao e a Saude", "resumo": "Alimentacao para a saude: grupos de alimentos, mitos e verdades, sodio, vitaminas, acucares, hidratacao, dietas da moda, saude intestinal e leitura de rotulos.", "tema_whatsapp": "A Nutricao e a Saude" },
-    { "slug": "atividade-fisica-x-sedentarismo", "categoria": "saude-qualidade", "status": "catalogo", "titulo": "Atividade Fisica x Sedentarismo", "resumo": "Importancia da atividade fisica para o metabolismo e o dia a dia, com dicas sobre emagrecimento, hipertrofia, mobilidade e reabilitacao corporal.", "tema_whatsapp": "Atividade Fisica x Sedentarismo" },
-    { "slug": "dia-das-mulheres", "categoria": "campanhas", "status": "catalogo", "titulo": "Dia das Mulheres - Dia Delas", "resumo": "Encontro para valorizar a mulher: identidade, autoestima, equilibrio emocional, proposito e protagonismo, com mensagens de encorajamento e superacao.", "tema_whatsapp": "Dia das Mulheres" },
-    { "slug": "trajeto-seguro", "categoria": "seguranca", "status": "catalogo", "titulo": "Trajeto Seguro", "resumo": "Prevencao de acidentes no percurso casa-trabalho: direcao defensiva, atencao plena, velocidade segura, celular ao volante, fadiga e autocuidado.", "tema_whatsapp": "Trajeto Seguro" },
-    { "slug": "ists-e-saude-sexual", "categoria": "saude-qualidade", "status": "catalogo", "titulo": "As ISTs e a Saude Sexual", "resumo": "Prevencao e educacao sexual: principais ISTs, transmissao, prevencao, vacinacao, diagnostico precoce e responsabilidade afetiva.", "tema_whatsapp": "As ISTs e a Saude Sexual" },
-    { "slug": "pare-pense-aja", "categoria": "seguranca", "status": "catalogo", "titulo": "Pare, Pense, Aja", "resumo": "Cultura do cuidado: parar, pensar nos riscos e agir com seguranca antes de qualquer atividade, com percepcao de riscos e responsabilidade coletiva.", "tema_whatsapp": "Pare, Pense, Aja" },
-    { "slug": "governanca-e-gestao-de-riscos", "categoria": "lideranca", "status": "catalogo", "titulo": "Governanca e Gestao de Riscos", "resumo": "Para lideres e gestores publicos: governar em tempos de incerteza, antecipar riscos, integridade, transparencia e geracao de valor publico.", "tema_whatsapp": "Governanca e Gestao de Riscos" },
-    { "slug": "qualidade-de-vida", "categoria": "saude-qualidade", "status": "catalogo", "titulo": "Qualidade de Vida e Estilo de Vida Saudavel", "resumo": "Habitos saudaveis para viver melhor: alimentacao, atividade fisica, sono, saude emocional, estresse, hidratacao e prevencao de doencas cronicas.", "tema_whatsapp": "Qualidade de Vida" },
-    { "slug": "seguranca-regras-de-ouro", "categoria": "seguranca", "status": "catalogo", "titulo": "Seguranca e as Regras de Ouro", "resumo": "Prevencao de acidentes dentro e fora do trabalho, adaptavel as Regras de Ouro da empresa: percepcao de riscos, EPIs, comunicacao e atividades criticas.", "tema_whatsapp": "Seguranca e as Regras de Ouro" },
-    { "slug": "ergonomia-operacional", "categoria": "ergonomia", "status": "catalogo", "titulo": "Ergonomia Operacional", "resumo": "Ergonomia em ambientes operacionais: postura, uso de maquinas, levantamento de cargas, LER/DORT, pausas e consciencia corporal.", "tema_whatsapp": "Ergonomia Operacional" },
-    { "slug": "ergonomia-escritorio-home-office", "categoria": "ergonomia", "status": "catalogo", "titulo": "Ergonomia para Escritorios e Home Office", "resumo": "Ergonomia para quem trabalha sentado: regulagem da cadeira e estacao, telas, teclado e mouse, pausas ativas, fadiga visual e LER/DORT.", "tema_whatsapp": "Ergonomia para Escritorios e Home Office" },
-    { "slug": "inteligencia-emocional", "categoria": "saude-mental", "status": "catalogo", "titulo": "Inteligencia Emocional", "resumo": "Competencia-chave do trabalho: autoconhecimento, autocontrole, empatia, comunicacao assertiva, resiliencia e gestao de conflitos.", "tema_whatsapp": "Inteligencia Emocional" },
-    { "slug": "educacao-financeira", "categoria": "saude-qualidade", "status": "catalogo", "titulo": "Educacao Financeira e a Saude", "resumo": "Financas com qualidade de vida: orcamento, consumo consciente, credito, juros, reserva de emergencia e metas financeiras.", "tema_whatsapp": "Educacao Financeira" },
-    { "slug": "adiccao-tecnologica", "categoria": "saude-mental", "status": "catalogo", "titulo": "Adiccao Tecnologica", "resumo": "Prevenindo a dependencia digital: uso consciente de telas, foco e produtividade, sono, saude mental e equilibrio entre o digital e a vida real.", "tema_whatsapp": "Adiccao Tecnologica" },
-    { "slug": "primeiros-socorros", "categoria": "seguranca", "status": "catalogo", "titulo": "Primeiros Socorros", "resumo": "Procedimentos basicos de primeiros socorros: avaliacao da vitima, acionamento de emergencia e o que fazer (e o que nao fazer) em cada situacao.", "tema_whatsapp": "Primeiros Socorros" },
-    { "slug": "cinco-sensos-5s", "categoria": "lideranca", "status": "catalogo", "titulo": "5S - Cinco Sensos no Trabalho e na Vida", "resumo": "Metodologia 5S de organizacao, disciplina e melhoria continua para ambientes mais seguros, produtivos e eficientes.", "tema_whatsapp": "5S - Cinco Sensos" },
-    { "slug": "shisa-kanko", "categoria": "seguranca", "status": "catalogo", "titulo": "Shisa Kanko - Apontar e Falar", "resumo": "Tecnica japonesa de prevencao de erros e acidentes: percepcao de riscos, confirmacao de procedimentos e disciplina operacional.", "tema_whatsapp": "Shisa Kanko" },
-    { "slug": "saude-bucal", "categoria": "saude-qualidade", "status": "catalogo", "titulo": "Saude Bucal", "resumo": "Higiene e cuidados para a qualidade de vida: escovacao e fio dental, prevencao de caries e gengivite, alimentacao e consultas periodicas.", "tema_whatsapp": "Saude Bucal" },
-    { "slug": "clima-organizacional", "categoria": "lideranca", "status": "catalogo", "titulo": "Clima Organizacional e Mente Positiva", "resumo": "Clima saudavel e mentalidade positiva: comunicacao, trabalho em equipe, gestao de conflitos, resiliencia e senso de pertencimento.", "tema_whatsapp": "Clima Organizacional" },
-    { "slug": "gestantes", "categoria": "saude-qualidade", "status": "catalogo", "titulo": "Gestantes - Cuidados na Gestacao", "resumo": "Cuidados com o corpo na gestacao, mitos e verdades: alimentacao, atividade orientada, postura, saude emocional e sinais de alerta.", "tema_whatsapp": "Gestantes" },
-    { "slug": "tabagismo", "categoria": "saude-qualidade", "status": "catalogo", "titulo": "Tabagismo", "resumo": "Prevencao e conscientizacao: impactos do cigarro, dependencia da nicotina, beneficios da cessacao e estrategias de apoio.", "tema_whatsapp": "Tabagismo" },
-    { "slug": "alcoolismo-e-drogas", "categoria": "saude-qualidade", "status": "catalogo", "titulo": "Alcoolismo e Drogas", "resumo": "Prevencao e escolhas saudaveis: fatores de risco, consequencias, impacto na seguranca e na produtividade e como dizer nao.", "tema_whatsapp": "Alcoolismo e Drogas" },
-    { "slug": "meio-ambiente", "categoria": "diversidade", "status": "catalogo", "titulo": "Meio Ambiente e Sustentabilidade", "resumo": "Responsabilidade socioambiental: consumo consciente, reciclagem, uso racional de agua e energia e boas praticas no trabalho.", "tema_whatsapp": "Meio Ambiente" },
-    { "slug": "qualidade-e-excelencia", "categoria": "lideranca", "status": "catalogo", "titulo": "Qualidade e Excelencia no Trabalho", "resumo": "Cultura da qualidade e melhoria continua: comprometimento, padronizacao, foco em resultados e alta performance.", "tema_whatsapp": "Qualidade e Excelencia" },
-    { "slug": "comunicacao-nao-violenta", "categoria": "lideranca", "status": "catalogo", "titulo": "CNV - Comunicacao Nao Violenta", "resumo": "Comunicacao, conflitos e relacoes no trabalho: escuta ativa, empatia, comunicacao assertiva e feedback construtivo.", "tema_whatsapp": "Comunicacao Nao Violenta" },
-    { "slug": "diversidade-e-inclusao", "categoria": "diversidade", "status": "catalogo", "titulo": "Respeito a Diversidade e Inclusao", "resumo": "Diversidade, equidade e inclusao: combate ao preconceito, inclusao de PcD, respeito as diferencas e igualdade de oportunidades.", "tema_whatsapp": "Diversidade e Inclusao" },
-    { "slug": "ginastica-laboral", "categoria": "saude-qualidade", "status": "catalogo", "titulo": "Ginastica Laboral", "resumo": "Pratica preventiva no trabalho: prevencao de LER/DORT, alivio do estresse, melhora da postura e da disposicao com pausas ativas.", "tema_whatsapp": "Ginastica Laboral" },
-    { "slug": "emagrecimento-com-saude", "categoria": "saude-qualidade", "status": "catalogo", "titulo": "Emagrecimento com Saude", "resumo": "Emagrecimento saudavel: equilibrio calorico, alimentacao, hidratacao, leitura de rotulos e o papel do HIIT.", "tema_whatsapp": "Emagrecimento com Saude" },
-    { "slug": "cipa-lideranca", "categoria": "seguranca", "status": "catalogo", "titulo": "CIPA - Lideranca para Cipeiros", "resumo": "Postura de lideranca para a CIPA: comunicacao, engajamento e o cipeiro como agente multiplicador e coach de prevencao.", "tema_whatsapp": "CIPA - Lideranca para Cipeiros" },
-    { "slug": "radio-pirata", "categoria": "lideranca", "status": "catalogo", "titulo": "Radio Pirata - Combate a Fofoca", "resumo": "Impactos da fofoca e dos boatos no clima organizacional; comunicacao responsavel, etica e cultura de confianca.", "tema_whatsapp": "Radio Pirata" },
-    { "slug": "proposito-e-felicidade", "categoria": "saude-mental", "status": "catalogo", "titulo": "Proposito e Felicidade", "resumo": "Proposito de vida como base do bem-estar e da motivacao: autoconhecimento, valores, sentido do trabalho e metas.", "tema_whatsapp": "Proposito e Felicidade" },
-    { "slug": "crencas-limitantes", "categoria": "saude-mental", "status": "catalogo", "titulo": "Crencas Limitantes", "resumo": "Transformar crencas limitantes em fortalecedoras: autossabotagem, mentalidade de crescimento e autoconfianca.", "tema_whatsapp": "Crencas Limitantes" },
-    { "slug": "habitos-e-pessoas-eficazes", "categoria": "lideranca", "status": "catalogo", "titulo": "Habitos e Pessoas Eficazes", "resumo": "Como habitos diarios geram resultados: disciplina, foco, priorizacao e caracteristicas das pessoas eficazes.", "tema_whatsapp": "Habitos e Pessoas Eficazes" },
-    { "slug": "tea-inclusao-e-respeito", "categoria": "diversidade", "status": "catalogo", "titulo": "TEA - Inclusao e Respeito", "resumo": "O que e o Transtorno do Espectro Autista, desmistificando conceitos e orientando para ambientes mais inclusivos e acolhedores.", "tema_whatsapp": "TEA - Inclusao e Respeito" }
+    {
+      "slug": "comportamento-seguro",
+      "categoria": "segurança",
+      "status": "catalogo",
+      "titulo": "Comportamento Seguro",
+      "resumo": "Abordagem motivacional para um dia a dia mais seguro: Regras de Ouro, Cuidado Ativo, uso de EPIs, analise de riscos e quase acidentes, riscos do celular e trabalho em equipe.",
+      "tema_whatsapp": "Comportamento Seguro"
+    },
+    {
+      "slug": "burnout",
+      "categoria": "saúde-mental",
+      "status": "catalogo",
+      "titulo": "Burnout Previna-se",
+      "resumo": "Conscientizacao sobre a síndrome do esgotamento profissional: sintomas principais e sinais da fronteira entre estresse cronico e disturbio emocional.",
+      "tema_whatsapp": "Burnout Previna-se"
+    },
+    {
+      "slug": "assedio-zero",
+      "categoria": "diversidade",
+      "status": "catalogo",
+      "titulo": "Assedio Zero",
+      "resumo": "Como prevenir, detectar e lidar com assedio moral e sexual no trabalho, unindo a equipe por um ambiente mais saudavel e seguro.",
+      "tema_whatsapp": "Assedio Zero"
+    },
+    {
+      "slug": "gestão-do-tempo",
+      "categoria": "liderança",
+      "status": "catalogo",
+      "titulo": "Gestão do Tempo",
+      "resumo": "Aproveitar o tempo de forma equilibrada com organização e planejamento, sem cair na ansiedade e na adiccao tecnologica que sabotam a produtividade.",
+      "tema_whatsapp": "Gestão do Tempo"
+    },
+    {
+      "slug": "ansiedade-e-depressão",
+      "categoria": "saúde-mental",
+      "status": "catalogo",
+      "titulo": "Ansiedade e Depressão",
+      "resumo": "Com profissional de Psicologia: abordagem introdutoria e roda de conversa desmistificando mitos e verdades sobre ansiedade e depressão.",
+      "tema_whatsapp": "Ansiedade e Depressão"
+    },
+    {
+      "slug": "ergonomia-no-dia-a-dia",
+      "categoria": "ergonomia",
+      "status": "catalogo",
+      "titulo": "Ergonomia no Dia a Dia",
+      "resumo": "Dicas para posições de trabalho em pe (operacional) ou sentada (escritorio): postura, mobiliario e equipamentos para evitar desconfortos e lesoes.",
+      "tema_whatsapp": "Ergonomia no Dia a Dia"
+    },
+    {
+      "slug": "nutricao-e-saúde",
+      "categoria": "saúde-qualidade",
+      "status": "catalogo",
+      "titulo": "A Nutricao e a Saúde",
+      "resumo": "Alimentacao para a saúde: grupos de alimentos, mitos e verdades, sodio, vitaminas, acucares, hidratacao, dietas da moda, saúde intestinal e leitura de rotulos.",
+      "tema_whatsapp": "A Nutricao e a Saúde"
+    },
+    {
+      "slug": "atividade-física-x-sedentarismo",
+      "categoria": "saúde-qualidade",
+      "status": "catalogo",
+      "titulo": "Atividade Física x Sedentarismo",
+      "resumo": "Importância da atividade física para o metabolismo e o dia a dia, com dicas sobre emagrecimento, hipertrofia, mobilidade e reabilitacao corporal.",
+      "tema_whatsapp": "Atividade Física x Sedentarismo"
+    },
+    {
+      "slug": "dia-das-mulheres",
+      "categoria": "campanhas",
+      "status": "catalogo",
+      "titulo": "Dia das Mulheres - Dia Delas",
+      "resumo": "Encontro para valorizar a mulher: identidade, autoestima, equilibrio emocional, proposito e protagonismo, com mensagens de encorajamento e superacao.",
+      "tema_whatsapp": "Dia das Mulheres"
+    },
+    {
+      "slug": "trajeto-seguro",
+      "categoria": "segurança",
+      "status": "catalogo",
+      "titulo": "Trajeto Seguro",
+      "resumo": "Prevenção de acidentes no percurso casa-trabalho: direcao defensiva, atenção plena, velocidade segura, celular ao volante, fadiga e autocuidado.",
+      "tema_whatsapp": "Trajeto Seguro"
+    },
+    {
+      "slug": "ists-e-saúde-sexual",
+      "categoria": "saúde-qualidade",
+      "status": "catalogo",
+      "titulo": "As ISTs e a Saúde Sexual",
+      "resumo": "Prevenção e educacao sexual: principais ISTs, transmissao, prevenção, vacinacao, diagnóstico precoce e responsabilidade afetiva.",
+      "tema_whatsapp": "As ISTs e a Saúde Sexual"
+    },
+    {
+      "slug": "pare-pense-aja",
+      "categoria": "segurança",
+      "status": "catalogo",
+      "titulo": "Pare, Pense, Aja",
+      "resumo": "Cultura do cuidado: parar, pensar nos riscos e agir com segurança antes de qualquer atividade, com percepção de riscos e responsabilidade coletiva.",
+      "tema_whatsapp": "Pare, Pense, Aja"
+    },
+    {
+      "slug": "governanca-e-gestão-de-riscos",
+      "categoria": "liderança",
+      "status": "catalogo",
+      "titulo": "Governanca e Gestão de Riscos",
+      "resumo": "Para lideres e gestores públicos: governar em tempos de incerteza, antecipar riscos, integridade, transparencia e geracao de valor público.",
+      "tema_whatsapp": "Governanca e Gestão de Riscos"
+    },
+    {
+      "slug": "qualidade-de-vida",
+      "categoria": "saúde-qualidade",
+      "status": "catalogo",
+      "titulo": "Qualidade de Vida e Estilo de Vida Saudavel",
+      "resumo": "Hábitos saudaveis para viver melhor: alimentacao, atividade física, sono, saúde emocional, estresse, hidratacao e prevenção de doencas cronicas.",
+      "tema_whatsapp": "Qualidade de Vida"
+    },
+    {
+      "slug": "segurança-regras-de-ouro",
+      "categoria": "segurança",
+      "status": "catalogo",
+      "titulo": "Segurança e às Regras de Ouro",
+      "resumo": "Prevenção de acidentes dentro e fora do trabalho, adaptavel às Regras de Ouro da empresa: percepção de riscos, EPIs, comunicação e atividades criticas.",
+      "tema_whatsapp": "Segurança e às Regras de Ouro"
+    },
+    {
+      "slug": "ergonomia-operacional",
+      "categoria": "ergonomia",
+      "status": "catalogo",
+      "titulo": "Ergonomia Operacional",
+      "resumo": "Ergonomia em ambientes operacionais: postura, uso de maquinas, levantamento de cargas, LER/DORT, pausas e consciencia corporal.",
+      "tema_whatsapp": "Ergonomia Operacional"
+    },
+    {
+      "slug": "ergonomia-escritorio-home-office",
+      "categoria": "ergonomia",
+      "status": "catalogo",
+      "titulo": "Ergonomia para Escritorios e Home Office",
+      "resumo": "Ergonomia para quem trabalha sentado: regulagem da cadeira e estacao, telas, teclado e mouse, pausas ativas, fadiga visual e LER/DORT.",
+      "tema_whatsapp": "Ergonomia para Escritorios e Home Office"
+    },
+    {
+      "slug": "inteligencia-emocional",
+      "categoria": "saúde-mental",
+      "status": "catalogo",
+      "titulo": "Inteligencia Emocional",
+      "resumo": "Competencia-chave do trabalho: autoconhecimento, autocontrole, empatia, comunicação assertiva, resiliencia e gestão de conflitos.",
+      "tema_whatsapp": "Inteligencia Emocional"
+    },
+    {
+      "slug": "educacao-financeira",
+      "categoria": "saúde-qualidade",
+      "status": "catalogo",
+      "titulo": "Educacao Financeira e a Saúde",
+      "resumo": "Financas com qualidade de vida: orçamento, consumo consciente, credito, juros, reserva de emergencia e metas financeiras.",
+      "tema_whatsapp": "Educacao Financeira"
+    },
+    {
+      "slug": "adiccao-tecnologica",
+      "categoria": "saúde-mental",
+      "status": "catalogo",
+      "titulo": "Adiccao Tecnologica",
+      "resumo": "Prevenindo a dependencia digital: uso consciente de telas, foco e produtividade, sono, saúde mental e equilibrio entre o digital e a vida real.",
+      "tema_whatsapp": "Adiccao Tecnologica"
+    },
+    {
+      "slug": "primeiros-socorros",
+      "categoria": "segurança",
+      "status": "catalogo",
+      "titulo": "Primeiros Socorros",
+      "resumo": "Procedimentos básicos de primeiros socorros: avaliação da vitima, acionamento de emergencia e o que fazer (e o que não fazer) em cada situação.",
+      "tema_whatsapp": "Primeiros Socorros"
+    },
+    {
+      "slug": "cinco-sensos-5s",
+      "categoria": "liderança",
+      "status": "catalogo",
+      "titulo": "5S - Cinco Sensos no Trabalho e na Vida",
+      "resumo": "Metodologia 5S de organização, disciplina e melhoria continua para ambientes mais seguros, produtivos e eficientes.",
+      "tema_whatsapp": "5S - Cinco Sensos"
+    },
+    {
+      "slug": "shisa-kanko",
+      "categoria": "segurança",
+      "status": "catalogo",
+      "titulo": "Shisa Kanko - Apontar e Falar",
+      "resumo": "Técnica japonesa de prevenção de erros e acidentes: percepção de riscos, confirmacao de procedimentos e disciplina operacional.",
+      "tema_whatsapp": "Shisa Kanko"
+    },
+    {
+      "slug": "saúde-bucal",
+      "categoria": "saúde-qualidade",
+      "status": "catalogo",
+      "titulo": "Saúde Bucal",
+      "resumo": "Higiene e cuidados para a qualidade de vida: escovacao e fio dental, prevenção de caries e gengivite, alimentacao e consultas periodicas.",
+      "tema_whatsapp": "Saúde Bucal"
+    },
+    {
+      "slug": "clima-organizacional",
+      "categoria": "liderança",
+      "status": "catalogo",
+      "titulo": "Clima Organizacional e Mente Positiva",
+      "resumo": "Clima saudavel e mentalidade positiva: comunicação, trabalho em equipe, gestão de conflitos, resiliencia e senso de pertencimento.",
+      "tema_whatsapp": "Clima Organizacional"
+    },
+    {
+      "slug": "gestantes",
+      "categoria": "saúde-qualidade",
+      "status": "catalogo",
+      "titulo": "Gestantes - Cuidados na Gestacao",
+      "resumo": "Cuidados com o corpo na gestacao, mitos e verdades: alimentacao, atividade orientada, postura, saúde emocional e sinais de alerta.",
+      "tema_whatsapp": "Gestantes"
+    },
+    {
+      "slug": "tabagismo",
+      "categoria": "saúde-qualidade",
+      "status": "catalogo",
+      "titulo": "Tabagismo",
+      "resumo": "Prevenção e conscientizacao: impactos do cigarro, dependencia da nicotina, beneficios da cessacao e estrategias de apoio.",
+      "tema_whatsapp": "Tabagismo"
+    },
+    {
+      "slug": "alcoolismo-e-drogas",
+      "categoria": "saúde-qualidade",
+      "status": "catalogo",
+      "titulo": "Alcoolismo e Drogas",
+      "resumo": "Prevenção e escolhas saudaveis: fatores de risco, consequências, impacto na segurança e na produtividade e como dizer não.",
+      "tema_whatsapp": "Alcoolismo e Drogas"
+    },
+    {
+      "slug": "meio-ambiente",
+      "categoria": "diversidade",
+      "status": "catalogo",
+      "titulo": "Meio Ambiente e Sustentabilidade",
+      "resumo": "Responsabilidade socioambiental: consumo consciente, reciclagem, uso racional de agua e energia e boas práticas no trabalho.",
+      "tema_whatsapp": "Meio Ambiente"
+    },
+    {
+      "slug": "qualidade-e-excelencia",
+      "categoria": "liderança",
+      "status": "catalogo",
+      "titulo": "Qualidade e Excelencia no Trabalho",
+      "resumo": "Cultura da qualidade e melhoria continua: comprometimento, padronizacao, foco em resultados e alta performance.",
+      "tema_whatsapp": "Qualidade e Excelencia"
+    },
+    {
+      "slug": "comunicação-não-violenta",
+      "categoria": "liderança",
+      "status": "catalogo",
+      "titulo": "CNV - Comunicação Não Violenta",
+      "resumo": "Comunicação, conflitos e relações no trabalho: escuta ativa, empatia, comunicação assertiva e feedback construtivo.",
+      "tema_whatsapp": "Comunicação Não Violenta"
+    },
+    {
+      "slug": "diversidade-e-inclusão",
+      "categoria": "diversidade",
+      "status": "catalogo",
+      "titulo": "Respeito a Diversidade e Inclusão",
+      "resumo": "Diversidade, equidade e inclusão: combate ao preconceito, inclusão de PcD, respeito as diferenças e igualdade de oportunidades.",
+      "tema_whatsapp": "Diversidade e Inclusão"
+    },
+    {
+      "slug": "ginastica-laboral",
+      "categoria": "saúde-qualidade",
+      "status": "catalogo",
+      "titulo": "Ginastica Laboral",
+      "resumo": "Prática preventiva no trabalho: prevenção de LER/DORT, alivio do estresse, melhora da postura e da disposicao com pausas ativas.",
+      "tema_whatsapp": "Ginastica Laboral"
+    },
+    {
+      "slug": "emagrecimento-com-saúde",
+      "categoria": "saúde-qualidade",
+      "status": "catalogo",
+      "titulo": "Emagrecimento com Saúde",
+      "resumo": "Emagrecimento saudavel: equilibrio calorico, alimentacao, hidratacao, leitura de rotulos e o papel do HIIT.",
+      "tema_whatsapp": "Emagrecimento com Saúde"
+    },
+    {
+      "slug": "cipa-liderança",
+      "categoria": "segurança",
+      "status": "catalogo",
+      "titulo": "CIPA - Liderança para Cipeiros",
+      "resumo": "Postura de liderança para a CIPA: comunicação, engajamento e o cipeiro como agente multiplicador e coach de prevenção.",
+      "tema_whatsapp": "CIPA - Liderança para Cipeiros"
+    },
+    {
+      "slug": "radio-pirata",
+      "categoria": "liderança",
+      "status": "catalogo",
+      "titulo": "Radio Pirata - Combate a Fofoca",
+      "resumo": "Impactos da fofoca e dos boatos no clima organizacional; comunicação responsável, etica e cultura de confiança.",
+      "tema_whatsapp": "Radio Pirata"
+    },
+    {
+      "slug": "proposito-e-felicidade",
+      "categoria": "saúde-mental",
+      "status": "catalogo",
+      "titulo": "Proposito e Felicidade",
+      "resumo": "Proposito de vida como base do bem-estar e da motivacao: autoconhecimento, valores, sentido do trabalho e metas.",
+      "tema_whatsapp": "Proposito e Felicidade"
+    },
+    {
+      "slug": "crencas-limitantes",
+      "categoria": "saúde-mental",
+      "status": "catalogo",
+      "titulo": "Crencas Limitantes",
+      "resumo": "Transformar crencas limitantes em fortalecedoras: autossabotagem, mentalidade de crescimento e autoconfianca.",
+      "tema_whatsapp": "Crencas Limitantes"
+    },
+    {
+      "slug": "hábitos-e-pessoas-eficazes",
+      "categoria": "liderança",
+      "status": "catalogo",
+      "titulo": "Hábitos e Pessoas Eficazes",
+      "resumo": "Como hábitos diarios geram resultados: disciplina, foco, priorizacao e caracteristicas das pessoas eficazes.",
+      "tema_whatsapp": "Hábitos e Pessoas Eficazes"
+    },
+    {
+      "slug": "tea-inclusão-e-respeito",
+      "categoria": "diversidade",
+      "status": "catalogo",
+      "titulo": "TEA - Inclusão e Respeito",
+      "resumo": "O que é o Transtorno do Espectro Autista, desmistificando conceitos e orientando para ambientes mais inclusivos e acolhedores.",
+      "tema_whatsapp": "TEA - Inclusão e Respeito"
+    }
   ]
 }
