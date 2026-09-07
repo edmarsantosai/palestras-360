@@ -239,10 +239,14 @@ def fix_text(s):
         s = re.sub(p, r, s, flags=re.MULTILINE)
     return s
 
-def fix_obj(o):
-    if isinstance(o, str):   return fix_text(o)
-    if isinstance(o, list):  return [fix_obj(i) for i in o]
-    if isinstance(o, dict):  return {k: fix_obj(v) for k, v in o.items()}
+SKIP_KEYS = {'slug', 'relacionadas', 'categoria', 'status', 'whatsapp',
+             'dominio', 'hero_base', 'formatos', 'larguras', 'base'}
+
+def fix_obj(o, key=None):
+    if key in SKIP_KEYS:    return o           # never touch slugs/ids
+    if isinstance(o, str):  return fix_text(o)
+    if isinstance(o, list): return [fix_obj(i) for i in o]
+    if isinstance(o, dict): return {k: fix_obj(v, key=k) for k, v in o.items()}
     return o
 
 data  = json.loads(SRC.read_text(encoding='utf-8'))

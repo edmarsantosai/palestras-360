@@ -134,8 +134,8 @@
       ],
       "tema_whatsapp": "Setembro Amarelo",
       "relacionadas": [
-        "saúde-mental",
-        "ansiedade-e-depressão",
+        "saude-mental",
+        "ansiedade-e-depressao",
         "burnout"
       ],
       "imagens": {
@@ -203,7 +203,7 @@
       "tema_whatsapp": "Outubro Rosa",
       "relacionadas": [
         "novembro-azul",
-        "saúde-mental",
+        "saude-mental",
         "qualidade-de-vida"
       ],
       "imagens": {
@@ -271,7 +271,7 @@
       "tema_whatsapp": "Novembro Azul",
       "relacionadas": [
         "outubro-rosa",
-        "saúde-mental",
+        "saude-mental",
         "qualidade-de-vida"
       ],
       "imagens": {
@@ -280,8 +280,8 @@
       }
     },
     {
-      "slug": "saúde-mental",
-      "categoria": "saúde-mental",
+      "slug": "saude-mental",
+      "categoria": "saude-mental",
       "status": "publicar",
       "prioridade": 4,
       "titulo": "Saúde Mental",
@@ -338,7 +338,7 @@
       ],
       "tema_whatsapp": "Saúde Mental",
       "relacionadas": [
-        "ansiedade-e-depressão",
+        "ansiedade-e-depressao",
         "burnout",
         "inteligencia-emocional"
       ],
@@ -349,7 +349,7 @@
     },
     {
       "slug": "sipat",
-      "categoria": "segurança",
+      "categoria": "seguranca",
       "status": "publicar",
       "prioridade": 5,
       "tipo": "programa",
@@ -417,7 +417,7 @@
     },
     {
       "slug": "comportamento-seguro",
-      "categoria": "segurança",
+      "categoria": "seguranca",
       "status": "catalogo",
       "titulo": "Comportamento Seguro",
       "resumo": "Abordagem motivacional para um dia a dia mais seguro: Regras de Ouro, Cuidado Ativo, uso de EPIs, analise de riscos e quase acidentes, riscos do celular e trabalho em equipe.",
@@ -425,7 +425,7 @@
     },
     {
       "slug": "burnout",
-      "categoria": "saúde-mental",
+      "categoria": "saude-mental",
       "status": "catalogo",
       "titulo": "Burnout Previna-se",
       "resumo": "Conscientizacao sobre a síndrome do esgotamento profissional: sintomas principais e sinais da fronteira entre estresse cronico e disturbio emocional.",
@@ -440,16 +440,16 @@
       "tema_whatsapp": "Assedio Zero"
     },
     {
-      "slug": "gestão-do-tempo",
-      "categoria": "liderança",
+      "slug": "gestao-do-tempo",
+      "categoria": "lideranca",
       "status": "catalogo",
       "titulo": "Gestão do Tempo",
       "resumo": "Aproveitar o tempo de forma equilibrada com organização e planejamento, sem cair na ansiedade e na adiccao tecnologica que sabotam a produtividade.",
       "tema_whatsapp": "Gestão do Tempo"
     },
     {
-      "slug": "ansiedade-e-depressão",
-      "categoria": "saúde-mental",
+      "slug": "ansiedade-e-depressao",
+      "categoria": "saude-mental",
       "status": "catalogo",
       "titulo": "Ansiedade e Depressão",
       "resumo": "Com profissional de Psicologia: abordagem introdutoria e roda de conversa desmistificando mitos e verdades sobre ansiedade e depressão.",
@@ -464,16 +464,16 @@
       "tema_whatsapp": "Ergonomia no Dia a Dia"
     },
     {
-      "slug": "nutricao-e-saúde",
-      "categoria": "saúde-qualidade",
+      "slug": "nutricao-e-saude",
+      "categoria": "saude-qualidade",
       "status": "catalogo",
       "titulo": "A Nutricao e a Saúde",
       "resumo": "Alimentacao para a saúde: grupos de alimentos, mitos e verdades, sodio, vitaminas, acucares, hidratacao, dietas da moda, saúde intestinal e leitura de rotulos.",
       "tema_whatsapp": "A Nutricao e a Saúde"
     },
     {
-      "slug": "atividade-física-x-sedentarismo",
-      "categoria": "saúde-qualidade",
+      "slug": "atividade-fisica-x-sedentarismo",
+      "categoria": "saude-qualidade",
       "status": "catalogo",
       "titulo": "Atividade Física x Sedentarismo",
       "resumo": "Importância da atividade física para o metabolismo e o dia a dia, com dicas sobre emagrecimento, hipertrofia, mobilidade e reabilitacao corporal.",
@@ -489,15 +489,15 @@
     },
     {
       "slug": "trajeto-seguro",
-      "categoria": "segurança",
+      "categoria": "seguranca",
       "status": "catalogo",
       "titulo": "Trajeto Seguro",
       "resumo": "Prevenção de acidentes no percurso casa-trabalho: direcao defensiva, atenção plena, velocidade segura, celular ao volante, fadiga e autocuidado.",
       "tema_whatsapp": "Trajeto Seguro"
     },
     {
-      "slug": "ists-e-saúde-sexual",
-      "categoria": "saúde-qualidade",
+      "slug": "ists-e-saude-sexual",
+      "categoria": "saude-qualidade",
       "status": "catalogo",
       "titulo": "As ISTs e a Saúde Sexual",
       "resumo": "Prevenção e educacao sexual: principais ISTs, transmissao, prevenção, vacinacao, diagnóstico precoce e responsabilidade afetiva.",
@@ -505,15 +505,15 @@
     },
     {
       "slug": "pare-pense-aja",
-      "categoria": "segurança",
+      "categoria": "seguranca",
       "status": "catalogo",
       "titulo": "Pare, Pense, Aja",
       "resumo": "Cultura do cuidado: parar, pensar nos riscos e agir com segurança antes de qualquer atividade, com percepção de riscos e responsabilidade coletiva.",
       "tema_whatsapp": "Pare, Pense, Aja"
     },
     {
-      "slug": "governanca-e-gestão-de-riscos",
-      "categoria": "liderança",
+      "slug": "governanca-e-gestao-de-riscos",
+      "categoria": "lideranca",
       "status": "catalogo",
       "titulo": "Governanca e Gestão de Riscos",
       "resumo": "Para lideres e gestores públicos: governar em tempos de incerteza, antecipar riscos, integridade, transparencia e geracao de valor público.",
@@ -521,15 +521,15 @@
     },
     {
       "slug": "qualidade-de-vida",
-      "categoria": "saúde-qualidade",
+      "categoria": "saude-qualidade",
       "status": "catalogo",
       "titulo": "Qualidade de Vida e Estilo de Vida Saudavel",
       "resumo": "Hábitos saudaveis para viver melhor: alimentacao, atividade física, sono, saúde emocional, estresse, hidratacao e prevenção de doencas cronicas.",
       "tema_whatsapp": "Qualidade de Vida"
     },
     {
-      "slug": "segurança-regras-de-ouro",
-      "categoria": "segurança",
+      "slug": "seguranca-regras-de-ouro",
+      "categoria": "seguranca",
       "status": "catalogo",
       "titulo": "Segurança e às Regras de Ouro",
       "resumo": "Prevenção de acidentes dentro e fora do trabalho, adaptavel às Regras de Ouro da empresa: percepção de riscos, EPIs, comunicação e atividades criticas.",
@@ -553,7 +553,7 @@
     },
     {
       "slug": "inteligencia-emocional",
-      "categoria": "saúde-mental",
+      "categoria": "saude-mental",
       "status": "catalogo",
       "titulo": "Inteligencia Emocional",
       "resumo": "Competencia-chave do trabalho: autoconhecimento, autocontrole, empatia, comunicação assertiva, resiliencia e gestão de conflitos.",
@@ -561,7 +561,7 @@
     },
     {
       "slug": "educacao-financeira",
-      "categoria": "saúde-qualidade",
+      "categoria": "saude-qualidade",
       "status": "catalogo",
       "titulo": "Educacao Financeira e a Saúde",
       "resumo": "Financas com qualidade de vida: orçamento, consumo consciente, credito, juros, reserva de emergencia e metas financeiras.",
@@ -569,7 +569,7 @@
     },
     {
       "slug": "adiccao-tecnologica",
-      "categoria": "saúde-mental",
+      "categoria": "saude-mental",
       "status": "catalogo",
       "titulo": "Adiccao Tecnologica",
       "resumo": "Prevenindo a dependencia digital: uso consciente de telas, foco e produtividade, sono, saúde mental e equilibrio entre o digital e a vida real.",
@@ -577,7 +577,7 @@
     },
     {
       "slug": "primeiros-socorros",
-      "categoria": "segurança",
+      "categoria": "seguranca",
       "status": "catalogo",
       "titulo": "Primeiros Socorros",
       "resumo": "Procedimentos básicos de primeiros socorros: avaliação da vitima, acionamento de emergencia e o que fazer (e o que não fazer) em cada situação.",
@@ -585,7 +585,7 @@
     },
     {
       "slug": "cinco-sensos-5s",
-      "categoria": "liderança",
+      "categoria": "lideranca",
       "status": "catalogo",
       "titulo": "5S - Cinco Sensos no Trabalho e na Vida",
       "resumo": "Metodologia 5S de organização, disciplina e melhoria continua para ambientes mais seguros, produtivos e eficientes.",
@@ -593,15 +593,15 @@
     },
     {
       "slug": "shisa-kanko",
-      "categoria": "segurança",
+      "categoria": "seguranca",
       "status": "catalogo",
       "titulo": "Shisa Kanko - Apontar e Falar",
       "resumo": "Técnica japonesa de prevenção de erros e acidentes: percepção de riscos, confirmacao de procedimentos e disciplina operacional.",
       "tema_whatsapp": "Shisa Kanko"
     },
     {
-      "slug": "saúde-bucal",
-      "categoria": "saúde-qualidade",
+      "slug": "saude-bucal",
+      "categoria": "saude-qualidade",
       "status": "catalogo",
       "titulo": "Saúde Bucal",
       "resumo": "Higiene e cuidados para a qualidade de vida: escovacao e fio dental, prevenção de caries e gengivite, alimentacao e consultas periodicas.",
@@ -609,7 +609,7 @@
     },
     {
       "slug": "clima-organizacional",
-      "categoria": "liderança",
+      "categoria": "lideranca",
       "status": "catalogo",
       "titulo": "Clima Organizacional e Mente Positiva",
       "resumo": "Clima saudavel e mentalidade positiva: comunicação, trabalho em equipe, gestão de conflitos, resiliencia e senso de pertencimento.",
@@ -617,7 +617,7 @@
     },
     {
       "slug": "gestantes",
-      "categoria": "saúde-qualidade",
+      "categoria": "saude-qualidade",
       "status": "catalogo",
       "titulo": "Gestantes - Cuidados na Gestacao",
       "resumo": "Cuidados com o corpo na gestacao, mitos e verdades: alimentacao, atividade orientada, postura, saúde emocional e sinais de alerta.",
@@ -625,7 +625,7 @@
     },
     {
       "slug": "tabagismo",
-      "categoria": "saúde-qualidade",
+      "categoria": "saude-qualidade",
       "status": "catalogo",
       "titulo": "Tabagismo",
       "resumo": "Prevenção e conscientizacao: impactos do cigarro, dependencia da nicotina, beneficios da cessacao e estrategias de apoio.",
@@ -633,7 +633,7 @@
     },
     {
       "slug": "alcoolismo-e-drogas",
-      "categoria": "saúde-qualidade",
+      "categoria": "saude-qualidade",
       "status": "catalogo",
       "titulo": "Alcoolismo e Drogas",
       "resumo": "Prevenção e escolhas saudaveis: fatores de risco, consequências, impacto na segurança e na produtividade e como dizer não.",
@@ -649,22 +649,22 @@
     },
     {
       "slug": "qualidade-e-excelencia",
-      "categoria": "liderança",
+      "categoria": "lideranca",
       "status": "catalogo",
       "titulo": "Qualidade e Excelencia no Trabalho",
       "resumo": "Cultura da qualidade e melhoria continua: comprometimento, padronizacao, foco em resultados e alta performance.",
       "tema_whatsapp": "Qualidade e Excelencia"
     },
     {
-      "slug": "comunicação-não-violenta",
-      "categoria": "liderança",
+      "slug": "comunicacao-nao-violenta",
+      "categoria": "lideranca",
       "status": "catalogo",
       "titulo": "CNV - Comunicação Não Violenta",
       "resumo": "Comunicação, conflitos e relações no trabalho: escuta ativa, empatia, comunicação assertiva e feedback construtivo.",
       "tema_whatsapp": "Comunicação Não Violenta"
     },
     {
-      "slug": "diversidade-e-inclusão",
+      "slug": "diversidade-e-inclusao",
       "categoria": "diversidade",
       "status": "catalogo",
       "titulo": "Respeito a Diversidade e Inclusão",
@@ -673,23 +673,23 @@
     },
     {
       "slug": "ginastica-laboral",
-      "categoria": "saúde-qualidade",
+      "categoria": "saude-qualidade",
       "status": "catalogo",
       "titulo": "Ginastica Laboral",
       "resumo": "Prática preventiva no trabalho: prevenção de LER/DORT, alivio do estresse, melhora da postura e da disposicao com pausas ativas.",
       "tema_whatsapp": "Ginastica Laboral"
     },
     {
-      "slug": "emagrecimento-com-saúde",
-      "categoria": "saúde-qualidade",
+      "slug": "emagrecimento-com-saude",
+      "categoria": "saude-qualidade",
       "status": "catalogo",
       "titulo": "Emagrecimento com Saúde",
       "resumo": "Emagrecimento saudavel: equilibrio calorico, alimentacao, hidratacao, leitura de rotulos e o papel do HIIT.",
       "tema_whatsapp": "Emagrecimento com Saúde"
     },
     {
-      "slug": "cipa-liderança",
-      "categoria": "segurança",
+      "slug": "cipa-lideranca",
+      "categoria": "seguranca",
       "status": "catalogo",
       "titulo": "CIPA - Liderança para Cipeiros",
       "resumo": "Postura de liderança para a CIPA: comunicação, engajamento e o cipeiro como agente multiplicador e coach de prevenção.",
@@ -697,7 +697,7 @@
     },
     {
       "slug": "radio-pirata",
-      "categoria": "liderança",
+      "categoria": "lideranca",
       "status": "catalogo",
       "titulo": "Radio Pirata - Combate a Fofoca",
       "resumo": "Impactos da fofoca e dos boatos no clima organizacional; comunicação responsável, etica e cultura de confiança.",
@@ -705,7 +705,7 @@
     },
     {
       "slug": "proposito-e-felicidade",
-      "categoria": "saúde-mental",
+      "categoria": "saude-mental",
       "status": "catalogo",
       "titulo": "Proposito e Felicidade",
       "resumo": "Proposito de vida como base do bem-estar e da motivacao: autoconhecimento, valores, sentido do trabalho e metas.",
@@ -713,22 +713,22 @@
     },
     {
       "slug": "crencas-limitantes",
-      "categoria": "saúde-mental",
+      "categoria": "saude-mental",
       "status": "catalogo",
       "titulo": "Crencas Limitantes",
       "resumo": "Transformar crencas limitantes em fortalecedoras: autossabotagem, mentalidade de crescimento e autoconfianca.",
       "tema_whatsapp": "Crencas Limitantes"
     },
     {
-      "slug": "hábitos-e-pessoas-eficazes",
-      "categoria": "liderança",
+      "slug": "habitos-e-pessoas-eficazes",
+      "categoria": "lideranca",
       "status": "catalogo",
       "titulo": "Hábitos e Pessoas Eficazes",
       "resumo": "Como hábitos diarios geram resultados: disciplina, foco, priorizacao e caracteristicas das pessoas eficazes.",
       "tema_whatsapp": "Hábitos e Pessoas Eficazes"
     },
     {
-      "slug": "tea-inclusão-e-respeito",
+      "slug": "tea-inclusao-e-respeito",
       "categoria": "diversidade",
       "status": "catalogo",
       "titulo": "TEA - Inclusão e Respeito",
