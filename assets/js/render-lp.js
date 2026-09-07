@@ -168,7 +168,7 @@ function preloadHero(slug, imgData) {
   const base   = `/assets/img/${slug}/${imgData.hero_base}`;
   const widths  = imgData.larguras;
   const srcset  = widths.map(w => `${base}-${w}w.avif ${w}w`).join(', ');
-  return `  <link rel="preload" as="image" imagesrcset="${srcset}" imagesizes="100vw" type="image/avif">`;
+  return `  <link rel="preload" as="image" fetchpriority="high" imagesrcset="${srcset}" imagesizes="100vw" type="image/avif">`;
 }
 
 // ── Thumb picture ─────────────────────────────────────────────────────────
