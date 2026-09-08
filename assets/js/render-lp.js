@@ -102,7 +102,7 @@ function buildHeader() {
         <nav class="header__nav" aria-label="Navegação principal">
           <a href="/" class="nav__link">Catálogo</a>
           <a href="/palestra-sipat/" class="nav__link">SIPAT</a>
-          <a href="tel:08006055544" class="nav__phone">${WA_DISPLAY}</a>
+          <a href="${waLink('Palestras Corporativas')}" class="nav__phone" data-wa data-wa-theme="Palestras Corporativas" data-wa-location="Header" target="_blank" rel="noopener noreferrer">${WA_DISPLAY}</a>
         </nav>
       </div>
     </div>
@@ -124,7 +124,7 @@ function buildFooter() {
             </picture>
           </a>
           <p class="footer__tagline">Central Nacional de Palestras Corporativas. Mais de 40 temas, presencial ou online, em todo o Brasil.</p>
-          <p class="footer__phone"><a href="tel:08006055544">${WA_DISPLAY}</a></p>
+          <p class="footer__phone"><a href="${waLink('Palestras Corporativas')}" target="_blank" rel="noopener noreferrer">${WA_DISPLAY}</a></p>
         </div>
         <div>
           <p class="footer__col-title">Palestras</p>
@@ -140,7 +140,7 @@ function buildFooter() {
         <div>
           <p class="footer__col-title">Contato</p>
           <ul class="footer__links">
-            <li><a href="tel:08006055544">${WA_DISPLAY}</a></li>
+            <li><a href="${waLink('Palestras Corporativas')}" target="_blank" rel="noopener noreferrer">${WA_DISPLAY}</a></li>
             <li><a href="${waLink('Palestras Corporativas')}" target="_blank" rel="noopener">WhatsApp</a></li>
           </ul>
         </div>
@@ -482,7 +482,7 @@ function sectionCTA(talk) {
       <a href="${waLink(twa)}" class="btn btn--action btn--lg" data-wa data-wa-theme="${esc(twa)}" data-wa-location="Final" target="_blank" rel="noopener noreferrer">
         ${SVG_WA} ${esc(meta.hero_padrao.cta)}
       </a>
-      <p class="cta-section__phone">Ou ligue: <a href="tel:08006055544">${WA_DISPLAY}</a></p>
+      <p class="cta-section__phone">WhatsApp: <a href="${waLink(twa)}" target="_blank" rel="noopener noreferrer" data-wa data-wa-theme="${esc(twa)}" data-wa-location="CTA-Phone">${WA_DISPLAY}</a></p>
     </div>
   </section>`;
 }
@@ -785,7 +785,7 @@ ${cards}
         <a href="${waLink('Palestras Corporativas')}" class="btn btn--action btn--lg" data-wa data-wa-theme="Palestras Corporativas" data-wa-location="Final" target="_blank" rel="noopener noreferrer">
           ${SVG_WA} SOLICITAR ORÇAMENTO PELO WHATSAPP
         </a>
-        <p class="cta-section__phone">Ou ligue: <a href="tel:08006055544">${WA_DISPLAY}</a></p>
+        <p class="cta-section__phone">WhatsApp: <a href="${waLink('Palestras Corporativas')}" target="_blank" rel="noopener noreferrer">${WA_DISPLAY}</a></p>
       </div>
     </section>
 
