@@ -4,7 +4,131 @@
    para quem · formatos · faq · cta · relacionadas · footer · sticky CTA
    ============================================================================= */
 
-@import "./tokens.css";
+/* tokens.css inlined — elimina request chain render-blocking */
+:root {
+  --brand-900: #0D2137;
+  --brand-700: #1B3A6A;
+  --brand-500: #2C5AA0;
+  --brand-300: #7FA2CE;
+  --brand-100: #D6E3F5;
+  --action-700: #008B9E;
+  --action-600: #00A5BB;
+  --action-500: #00BCD4;
+  --action-300: #6FE0EE;
+  --action-100: #CCEFF5;
+  --n-0:   #FFFFFF;
+  --n-50:  #F4F7FB;
+  --n-100: #E9EEF5;
+  --n-200: #D6DEE9;
+  --n-300: #B4C0D0;
+  --n-400: #8A97A8;
+  --n-500: #5E6B7C;
+  --n-600: #3E4A5A;
+  --n-700: #29323F;
+  --n-800: #182029;
+  --n-900: #0B1017;
+  --success-500: #16A34A;
+  --warning-500: #D97706;
+  --danger-500:  #DC2626;
+  --info-500:    #2563EB;
+  --color-bg:           var(--n-0);
+  --color-surface:      var(--n-50);
+  --color-surface-2:    var(--n-100);
+  --color-border:       var(--n-200);
+  --color-border-faint: var(--n-100);
+  --color-text:   #101828;
+  --color-text-2: var(--n-600);
+  --color-muted:  var(--n-500);
+  --color-brand:        var(--brand-700);
+  --color-brand-strong: var(--brand-900);
+  --color-on-brand:     var(--n-0);
+  --color-action:       var(--action-500);
+  --color-action-hover: var(--action-600);
+  --color-on-action:    #04222A;
+  --color-success: var(--success-500);
+  --color-warning: var(--warning-500);
+  --color-danger:  var(--danger-500);
+  --color-info:    var(--info-500);
+  --font-display: "Montserrat", "Montserrat Fallback", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-body:    "Open Sans", "Open Sans Fallback",   system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --text-xs:   clamp(.75rem,   .72rem  + .15vw, .8125rem);
+  --text-sm:   clamp(.875rem,  .84rem  + .18vw, .9375rem);
+  --text-base: clamp(1rem,     .96rem  + .2vw,  1.0625rem);
+  --text-lg:   clamp(1.125rem, 1.06rem + .3vw,  1.25rem);
+  --text-xl:   clamp(1.375rem, 1.25rem + .6vw,  1.75rem);
+  --text-2xl:  clamp(1.75rem,  1.5rem  + 1.2vw, 2.5rem);
+  --text-3xl:  clamp(2.25rem,  1.8rem  + 2.2vw, 3.5rem);
+  --text-4xl:  clamp(2.75rem,  2rem    + 3.6vw, 4.5rem);
+  --leading-tight: 1.1;
+  --leading-snug:  1.28;
+  --leading-body:  1.65;
+  --weight-normal: 400;
+  --weight-medium: 600;
+  --weight-bold:   700;
+  --weight-black:  800;
+  --tracking-tight:  -.025em;
+  --tracking-normal: 0em;
+  --tracking-wide:   .06em;
+  --space-1:  .25rem;
+  --space-2:  .5rem;
+  --space-3:  .75rem;
+  --space-4:  1rem;
+  --space-5:  1.5rem;
+  --space-6:  2rem;
+  --space-7:  3rem;
+  --space-8:  4rem;
+  --space-9:  6rem;
+  --space-10: 8rem;
+  --space-section: clamp(4rem, 9vw, 8rem);
+  --radius-sm:   .25rem;
+  --radius-md:   .5rem;
+  --radius-lg:   .875rem;
+  --radius-xl:   1.25rem;
+  --radius-full: 9999px;
+  --radius-btn:  10px;
+  --radius-card: 14px;
+  --shadow-sm: 0 1px 2px rgba(16,24,40,.06);
+  --shadow-md: 0 4px 16px rgba(16,24,40,.08);
+  --shadow-lg: 0 12px 40px rgba(16,24,40,.12);
+  --shadow-xl: 0 24px 64px rgba(16,24,40,.16);
+  --duration-fast: 120ms;
+  --duration-base: 220ms;
+  --duration-slow: 360ms;
+  --ease-out:    cubic-bezier(.16, 1, .3, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --container:        1200px;
+  --container-narrow: 760px;
+  --z-base:    0;
+  --z-header:  100;
+  --z-sticky:  150;
+  --z-overlay: 200;
+  --z-modal:   300;
+  --z-toast:   400;
+}
+
+.section--dark {
+  --color-bg:           var(--brand-900);
+  --color-surface:      rgba(255,255,255,.05);
+  --color-surface-2:    rgba(255,255,255,.08);
+  --color-border:       rgba(255,255,255,.10);
+  --color-border-faint: rgba(255,255,255,.06);
+  --color-text:         var(--n-50);
+  --color-text-2:       var(--n-200);
+  --color-muted:        var(--n-300);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.section--brand {
+  --color-bg:       var(--brand-700);
+  --color-surface:  rgba(255,255,255,.07);
+  --color-border:   rgba(255,255,255,.12);
+  --color-text:     var(--n-0);
+  --color-text-2:   var(--brand-100);
+  --color-muted:    var(--brand-300);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
 
 /* ── FONTES SELF-HOSTED (latin) — elimina RTT ao CDN externo ──────────────────
    Métricas de fallback calculadas com fontTools para minimizar CLS no swap.
@@ -252,15 +376,21 @@ button     { cursor: pointer; border: none; background: none; font: inherit; }
   gap: var(--space-5);
 }
 
-/* Wordmark */
+/* Logo */
 .logo {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  gap: 2px;
   flex-shrink: 0;
 }
+
+.logo__img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+.footer__brand .logo__img { height: 40px; }
 
 .logo__palestras {
   font-family: var(--font-display);
@@ -1234,4 +1364,82 @@ a.talk-card:hover .talk-card__thumb::after {
 
   .talk-card__thumb-img,
   .related-card__img { transition: none; }
+}
+
+/* ── 27. BOTÃO FLUTUANTE WHATSAPP ─────────────────────────────────────────── */
+
+.wa-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,.28);
+  z-index: 90;
+  text-decoration: none;
+  transition: transform .2s var(--ease-out), box-shadow .2s var(--ease-out);
+}
+
+.wa-float:hover,
+.wa-float:focus-visible {
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+  outline: none;
+}
+
+.wa-float svg { display: block; }
+
+/* ── 28. GALERIA DE FOTOS REAIS ───────────────────────────────────────────── */
+
+.galeria__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .galeria__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .galeria__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.galeria__item {
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.galeria__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s var(--ease-out);
+}
+
+.galeria__item:hover img {
+  transform: scale(1.04);
+}
+
+.galeria--single { padding-top: 0; }
+
+.galeria--single picture { display: block; }
+
+.galeria--single img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+  display: block;
 }

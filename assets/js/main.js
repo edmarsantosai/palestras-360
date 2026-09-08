@@ -16,7 +16,7 @@ const P360 = (() => {
   /* ── Configuração ─────────────────────────────────────────────────────────── */
 
   const cfg = {
-    waPhone: '55XXXXXXXXXXX',  // <-- Substituir antes de publicar
+    waPhone: '5508006055544',
     waTpl: (theme) =>
       `Olá! Tenho interesse na palestra sobre ${theme} para minha empresa e gostaria de solicitar um orçamento.`,
   };

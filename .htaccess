@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Cache de assets estáticos
+<FilesMatch "\.(avif|webp|jpg|jpeg|png|woff2|css|js)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+# Cache curto para HTML
+<FilesMatch "\.html$">
+  Header set Cache-Control "public, max-age=3600"
+</FilesMatch>
+
+# Charset UTF-8 para HTML
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html .htm .css .js .json

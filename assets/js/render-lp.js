@@ -3,9 +3,9 @@
 
 /**
  * Palestras 360 — Gerador de páginas estáticas.
- * Lê assets/data/palestras.json + assets/data/images.json e gera:
- *   - /palestra-<slug>/index.html  (palestras com status "publicar")
- *   - /index.html                  (catálogo home)
+ * Lê assets/data/palestras.json + assets/data/images.json + assets/data/galerias-fotos-reais.json e gera:
+ *   - /palestra-<slug>/index.html  (palestras com completo:true)
+ *   - /index.html                  (catálogo home — só as 20 LPs fechadas)
  *   - /sitemap.xml
  *   - /robots.txt
  *
@@ -20,6 +20,7 @@ const DATA_DIR = path.join(ROOT, 'assets', 'data');
 
 const PALESTRAS = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'palestras.json'), 'utf-8'));
 const IMAGES    = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'images.json'),    'utf-8'));
+const GALERIAS  = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'galerias-fotos-reais.json'), 'utf-8'));
 
 const { meta, categorias, palestras: TALKS } = PALESTRAS;
 const { whatsapp: WA_PHONE, whatsapp_exibicao: WA_DISPLAY } = meta.contato;
@@ -76,6 +77,8 @@ function waLink(theme) {
 
 const SVG_WA = `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.7-1.8-3.6-3.3-.3-.5.3-.4.8-1.5.1-.2 0-.3 0-.5-.1-.2-.7-1.7-1-2.3-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.7 1.2 2.9.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 2-1.3.2-.6.2-1.1.1-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.4 5.2L2 22l4.9-1.3C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>`;
 
+const SVG_WA_FLOAT = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.7-1.8-3.6-3.3-.3-.5.3-.4.8-1.5.1-.2 0-.3 0-.5-.1-.2-.7-1.7-1-2.3-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.7 1.2 2.9.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 2-1.3.2-.6.2-1.1.1-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.4 5.2L2 22l4.9-1.3C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>`;
+
 const SVG_CHECK = `<svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
 const SVG_ARROW = `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
@@ -91,8 +94,10 @@ function buildHeader() {
     <div class="container">
       <div class="header__inner">
         <a href="/" class="logo" aria-label="Palestras 360 — Página inicial">
-          <span class="logo__palestras">PALESTRAS</span>
-          <span class="logo__360">360</span>
+          <picture>
+            <source type="image/webp" srcset="/assets/img/logo/logo-palestras360-white-web.webp">
+            <img src="/assets/img/logo/logo-palestras360-white-web.png" alt="Palestras 360" width="320" height="175" class="logo__img">
+          </picture>
         </a>
         <nav class="header__nav" aria-label="Navegação principal">
           <a href="/" class="nav__link">Catálogo</a>
@@ -113,8 +118,10 @@ function buildFooter() {
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="/" class="logo" aria-label="Palestras 360">
-            <span class="logo__palestras">PALESTRAS</span>
-            <span class="logo__360">360</span>
+            <picture>
+              <source type="image/webp" srcset="/assets/img/logo/logo-palestras360-white-web.webp">
+              <img src="/assets/img/logo/logo-palestras360-white-web.png" alt="Palestras 360" width="320" height="175" class="logo__img">
+            </picture>
           </a>
           <p class="footer__tagline">Central Nacional de Palestras Corporativas. Mais de 40 temas, presencial ou online, em todo o Brasil.</p>
           <p class="footer__phone"><a href="tel:08006055544">${WA_DISPLAY}</a></p>
@@ -141,15 +148,24 @@ function buildFooter() {
       <div class="footer__bottom">
         <span>&copy; ${year} Palestras 360. Todos os direitos reservados.</span>
         <span>Palestras corporativas para empresas de todo o Brasil.</span>
+        <span>Desenvolvido por <a href="https://edmarsantos.com.br" target="_blank" rel="noopener">Edmar Santos</a></span>
       </div>
     </div>
   </footer>`;
 }
 
+// ── Floating WhatsApp button ───────────────────────────────────────────────
+
+function buildFloatWA(twa) {
+  return `  <a href="${waLink(twa)}" class="wa-float" data-wa data-wa-theme="${esc(twa)}" data-wa-location="Float" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+    ${SVG_WA_FLOAT}
+  </a>`;
+}
+
 // ── Hero picture ──────────────────────────────────────────────────────────
 
 function heroPicture(slug, imgData) {
-  const base   = `/assets/img/${slug}/${imgData.hero_base}`;
+  const base   = `/assets/img/hero/${imgData.hero_base}`;
   const widths  = imgData.larguras;
   const fmts    = imgData.formatos;
   let s = '    <picture>\n';
@@ -165,7 +181,7 @@ function heroPicture(slug, imgData) {
 
 function preloadHero(slug, imgData) {
   if (!imgData) return '';
-  const base   = `/assets/img/${slug}/${imgData.hero_base}`;
+  const base   = `/assets/img/hero/${imgData.hero_base}`;
   const widths  = imgData.larguras;
   const srcset  = widths.map(w => `${base}-${w}w.avif ${w}w`).join(', ');
   return `  <link rel="preload" as="image" fetchpriority="high" imagesrcset="${srcset}" imagesizes="100vw" type="image/avif">`;
@@ -176,7 +192,7 @@ function preloadHero(slug, imgData) {
 function thumbPicture(slug, imgData, sizes) {
   if (!imgData || !imgData.thumb) return null;
   const th   = imgData.thumb;
-  const base = `/assets/img/${slug}/thumb/${th.base}`;
+  const base = `/assets/img/thumb/${th.base}`;
   const fmts = th.formatos;
   const sz   = sizes || '(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px';
   const w0   = th.larguras[0];
@@ -200,7 +216,7 @@ function catPlaceholder(catId) {
 
 function jsonLdLP(talk, imgData) {
   const url   = `${DOMAIN}/palestra-${talk.slug}/`;
-  const ogImg = imgData ? `${DOMAIN}/assets/img/${talk.slug}/${imgData.hero_base}-1920w.jpg` : null;
+  const ogImg = imgData ? `${DOMAIN}/assets/img/hero/${imgData.hero_base}-1920w.jpg` : null;
 
   const graph = [
     {
@@ -309,6 +325,7 @@ ${bg}
 }
 
 function sectionSobre(talk) {
+  const sobreParas = Array.isArray(talk.sobre) ? talk.sobre : (talk.sobre ? [talk.sobre] : []);
   return `  <section class="section" id="sobre" aria-labelledby="sobre-h2">
     <div class="container--narrow">
       <div class="section__header">
@@ -317,13 +334,13 @@ function sectionSobre(talk) {
       </div>
       <p class="sobre__lead">${esc(talk.frase)}</p>
       <p class="sobre__body">${esc(talk.intro)}</p>
-      ${talk.sobre ? `<p class="sobre__body" style="margin-top:var(--space-4)">${esc(talk.sobre)}</p>` : ''}
+      ${sobreParas.map(p => `<p class="sobre__body">${esc(p)}</p>`).join('\n      ')}
     </div>
   </section>`;
 }
 
 function sectionTopicos(talk) {
-  const cards = talk.topicos.map((t, i) => `        <div class="topic-card" role="listitem">
+  const cards = talk.topicos.map(t => `        <div class="topic-card" role="listitem">
           <span class="topic-card__num" aria-hidden="true">—</span>
           <span class="topic-card__text">${esc(t)}</span>
         </div>`).join('\n');
@@ -356,6 +373,47 @@ function sectionParaQuem(talk) {
       </div>
       <div class="audience__grid" role="list">
 ${cards}
+      </div>
+    </div>
+  </section>`;
+}
+
+function sectionGaleria(slug) {
+  const fotos = GALERIAS[slug];
+  if (!fotos || !fotos.length) return '';
+
+  if (fotos.length === 1) {
+    const foto = fotos[0];
+    return `  <section class="section galeria galeria--single" aria-label="Foto real da palestra">
+    <div class="container--narrow">
+      <picture>
+        <source type="image/avif" srcset="/assets/img/galeria/${slug}-01-1280w.avif 1280w, /assets/img/galeria/${slug}-01-768w.avif 768w" sizes="(max-width:1023px) 100vw, 840px">
+        <source type="image/webp" srcset="/assets/img/galeria/${slug}-01-1280w.webp 1280w, /assets/img/galeria/${slug}-01-768w.webp 768w" sizes="(max-width:1023px) 100vw, 840px">
+        <img src="/assets/img/galeria/${slug}-01-1280w.jpg" alt="${esc(foto.alt)}" loading="lazy" width="1280" height="720">
+      </picture>
+    </div>
+  </section>`;
+  }
+
+  const items = fotos.map((foto, i) => {
+    const num = String(i + 1).padStart(2, '0');
+    return `      <div class="galeria__item">
+        <picture>
+          <source type="image/avif" srcset="/assets/img/galeria/${slug}-${num}-1280w.avif 1280w, /assets/img/galeria/${slug}-${num}-768w.avif 768w" sizes="(max-width:767px) 100vw,(max-width:1023px) 50vw,420px">
+          <source type="image/webp" srcset="/assets/img/galeria/${slug}-${num}-1280w.webp 1280w, /assets/img/galeria/${slug}-${num}-768w.webp 768w" sizes="(max-width:767px) 100vw,(max-width:1023px) 50vw,420px">
+          <img src="/assets/img/galeria/${slug}-${num}-1280w.jpg" alt="${esc(foto.alt)}" loading="lazy" width="1280" height="720">
+        </picture>
+      </div>`;
+  }).join('\n');
+
+  return `  <section class="section galeria" aria-labelledby="galeria-h2">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Fotos Reais</span>
+        <h2 class="section__title" id="galeria-h2">Nossa Palestra em Ação</h2>
+      </div>
+      <div class="galeria__grid">
+${items}
       </div>
     </div>
   </section>`;
@@ -432,18 +490,20 @@ function sectionCTA(talk) {
 function sectionRelacionadas(talk) {
   if (!talk.relacionadas || !talk.relacionadas.length) return '';
 
-  const related = talk.relacionadas.slice(0, 3).map(s => TALK_MAP[s]).filter(Boolean);
+  const related = talk.relacionadas
+    .slice(0, 3)
+    .map(s => TALK_MAP[s])
+    .filter(r => r && r.completo === true);
   if (!related.length) return '';
 
   const cards = related.map(r => {
     const imgR    = IMAGES[r.slug];
-    const isPubl  = r.status === 'publicar';
     const catNome = CAT_MAP[r.categoria] || '';
 
     let thumbHtml;
     if (imgR && imgR.thumb) {
       const th   = imgR.thumb;
-      const base = `/assets/img/${r.slug}/thumb/${th.base}`;
+      const base = `/assets/img/thumb/${th.base}`;
       const sz   = '(max-width:767px) 100vw,(max-width:1023px) 50vw,33vw';
       const w0   = th.larguras[0];
       const h0   = Math.round(w0 * 3 / 4);
@@ -456,25 +516,18 @@ function sectionRelacionadas(talk) {
       thumbHtml = catPlaceholder(r.categoria);
     }
 
-    const soonBadge = !isPubl
-      ? `<span class="related-card__tag" style="left:auto;right:var(--space-3);background:rgba(0,188,212,.85);color:#04222A">Em breve</span>`
-      : '';
-
     const inner = `
       <div class="related-card__img-wrap">
         ${thumbHtml}
         <span class="related-card__tag">${esc(catNome)}</span>
-        ${soonBadge}
       </div>
       <div class="related-card__body">
         <h3 class="related-card__title">${esc(r.titulo)}</h3>
         ${r.resumo ? `<p class="related-card__desc">${esc(r.resumo.substring(0, 100))}…</p>` : ''}
-        ${isPubl ? `<span class="related-card__link">Ver palestra ${SVG_ARROW}</span>` : ''}
+        <span class="related-card__link">Ver palestra ${SVG_ARROW}</span>
       </div>`;
 
-    return isPubl
-      ? `      <a href="/palestra-${r.slug}/" class="related-card" data-theme-card="${esc(r.slug)}">${inner}</a>`
-      : `      <div class="related-card" data-theme-card="${esc(r.slug)}">${inner}</div>`;
+    return `      <a href="/palestra-${r.slug}/" class="related-card" data-theme-card="${esc(r.slug)}">${inner}</a>`;
   }).join('\n');
 
   return `  <section class="section" style="background-color:var(--color-surface)" id="relacionadas" aria-labelledby="rel-h2">
@@ -503,7 +556,7 @@ function buildStickyCTA(twa) {
 function buildLP(talk) {
   const imgData  = IMAGES[talk.slug] || null;
   const url      = `${DOMAIN}/palestra-${talk.slug}/`;
-  const ogImg    = imgData ? `${DOMAIN}/assets/img/${talk.slug}/${imgData.hero_base}-1920w.jpg` : '';
+  const ogImg    = imgData ? `${DOMAIN}/assets/img/hero/${imgData.hero_base}-1920w.jpg` : '';
   const keywords = (talk.keywords || []).join(', ');
 
   return `<!DOCTYPE html>
@@ -526,6 +579,8 @@ ${GTM_HEAD}
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Palestras 360">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/img/logo/apple-touch-icon.png">
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
   ${preloadHero(talk.slug, imgData)}
@@ -544,6 +599,7 @@ ${sectionHero(talk, imgData)}
 ${sectionSobre(talk)}
 ${sectionTopicos(talk)}
 ${sectionParaQuem(talk)}
+${sectionGaleria(talk.slug)}
 ${sectionFormatos(talk)}
 ${sectionFAQ(talk)}
 ${sectionCTA(talk)}
@@ -553,6 +609,7 @@ ${sectionRelacionadas(talk)}
 ${buildFooter()}
 
 ${buildStickyCTA(talk.tema_whatsapp)}
+${buildFloatWA(talk.tema_whatsapp)}
 
   <script src="/assets/js/main.js" defer></script>
   <script>document.addEventListener('DOMContentLoaded',()=>P360.init('${esc(talk.tema_whatsapp)}'));</script>
@@ -563,7 +620,6 @@ ${buildStickyCTA(talk.tema_whatsapp)}
 // ── Talk card (grid home) ─────────────────────────────────────────────────
 
 function talkCard(talk) {
-  const isPubl  = talk.status === 'publicar';
   const imgData = IMAGES[talk.slug];
   const catNome = CAT_MAP[talk.categoria] || '';
   const sz      = '(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px';
@@ -571,7 +627,7 @@ function talkCard(talk) {
   let thumbHtml;
   if (imgData && imgData.thumb) {
     const th   = imgData.thumb;
-    const base = `/assets/img/${talk.slug}/thumb/${th.base}`;
+    const base = `/assets/img/thumb/${th.base}`;
     const w0   = th.larguras[0];
     const h0   = Math.round(w0 * 3 / 4);
     thumbHtml = `<picture>
@@ -583,25 +639,18 @@ function talkCard(talk) {
     thumbHtml = catPlaceholder(talk.categoria);
   }
 
-  const badge = isPubl
-    ? `<span class="talk-card__badge talk-card__badge--new">Disponível</span>`
-    : `<span class="talk-card__badge talk-card__badge--soon">Em breve</span>`;
-
   const inner = `
       <div class="talk-card__thumb">
         ${thumbHtml}
-        ${badge}
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
         <span class="talk-card__cat">${esc(catNome)}</span>
         <h3 class="talk-card__title">${esc(talk.titulo)}</h3>
-        ${isPubl ? `<span class="talk-card__link-hint">Ver palestra ${SVG_ARROW}</span>` : ''}
+        <span class="talk-card__link-hint">Ver palestra ${SVG_ARROW}</span>
       </div>`;
 
-  if (isPubl) {
-    return `        <a href="/palestra-${talk.slug}/" class="talk-card" data-category="${talk.categoria}" data-theme-card="${esc(talk.slug)}" aria-label="Ver palestra: ${esc(talk.titulo)}">${inner}</a>`;
-  }
-  return `        <div class="talk-card talk-card--soon" data-category="${talk.categoria}" data-theme-card="${esc(talk.slug)}" aria-label="${esc(talk.titulo)} — em breve" aria-disabled="true">${inner}</div>`;
+  return `        <a href="/palestra-${talk.slug}/" class="talk-card" data-category="${talk.categoria}" data-theme-card="${esc(talk.slug)}" aria-label="Ver palestra: ${esc(talk.titulo)}">${inner}</a>`;
 }
 
 // ── Home ──────────────────────────────────────────────────────────────────
@@ -610,6 +659,8 @@ function buildHome() {
   const title = 'Palestras Corporativas para Empresas de Todo o Brasil | Palestras 360';
   const desc  = 'Central de palestras corporativas com mais de 40 temas: saúde, segurança, diversidade, liderança e mais. Presencial ou online. Atendimento nacional.';
 
+  const completoTalks = TALKS.filter(t => t.completo === true);
+
   const filterBtns = [
     { id: 'all', nome: 'Todos os temas' },
     ...categorias,
@@ -617,7 +668,22 @@ function buildHome() {
     `          <button class="cat-filter__btn${i === 0 ? ' is-active' : ''}" data-filter="${c.id}" type="button">${esc(c.nome)}</button>`
   ).join('\n');
 
-  const cards = TALKS.map(talkCard).join('\n');
+  const cards = completoTalks.map(talkCard).join('\n');
+
+  const homeImg = IMAGES['home'] || null;
+  const homePreload = homeImg
+    ? `  <link rel="preload" as="image" fetchpriority="high" imagesrcset="${homeImg.larguras.map(w => `/assets/img/hero/${homeImg.hero_base}-${w}w.avif ${w}w`).join(', ')}" imagesizes="100vw" type="image/avif">`
+    : '';
+  const homeHeroBg = homeImg
+    ? `      <div class="hero__bg">
+        <picture>
+          <source type="image/avif" srcset="${homeImg.larguras.map(w => `/assets/img/hero/${homeImg.hero_base}-${w}w.avif ${w}w`).join(', ')}" sizes="100vw">
+          <source type="image/webp" srcset="${homeImg.larguras.map(w => `/assets/img/hero/${homeImg.hero_base}-${w}w.webp ${w}w`).join(', ')}" sizes="100vw">
+          <img class="hero__img" src="/assets/img/hero/${homeImg.hero_base}-1920w.jpg" alt="${esc(homeImg.alt)}" fetchpriority="high" decoding="async" width="1920" height="1080">
+        </picture>
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>`
+    : '';
 
   return `<!DOCTYPE html>
 <html lang="pt-BR">
@@ -635,8 +701,11 @@ ${GTM_HEAD}
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Palestras 360">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/img/logo/apple-touch-icon.png">
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
+  ${homePreload}
   <link rel="stylesheet" href="/assets/css/main.css">
   <script type="application/ld+json">
 ${jsonLdHome()}
@@ -650,6 +719,7 @@ ${buildHeader()}
   <main id="main" tabindex="-1">
 
     <section class="hero hero--home" id="topo" aria-label="Palestras 360 — Central Nacional">
+${homeHeroBg}
       <div class="container">
         <div class="hero__content">
           <div class="hero__badge" aria-hidden="true">
@@ -690,8 +760,8 @@ ${buildHeader()}
     <section class="catalogue" id="catalogo" aria-labelledby="catalogo-h2">
       <div class="container">
         <div class="section__header">
-          <span class="section__label">Catálogo Completo</span>
-          <h2 class="section__title" id="catalogo-h2">Mais de 40 Temas Disponíveis</h2>
+          <span class="section__label">Palestras Disponíveis</span>
+          <h2 class="section__title" id="catalogo-h2">${completoTalks.length} Temas Prontos para a Sua Empresa</h2>
           <p class="section__subtitle">Selecione uma categoria para filtrar:</p>
         </div>
         <div class="cat-filter" role="group" aria-label="Filtro por categoria">
@@ -724,6 +794,7 @@ ${buildFooter()}
       ${SVG_WA} SOLICITAR ORÇAMENTO
     </a>
   </div>
+${buildFloatWA('Palestras Corporativas')}
 
   <script src="/assets/js/main.js" defer></script>
   <script>
@@ -748,11 +819,11 @@ ${buildFooter()}
 
 // ── Sitemap + Robots ──────────────────────────────────────────────────────
 
-function buildSitemap(publicar) {
+function buildSitemap(completo) {
   const today = new Date().toISOString().split('T')[0];
   const urls  = [
     `  <url>\n    <loc>${DOMAIN}/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n    <lastmod>${today}</lastmod>\n  </url>`,
-    ...publicar.map(t =>
+    ...completo.map(t =>
       `  <url>\n    <loc>${DOMAIN}/palestra-${t.slug}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.9</priority>\n    <lastmod>${today}</lastmod>\n  </url>`
     ),
   ].join('\n');
@@ -766,19 +837,19 @@ function buildRobots() {
 // ── Main ──────────────────────────────────────────────────────────────────
 
 function main() {
-  const publicar = TALKS.filter(t => t.status === 'publicar');
-  console.log(`\nGerando ${publicar.length} LPs + home + sitemap + robots...\n`);
+  const completo = TALKS.filter(t => t.completo === true);
+  console.log(`\nGerando ${completo.length} LPs + home + sitemap + robots...\n`);
 
-  for (const talk of publicar) {
+  for (const talk of completo) {
     const dir = path.join(ROOT, `palestra-${talk.slug}`);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), buildLP(talk), 'utf-8');
     console.log(`[ok] palestra-${talk.slug}/index.html`);
   }
 
-  fs.writeFileSync(path.join(ROOT, 'index.html'),   buildHome(),          'utf-8');
-  fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),  buildSitemap(publicar),'utf-8');
-  fs.writeFileSync(path.join(ROOT, 'robots.txt'),   buildRobots(),         'utf-8');
+  fs.writeFileSync(path.join(ROOT, 'index.html'),   buildHome(),            'utf-8');
+  fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),  buildSitemap(completo), 'utf-8');
+  fs.writeFileSync(path.join(ROOT, 'robots.txt'),   buildRobots(),          'utf-8');
   console.log('[ok] index.html');
   console.log('[ok] sitemap.xml');
   console.log('[ok] robots.txt');

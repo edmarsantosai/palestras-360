@@ -11,6 +11,12 @@ desktop.ini
 # Imagens brutas (originais de câmera/entrega — não commitar)
 _raw-img/
 
+# Drops de originais — ficam local; processados já estão em assets/img/
+Imagens-Hero/
+Logo-palestras360/
+Fotos reais/
+assets/img/_hero-staging/
+
 # Dependências / build (se um dia usar)
 node_modules/
 dist/

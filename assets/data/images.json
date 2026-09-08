@@ -11,7 +11,7 @@
       "webp",
       "jpg"
     ],
-    "alt": "Conversa de apoio e escuta entre dois profissionais em escritorio iluminado, representando acolhimento",
+    "alt": "Conversa de apoio e escuta entre dois profissionais em escritório iluminado, representando acolhimento",
     "thumb": {
       "base": "palestra-setembro-amarelo-empresas-hero-thumb",
       "larguras": [
@@ -38,7 +38,7 @@
       "webp",
       "jpg"
     ],
-    "alt": "Mulheres profissionais reunidas em ambiente corporativo moderno, representando saude da mulher",
+    "alt": "Mulheres profissionais reunidas em ambiente corporativo moderno, representando saúde da mulher",
     "thumb": {
       "base": "palestra-outubro-rosa-empresas-hero-thumb",
       "larguras": [
@@ -65,7 +65,7 @@
       "webp",
       "jpg"
     ],
-    "alt": "Homens em ambiente corporativo contemporaneo, representando cuidado e saude masculina",
+    "alt": "Homens em ambiente corporativo contemporâneo, representando cuidado e saúde masculina",
     "thumb": {
       "base": "palestra-novembro-azul-empresas-hero-thumb",
       "larguras": [
@@ -92,7 +92,7 @@
       "webp",
       "jpg"
     ],
-    "alt": "Colaboradores atentos em sessao de seguranca do trabalho em ambiente industrial moderno",
+    "alt": "Colaboradores atentos em sessão de segurança do trabalho em ambiente industrial moderno",
     "thumb": {
       "base": "palestra-sipat-empresas-hero-thumb",
       "larguras": [
@@ -119,9 +119,428 @@
       "webp",
       "jpg"
     ],
-    "alt": "Profissional em ambiente de trabalho tranquilo, com sensacao de equilibrio e bem-estar",
+    "alt": "Profissional em ambiente de trabalho tranquilo, com sensação de equilíbrio e bem-estar",
     "thumb": {
       "base": "palestra-saude-mental-trabalho-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "home": {
+    "hero_base": "home-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Central de palestras corporativas presenciais e online para empresas de todo o Brasil"
+  },
+  "ansiedade-e-depressao": {
+    "hero_base": "palestra-ansiedade-e-depressao-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Roda de conversa acolhedora conduzida por psicólogo em sala iluminada",
+    "thumb": {
+      "base": "palestra-ansiedade-e-depressao-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "assedio-zero": {
+    "hero_base": "palestra-assedio-zero-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Equipe diversa colaborando com respeito mútuo em escritório moderno",
+    "thumb": {
+      "base": "palestra-assedio-zero-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "atividade-fisica-x-sedentarismo": {
+    "hero_base": "palestra-atividade-fisica-x-sedentarismo-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissionais em pausa ativa, alongando-se perto de um escritório iluminado",
+    "thumb": {
+      "base": "palestra-atividade-fisica-x-sedentarismo-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "burnout": {
+    "hero_base": "palestra-burnout-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional fazendo uma pausa consciente no trabalho, com sensação de alívio",
+    "thumb": {
+      "base": "palestra-burnout-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "comportamento-seguro": {
+    "hero_base": "palestra-comportamento-seguro-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional em ambiente industrial avaliando o entorno antes de uma tarefa",
+    "thumb": {
+      "base": "palestra-comportamento-seguro-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "dia-das-mulheres": {
+    "hero_base": "palestra-dia-das-mulheres-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Mulheres profissionais juntas, representando empoderamento e celebração",
+    "thumb": {
+      "base": "palestra-dia-das-mulheres-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "ergonomia-no-dia-a-dia": {
+    "hero_base": "palestra-ergonomia-no-dia-a-dia-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Especialista ajustando a postura de um trabalhador no posto de trabalho",
+    "thumb": {
+      "base": "palestra-ergonomia-no-dia-a-dia-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "gestao-do-tempo": {
+    "hero_base": "palestra-gestao-do-tempo-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional organizando o dia em uma mesa limpa, com calma e foco",
+    "thumb": {
+      "base": "palestra-gestao-do-tempo-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "governanca-e-gestao-de-riscos": {
+    "hero_base": "palestra-governanca-e-gestao-de-riscos-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Líderes em reunião estratégica de decisão, com dados em tela",
+    "thumb": {
+      "base": "palestra-governanca-e-gestao-de-riscos-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "ists-e-saude-sexual": {
+    "hero_base": "palestra-ists-e-saude-sexual-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional de saúde em conversa educativa e respeitosa com adultos",
+    "thumb": {
+      "base": "palestra-ists-e-saude-sexual-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "nutricao-e-saude": {
+    "hero_base": "palestra-nutricao-e-saude-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Refeição equilibrada e alimentos frescos sobre mesa moderna e limpa",
+    "thumb": {
+      "base": "palestra-nutricao-e-saude-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "pare-pense-aja": {
+    "hero_base": "palestra-pare-pense-aja-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Trabalhador parando para pensar antes de agir em ambiente industrial",
+    "thumb": {
+      "base": "palestra-pare-pense-aja-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "qualidade-de-vida": {
+    "hero_base": "palestra-qualidade-de-vida-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional em rotina de bem-estar, com luz natural, calma e vitalidade",
+    "thumb": {
+      "base": "palestra-qualidade-de-vida-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "seguranca-regras-de-ouro": {
+    "hero_base": "palestra-seguranca-regras-de-ouro-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Trabalhador seguindo regras de ouro de segurança no chão de fábrica",
+    "thumb": {
+      "base": "palestra-seguranca-regras-de-ouro-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "trajeto-seguro": {
+    "hero_base": "palestra-trajeto-seguro-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Condutor atento no trânsito urbano, com direção defensiva",
+    "thumb": {
+      "base": "palestra-trajeto-seguro-empresas-hero-thumb",
       "larguras": [
         640,
         480,

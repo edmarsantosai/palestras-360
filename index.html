@@ -21,8 +21,11 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Palestras 360">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/img/logo/apple-touch-icon.png">
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
+    <link rel="preload" as="image" fetchpriority="high" imagesrcset="/assets/img/hero/home-hero-1920w.avif 1920w, /assets/img/hero/home-hero-1280w.avif 1280w, /assets/img/hero/home-hero-768w.avif 768w" imagesizes="100vw" type="image/avif">
   <link rel="stylesheet" href="/assets/css/main.css">
   <script type="application/ld+json">
 {
@@ -56,8 +59,10 @@
     <div class="container">
       <div class="header__inner">
         <a href="/" class="logo" aria-label="Palestras 360 — Página inicial">
-          <span class="logo__palestras">PALESTRAS</span>
-          <span class="logo__360">360</span>
+          <picture>
+            <source type="image/webp" srcset="/assets/img/logo/logo-palestras360-white-web.webp">
+            <img src="/assets/img/logo/logo-palestras360-white-web.png" alt="Palestras 360" width="320" height="175" class="logo__img">
+          </picture>
         </a>
         <nav class="header__nav" aria-label="Navegação principal">
           <a href="/" class="nav__link">Catálogo</a>
@@ -71,6 +76,14 @@
   <main id="main" tabindex="-1">
 
     <section class="hero hero--home" id="topo" aria-label="Palestras 360 — Central Nacional">
+      <div class="hero__bg">
+        <picture>
+          <source type="image/avif" srcset="/assets/img/hero/home-hero-1920w.avif 1920w, /assets/img/hero/home-hero-1280w.avif 1280w, /assets/img/hero/home-hero-768w.avif 768w" sizes="100vw">
+          <source type="image/webp" srcset="/assets/img/hero/home-hero-1920w.webp 1920w, /assets/img/hero/home-hero-1280w.webp 1280w, /assets/img/hero/home-hero-768w.webp 768w" sizes="100vw">
+          <img class="hero__img" src="/assets/img/hero/home-hero-1920w.jpg" alt="Central de palestras corporativas presenciais e online para empresas de todo o Brasil" fetchpriority="high" decoding="async" width="1920" height="1080">
+        </picture>
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
       <div class="container">
         <div class="hero__content">
           <div class="hero__badge" aria-hidden="true">
@@ -87,7 +100,7 @@
           <ul class="hero__trust" role="list">
             <li class="hero__trust-item">
             <span class="hero__trust-check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            Palestras para todas as tematicas do ano
+            Palestras para todas as temáticas do ano
           </li>
             <li class="hero__trust-item">
             <span class="hero__trust-check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 5l2.5 2.5 3.5-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
@@ -123,27 +136,27 @@
     <section class="catalogue" id="catalogo" aria-labelledby="catalogo-h2">
       <div class="container">
         <div class="section__header">
-          <span class="section__label">Catálogo Completo</span>
-          <h2 class="section__title" id="catalogo-h2">Mais de 40 Temas Disponíveis</h2>
+          <span class="section__label">Palestras Disponíveis</span>
+          <h2 class="section__title" id="catalogo-h2">20 Temas Prontos para a Sua Empresa</h2>
           <p class="section__subtitle">Selecione uma categoria para filtrar:</p>
         </div>
         <div class="cat-filter" role="group" aria-label="Filtro por categoria">
           <button class="cat-filter__btn is-active" data-filter="all" type="button">Todos os temas</button>
           <button class="cat-filter__btn" data-filter="campanhas" type="button">Campanhas e Datas do Ano</button>
-          <button class="cat-filter__btn" data-filter="saúde-mental" type="button">Saúde Mental e Emocional</button>
-          <button class="cat-filter__btn" data-filter="segurança" type="button">Segurança do Trabalho</button>
-          <button class="cat-filter__btn" data-filter="saúde-qualidade" type="button">Saúde e Qualidade de Vida</button>
+          <button class="cat-filter__btn" data-filter="saude-mental" type="button">Saúde Mental e Emocional</button>
+          <button class="cat-filter__btn" data-filter="seguranca" type="button">Segurança do Trabalho</button>
+          <button class="cat-filter__btn" data-filter="saude-qualidade" type="button">Saúde e Qualidade de Vida</button>
           <button class="cat-filter__btn" data-filter="ergonomia" type="button">Ergonomia</button>
-          <button class="cat-filter__btn" data-filter="liderança" type="button">Liderança, Gestão e Comportamento</button>
+          <button class="cat-filter__btn" data-filter="lideranca" type="button">Liderança, Gestão e Comportamento</button>
           <button class="cat-filter__btn" data-filter="diversidade" type="button">Diversidade, Inclusão e Cultura</button>
         </div>
         <div class="catalogue__grid" id="catalogue-grid">
         <a href="/palestra-setembro-amarelo/" class="talk-card" data-category="campanhas" data-theme-card="setembro-amarelo" aria-label="Ver palestra: Setembro Amarelo">
       <div class="talk-card__thumb">
         <picture>
-          <source type="image/avif" srcset="/assets/img/setembro-amarelo/thumb/palestra-setembro-amarelo-empresas-hero-thumb-640w.avif 640w, /assets/img/setembro-amarelo/thumb/palestra-setembro-amarelo-empresas-hero-thumb-480w.avif 480w, /assets/img/setembro-amarelo/thumb/palestra-setembro-amarelo-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
-          <source type="image/webp" srcset="/assets/img/setembro-amarelo/thumb/palestra-setembro-amarelo-empresas-hero-thumb-640w.webp 640w, /assets/img/setembro-amarelo/thumb/palestra-setembro-amarelo-empresas-hero-thumb-480w.webp 480w, /assets/img/setembro-amarelo/thumb/palestra-setembro-amarelo-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
-          <img class="talk-card__thumb-img" src="/assets/img/setembro-amarelo/thumb/palestra-setembro-amarelo-empresas-hero-thumb-640w.jpg" alt="Conversa de apoio e escuta entre dois profissionais em escritorio iluminado, representando acolhimento" loading="lazy" width="640" height="480">
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-setembro-amarelo-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-setembro-amarelo-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-setembro-amarelo-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-setembro-amarelo-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-setembro-amarelo-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-setembro-amarelo-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-setembro-amarelo-empresas-hero-thumb-640w.jpg" alt="Conversa de apoio e escuta entre dois profissionais em escritório iluminado, representando acolhimento" loading="lazy" width="640" height="480">
         </picture>
         <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
@@ -155,9 +168,9 @@
         <a href="/palestra-outubro-rosa/" class="talk-card" data-category="campanhas" data-theme-card="outubro-rosa" aria-label="Ver palestra: Outubro Rosa">
       <div class="talk-card__thumb">
         <picture>
-          <source type="image/avif" srcset="/assets/img/outubro-rosa/thumb/palestra-outubro-rosa-empresas-hero-thumb-640w.avif 640w, /assets/img/outubro-rosa/thumb/palestra-outubro-rosa-empresas-hero-thumb-480w.avif 480w, /assets/img/outubro-rosa/thumb/palestra-outubro-rosa-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
-          <source type="image/webp" srcset="/assets/img/outubro-rosa/thumb/palestra-outubro-rosa-empresas-hero-thumb-640w.webp 640w, /assets/img/outubro-rosa/thumb/palestra-outubro-rosa-empresas-hero-thumb-480w.webp 480w, /assets/img/outubro-rosa/thumb/palestra-outubro-rosa-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
-          <img class="talk-card__thumb-img" src="/assets/img/outubro-rosa/thumb/palestra-outubro-rosa-empresas-hero-thumb-640w.jpg" alt="Mulheres profissionais reunidas em ambiente corporativo moderno, representando saude da mulher" loading="lazy" width="640" height="480">
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-outubro-rosa-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-outubro-rosa-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-outubro-rosa-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-outubro-rosa-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-outubro-rosa-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-outubro-rosa-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-outubro-rosa-empresas-hero-thumb-640w.jpg" alt="Mulheres profissionais reunidas em ambiente corporativo moderno, representando saúde da mulher" loading="lazy" width="640" height="480">
         </picture>
         <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
@@ -169,9 +182,9 @@
         <a href="/palestra-novembro-azul/" class="talk-card" data-category="campanhas" data-theme-card="novembro-azul" aria-label="Ver palestra: Novembro Azul">
       <div class="talk-card__thumb">
         <picture>
-          <source type="image/avif" srcset="/assets/img/novembro-azul/thumb/palestra-novembro-azul-empresas-hero-thumb-640w.avif 640w, /assets/img/novembro-azul/thumb/palestra-novembro-azul-empresas-hero-thumb-480w.avif 480w, /assets/img/novembro-azul/thumb/palestra-novembro-azul-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
-          <source type="image/webp" srcset="/assets/img/novembro-azul/thumb/palestra-novembro-azul-empresas-hero-thumb-640w.webp 640w, /assets/img/novembro-azul/thumb/palestra-novembro-azul-empresas-hero-thumb-480w.webp 480w, /assets/img/novembro-azul/thumb/palestra-novembro-azul-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
-          <img class="talk-card__thumb-img" src="/assets/img/novembro-azul/thumb/palestra-novembro-azul-empresas-hero-thumb-640w.jpg" alt="Homens em ambiente corporativo contemporaneo, representando cuidado e saude masculina" loading="lazy" width="640" height="480">
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-novembro-azul-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-novembro-azul-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-novembro-azul-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-novembro-azul-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-novembro-azul-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-novembro-azul-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-novembro-azul-empresas-hero-thumb-640w.jpg" alt="Homens em ambiente corporativo contemporâneo, representando cuidado e saúde masculina" loading="lazy" width="640" height="480">
         </picture>
         <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
@@ -183,431 +196,241 @@
         <a href="/palestra-saude-mental/" class="talk-card" data-category="saude-mental" data-theme-card="saude-mental" aria-label="Ver palestra: Saúde Mental">
       <div class="talk-card__thumb">
         <picture>
-          <source type="image/avif" srcset="/assets/img/saude-mental/thumb/palestra-saude-mental-trabalho-hero-thumb-640w.avif 640w, /assets/img/saude-mental/thumb/palestra-saude-mental-trabalho-hero-thumb-480w.avif 480w, /assets/img/saude-mental/thumb/palestra-saude-mental-trabalho-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
-          <source type="image/webp" srcset="/assets/img/saude-mental/thumb/palestra-saude-mental-trabalho-hero-thumb-640w.webp 640w, /assets/img/saude-mental/thumb/palestra-saude-mental-trabalho-hero-thumb-480w.webp 480w, /assets/img/saude-mental/thumb/palestra-saude-mental-trabalho-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
-          <img class="talk-card__thumb-img" src="/assets/img/saude-mental/thumb/palestra-saude-mental-trabalho-hero-thumb-640w.jpg" alt="Profissional em ambiente de trabalho tranquilo, com sensacao de equilibrio e bem-estar" loading="lazy" width="640" height="480">
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-saude-mental-trabalho-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-saude-mental-trabalho-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-saude-mental-trabalho-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-saude-mental-trabalho-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-saude-mental-trabalho-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-saude-mental-trabalho-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-saude-mental-trabalho-hero-thumb-640w.jpg" alt="Profissional em ambiente de trabalho tranquilo, com sensação de equilíbrio e bem-estar" loading="lazy" width="640" height="480">
         </picture>
         <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
+        <span class="talk-card__cat">Saúde Mental e Emocional</span>
         <h3 class="talk-card__title">Saúde Mental</h3>
         <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </div></a>
         <a href="/palestra-sipat/" class="talk-card" data-category="seguranca" data-theme-card="sipat" aria-label="Ver palestra: SIPAT">
       <div class="talk-card__thumb">
         <picture>
-          <source type="image/avif" srcset="/assets/img/sipat/thumb/palestra-sipat-empresas-hero-thumb-640w.avif 640w, /assets/img/sipat/thumb/palestra-sipat-empresas-hero-thumb-480w.avif 480w, /assets/img/sipat/thumb/palestra-sipat-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
-          <source type="image/webp" srcset="/assets/img/sipat/thumb/palestra-sipat-empresas-hero-thumb-640w.webp 640w, /assets/img/sipat/thumb/palestra-sipat-empresas-hero-thumb-480w.webp 480w, /assets/img/sipat/thumb/palestra-sipat-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
-          <img class="talk-card__thumb-img" src="/assets/img/sipat/thumb/palestra-sipat-empresas-hero-thumb-640w.jpg" alt="Colaboradores atentos em sessao de seguranca do trabalho em ambiente industrial moderno" loading="lazy" width="640" height="480">
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-sipat-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-sipat-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-sipat-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-sipat-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-sipat-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-sipat-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-sipat-empresas-hero-thumb-640w.jpg" alt="Colaboradores atentos em sessão de segurança do trabalho em ambiente industrial moderno" loading="lazy" width="640" height="480">
         </picture>
         <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
+        <span class="talk-card__cat">Segurança do Trabalho</span>
         <h3 class="talk-card__title">SIPAT</h3>
         <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </div></a>
-        <div class="talk-card talk-card--soon" data-category="seguranca" data-theme-card="comportamento-seguro" aria-label="Comportamento Seguro — em breve" aria-disabled="true">
+        <a href="/palestra-comportamento-seguro/" class="talk-card" data-category="seguranca" data-theme-card="comportamento-seguro" aria-label="Ver palestra: Comportamento Seguro">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4v6c0 4.4-3.8 8.5-9 10C6.8 20.5 3 16.4 3 12V6l9-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-comportamento-seguro-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-comportamento-seguro-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-comportamento-seguro-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-comportamento-seguro-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-comportamento-seguro-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-comportamento-seguro-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-comportamento-seguro-empresas-hero-thumb-640w.jpg" alt="Profissional em ambiente industrial avaliando o entorno antes de uma tarefa" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
+        <span class="talk-card__cat">Segurança do Trabalho</span>
         <h3 class="talk-card__title">Comportamento Seguro</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-mental" data-theme-card="burnout" aria-label="Burnout Previna-se — em breve" aria-disabled="true">
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-burnout/" class="talk-card" data-category="saude-mental" data-theme-card="burnout" aria-label="Ver palestra: Burnout Previna-se">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3A5.5 5.5 0 0 0 4 8.5c0 2.3 1.3 4.3 3.2 5.4V20h9v-6.1c1.9-1.1 3.2-3.1 3.2-5.4A5.5 5.5 0 0 0 14 3a5.5 5.5 0 0 0-4.5 0z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-burnout-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-burnout-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-burnout-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-burnout-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-burnout-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-burnout-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-burnout-empresas-hero-thumb-640w.jpg" alt="Profissional fazendo uma pausa consciente no trabalho, com sensação de alívio" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
+        <span class="talk-card__cat">Saúde Mental e Emocional</span>
         <h3 class="talk-card__title">Burnout Previna-se</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="diversidade" data-theme-card="assedio-zero" aria-label="Assedio Zero — em breve" aria-disabled="true">
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-assedio-zero/" class="talk-card" data-category="diversidade" data-theme-card="assedio-zero" aria-label="Ver palestra: Assédio Zero">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 19c0-3 2.7-5 6-5h6c3.3 0 6 2 6 5"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-assedio-zero-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-assedio-zero-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-assedio-zero-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-assedio-zero-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-assedio-zero-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-assedio-zero-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-assedio-zero-empresas-hero-thumb-640w.jpg" alt="Equipe diversa colaborando com respeito mútuo em escritório moderno" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
         <span class="talk-card__cat">Diversidade, Inclusão e Cultura</span>
-        <h3 class="talk-card__title">Assedio Zero</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="lideranca" data-theme-card="gestao-do-tempo" aria-label="Gestão do Tempo — em breve" aria-disabled="true">
+        <h3 class="talk-card__title">Assédio Zero</h3>
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-gestao-do-tempo/" class="talk-card" data-category="lideranca" data-theme-card="gestao-do-tempo" aria-label="Ver palestra: Gestão do Tempo">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-gestao-do-tempo-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-gestao-do-tempo-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-gestao-do-tempo-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-gestao-do-tempo-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-gestao-do-tempo-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-gestao-do-tempo-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-gestao-do-tempo-empresas-hero-thumb-640w.jpg" alt="Profissional organizando o dia em uma mesa limpa, com calma e foco" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
+        <span class="talk-card__cat">Liderança, Gestão e Comportamento</span>
         <h3 class="talk-card__title">Gestão do Tempo</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-mental" data-theme-card="ansiedade-e-depressao" aria-label="Ansiedade e Depressão — em breve" aria-disabled="true">
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-ansiedade-e-depressao/" class="talk-card" data-category="saude-mental" data-theme-card="ansiedade-e-depressao" aria-label="Ver palestra: Ansiedade e Depressão">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3A5.5 5.5 0 0 0 4 8.5c0 2.3 1.3 4.3 3.2 5.4V20h9v-6.1c1.9-1.1 3.2-3.1 3.2-5.4A5.5 5.5 0 0 0 14 3a5.5 5.5 0 0 0-4.5 0z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-ansiedade-e-depressao-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-ansiedade-e-depressao-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-ansiedade-e-depressao-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-ansiedade-e-depressao-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-ansiedade-e-depressao-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-ansiedade-e-depressao-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-ansiedade-e-depressao-empresas-hero-thumb-640w.jpg" alt="Roda de conversa acolhedora conduzida por psicólogo em sala iluminada" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
+        <span class="talk-card__cat">Saúde Mental e Emocional</span>
         <h3 class="talk-card__title">Ansiedade e Depressão</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="ergonomia" data-theme-card="ergonomia-no-dia-a-dia" aria-label="Ergonomia no Dia a Dia — em breve" aria-disabled="true">
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-ergonomia-no-dia-a-dia/" class="talk-card" data-category="ergonomia" data-theme-card="ergonomia-no-dia-a-dia" aria-label="Ver palestra: Ergonomia no Dia a Dia">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><path d="M12 7.5v6M7.5 16h9M8 16l-1.5 5h11L16 16"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-ergonomia-no-dia-a-dia-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-ergonomia-no-dia-a-dia-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-ergonomia-no-dia-a-dia-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-ergonomia-no-dia-a-dia-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-ergonomia-no-dia-a-dia-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-ergonomia-no-dia-a-dia-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-ergonomia-no-dia-a-dia-empresas-hero-thumb-640w.jpg" alt="Especialista ajustando a postura de um trabalhador no posto de trabalho" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
         <span class="talk-card__cat">Ergonomia</span>
         <h3 class="talk-card__title">Ergonomia no Dia a Dia</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-qualidade" data-theme-card="nutricao-e-saude" aria-label="A Nutricao e a Saúde — em breve" aria-disabled="true">
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-nutricao-e-saude/" class="talk-card" data-category="saude-qualidade" data-theme-card="nutricao-e-saude" aria-label="Ver palestra: A Nutrição e a Saúde">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-nutricao-e-saude-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-nutricao-e-saude-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-nutricao-e-saude-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-nutricao-e-saude-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-nutricao-e-saude-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-nutricao-e-saude-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-nutricao-e-saude-empresas-hero-thumb-640w.jpg" alt="Refeição equilibrada e alimentos frescos sobre mesa moderna e limpa" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">A Nutricao e a Saúde</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-qualidade" data-theme-card="atividade-fisica-x-sedentarismo" aria-label="Atividade Física x Sedentarismo — em breve" aria-disabled="true">
+        <span class="talk-card__cat">Saúde e Qualidade de Vida</span>
+        <h3 class="talk-card__title">A Nutrição e a Saúde</h3>
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-atividade-fisica-x-sedentarismo/" class="talk-card" data-category="saude-qualidade" data-theme-card="atividade-fisica-x-sedentarismo" aria-label="Ver palestra: Atividade Física x Sedentarismo">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-atividade-fisica-x-sedentarismo-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-atividade-fisica-x-sedentarismo-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-atividade-fisica-x-sedentarismo-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-atividade-fisica-x-sedentarismo-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-atividade-fisica-x-sedentarismo-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-atividade-fisica-x-sedentarismo-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-atividade-fisica-x-sedentarismo-empresas-hero-thumb-640w.jpg" alt="Profissionais em pausa ativa, alongando-se perto de um escritório iluminado" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
+        <span class="talk-card__cat">Saúde e Qualidade de Vida</span>
         <h3 class="talk-card__title">Atividade Física x Sedentarismo</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="campanhas" data-theme-card="dia-das-mulheres" aria-label="Dia das Mulheres - Dia Delas — em breve" aria-disabled="true">
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-dia-das-mulheres/" class="talk-card" data-category="campanhas" data-theme-card="dia-das-mulheres" aria-label="Ver palestra: Dia das Mulheres - Dia Delas">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-dia-das-mulheres-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-dia-das-mulheres-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-dia-das-mulheres-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-dia-das-mulheres-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-dia-das-mulheres-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-dia-das-mulheres-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-dia-das-mulheres-empresas-hero-thumb-640w.jpg" alt="Mulheres profissionais juntas, representando empoderamento e celebração" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
         <span class="talk-card__cat">Campanhas e Datas do Ano</span>
         <h3 class="talk-card__title">Dia das Mulheres - Dia Delas</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="seguranca" data-theme-card="trajeto-seguro" aria-label="Trajeto Seguro — em breve" aria-disabled="true">
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-trajeto-seguro/" class="talk-card" data-category="seguranca" data-theme-card="trajeto-seguro" aria-label="Ver palestra: Trajeto Seguro">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4v6c0 4.4-3.8 8.5-9 10C6.8 20.5 3 16.4 3 12V6l9-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-trajeto-seguro-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-trajeto-seguro-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-trajeto-seguro-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-trajeto-seguro-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-trajeto-seguro-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-trajeto-seguro-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-trajeto-seguro-empresas-hero-thumb-640w.jpg" alt="Condutor atento no trânsito urbano, com direção defensiva" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
+        <span class="talk-card__cat">Segurança do Trabalho</span>
         <h3 class="talk-card__title">Trajeto Seguro</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-qualidade" data-theme-card="ists-e-saude-sexual" aria-label="As ISTs e a Saúde Sexual — em breve" aria-disabled="true">
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-ists-e-saude-sexual/" class="talk-card" data-category="saude-qualidade" data-theme-card="ists-e-saude-sexual" aria-label="Ver palestra: As ISTs e a Saúde Sexual">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-ists-e-saude-sexual-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-ists-e-saude-sexual-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-ists-e-saude-sexual-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-ists-e-saude-sexual-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-ists-e-saude-sexual-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-ists-e-saude-sexual-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-ists-e-saude-sexual-empresas-hero-thumb-640w.jpg" alt="Profissional de saúde em conversa educativa e respeitosa com adultos" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
+        <span class="talk-card__cat">Saúde e Qualidade de Vida</span>
         <h3 class="talk-card__title">As ISTs e a Saúde Sexual</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="seguranca" data-theme-card="pare-pense-aja" aria-label="Pare, Pense, Aja — em breve" aria-disabled="true">
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-pare-pense-aja/" class="talk-card" data-category="seguranca" data-theme-card="pare-pense-aja" aria-label="Ver palestra: Pare, Pense, Aja">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4v6c0 4.4-3.8 8.5-9 10C6.8 20.5 3 16.4 3 12V6l9-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-pare-pense-aja-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-pare-pense-aja-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-pare-pense-aja-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-pare-pense-aja-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-pare-pense-aja-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-pare-pense-aja-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-pare-pense-aja-empresas-hero-thumb-640w.jpg" alt="Trabalhador parando para pensar antes de agir em ambiente industrial" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
+        <span class="talk-card__cat">Segurança do Trabalho</span>
         <h3 class="talk-card__title">Pare, Pense, Aja</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="lideranca" data-theme-card="governanca-e-gestao-de-riscos" aria-label="Governanca e Gestão de Riscos — em breve" aria-disabled="true">
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-governanca-e-gestao-de-riscos/" class="talk-card" data-category="lideranca" data-theme-card="governanca-e-gestao-de-riscos" aria-label="Ver palestra: Governança e Gestão de Riscos">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-governanca-e-gestao-de-riscos-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-governanca-e-gestao-de-riscos-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-governanca-e-gestao-de-riscos-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-governanca-e-gestao-de-riscos-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-governanca-e-gestao-de-riscos-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-governanca-e-gestao-de-riscos-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-governanca-e-gestao-de-riscos-empresas-hero-thumb-640w.jpg" alt="Líderes em reunião estratégica de decisão, com dados em tela" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Governanca e Gestão de Riscos</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-qualidade" data-theme-card="qualidade-de-vida" aria-label="Qualidade de Vida e Estilo de Vida Saudavel — em breve" aria-disabled="true">
+        <span class="talk-card__cat">Liderança, Gestão e Comportamento</span>
+        <h3 class="talk-card__title">Governança e Gestão de Riscos</h3>
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-qualidade-de-vida/" class="talk-card" data-category="saude-qualidade" data-theme-card="qualidade-de-vida" aria-label="Ver palestra: Qualidade de Vida e Estilo de Vida Saudável">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-qualidade-de-vida-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-qualidade-de-vida-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-qualidade-de-vida-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-qualidade-de-vida-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-qualidade-de-vida-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-qualidade-de-vida-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-qualidade-de-vida-empresas-hero-thumb-640w.jpg" alt="Profissional em rotina de bem-estar, com luz natural, calma e vitalidade" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Qualidade de Vida e Estilo de Vida Saudavel</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="seguranca" data-theme-card="seguranca-regras-de-ouro" aria-label="Segurança e às Regras de Ouro — em breve" aria-disabled="true">
+        <span class="talk-card__cat">Saúde e Qualidade de Vida</span>
+        <h3 class="talk-card__title">Qualidade de Vida e Estilo de Vida Saudável</h3>
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
+        <a href="/palestra-seguranca-regras-de-ouro/" class="talk-card" data-category="seguranca" data-theme-card="seguranca-regras-de-ouro" aria-label="Ver palestra: Segurança e as Regras de Ouro">
       <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4v6c0 4.4-3.8 8.5-9 10C6.8 20.5 3 16.4 3 12V6l9-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
+        <picture>
+          <source type="image/avif" srcset="/assets/img/thumb/palestra-seguranca-regras-de-ouro-empresas-hero-thumb-640w.avif 640w, /assets/img/thumb/palestra-seguranca-regras-de-ouro-empresas-hero-thumb-480w.avif 480w, /assets/img/thumb/palestra-seguranca-regras-de-ouro-empresas-hero-thumb-320w.avif 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <source type="image/webp" srcset="/assets/img/thumb/palestra-seguranca-regras-de-ouro-empresas-hero-thumb-640w.webp 640w, /assets/img/thumb/palestra-seguranca-regras-de-ouro-empresas-hero-thumb-480w.webp 480w, /assets/img/thumb/palestra-seguranca-regras-de-ouro-empresas-hero-thumb-320w.webp 320w" sizes="(max-width:639px) calc(100vw - 3rem),(max-width:1023px) calc(50vw - 3rem),320px">
+          <img class="talk-card__thumb-img" src="/assets/img/thumb/palestra-seguranca-regras-de-ouro-empresas-hero-thumb-640w.jpg" alt="Trabalhador seguindo regras de ouro de segurança no chão de fábrica" loading="lazy" width="640" height="480">
+        </picture>
+        <span class="talk-card__badge talk-card__badge--new">Disponível</span>
       </div>
       <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Segurança e às Regras de Ouro</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="ergonomia" data-theme-card="ergonomia-operacional" aria-label="Ergonomia Operacional — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><path d="M12 7.5v6M7.5 16h9M8 16l-1.5 5h11L16 16"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat">Ergonomia</span>
-        <h3 class="talk-card__title">Ergonomia Operacional</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="ergonomia" data-theme-card="ergonomia-escritorio-home-office" aria-label="Ergonomia para Escritorios e Home Office — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><path d="M12 7.5v6M7.5 16h9M8 16l-1.5 5h11L16 16"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat">Ergonomia</span>
-        <h3 class="talk-card__title">Ergonomia para Escritorios e Home Office</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-mental" data-theme-card="inteligencia-emocional" aria-label="Inteligencia Emocional — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3A5.5 5.5 0 0 0 4 8.5c0 2.3 1.3 4.3 3.2 5.4V20h9v-6.1c1.9-1.1 3.2-3.1 3.2-5.4A5.5 5.5 0 0 0 14 3a5.5 5.5 0 0 0-4.5 0z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Inteligencia Emocional</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-qualidade" data-theme-card="educacao-financeira" aria-label="Educacao Financeira e a Saúde — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Educacao Financeira e a Saúde</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-mental" data-theme-card="adiccao-tecnologica" aria-label="Adiccao Tecnologica — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3A5.5 5.5 0 0 0 4 8.5c0 2.3 1.3 4.3 3.2 5.4V20h9v-6.1c1.9-1.1 3.2-3.1 3.2-5.4A5.5 5.5 0 0 0 14 3a5.5 5.5 0 0 0-4.5 0z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Adiccao Tecnologica</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="seguranca" data-theme-card="primeiros-socorros" aria-label="Primeiros Socorros — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4v6c0 4.4-3.8 8.5-9 10C6.8 20.5 3 16.4 3 12V6l9-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Primeiros Socorros</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="lideranca" data-theme-card="cinco-sensos-5s" aria-label="5S - Cinco Sensos no Trabalho e na Vida — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">5S - Cinco Sensos no Trabalho e na Vida</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="seguranca" data-theme-card="shisa-kanko" aria-label="Shisa Kanko - Apontar e Falar — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4v6c0 4.4-3.8 8.5-9 10C6.8 20.5 3 16.4 3 12V6l9-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Shisa Kanko - Apontar e Falar</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-qualidade" data-theme-card="saude-bucal" aria-label="Saúde Bucal — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Saúde Bucal</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="lideranca" data-theme-card="clima-organizacional" aria-label="Clima Organizacional e Mente Positiva — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Clima Organizacional e Mente Positiva</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-qualidade" data-theme-card="gestantes" aria-label="Gestantes - Cuidados na Gestacao — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Gestantes - Cuidados na Gestacao</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-qualidade" data-theme-card="tabagismo" aria-label="Tabagismo — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Tabagismo</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-qualidade" data-theme-card="alcoolismo-e-drogas" aria-label="Alcoolismo e Drogas — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Alcoolismo e Drogas</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="diversidade" data-theme-card="meio-ambiente" aria-label="Meio Ambiente e Sustentabilidade — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 19c0-3 2.7-5 6-5h6c3.3 0 6 2 6 5"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat">Diversidade, Inclusão e Cultura</span>
-        <h3 class="talk-card__title">Meio Ambiente e Sustentabilidade</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="lideranca" data-theme-card="qualidade-e-excelencia" aria-label="Qualidade e Excelencia no Trabalho — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Qualidade e Excelencia no Trabalho</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="lideranca" data-theme-card="comunicacao-nao-violenta" aria-label="CNV - Comunicação Não Violenta — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">CNV - Comunicação Não Violenta</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="diversidade" data-theme-card="diversidade-e-inclusao" aria-label="Respeito a Diversidade e Inclusão — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 19c0-3 2.7-5 6-5h6c3.3 0 6 2 6 5"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat">Diversidade, Inclusão e Cultura</span>
-        <h3 class="talk-card__title">Respeito a Diversidade e Inclusão</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-qualidade" data-theme-card="ginastica-laboral" aria-label="Ginastica Laboral — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Ginastica Laboral</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-qualidade" data-theme-card="emagrecimento-com-saude" aria-label="Emagrecimento com Saúde — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Emagrecimento com Saúde</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="seguranca" data-theme-card="cipa-lideranca" aria-label="CIPA - Liderança para Cipeiros — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4v6c0 4.4-3.8 8.5-9 10C6.8 20.5 3 16.4 3 12V6l9-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">CIPA - Liderança para Cipeiros</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="lideranca" data-theme-card="radio-pirata" aria-label="Radio Pirata - Combate a Fofoca — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Radio Pirata - Combate a Fofoca</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-mental" data-theme-card="proposito-e-felicidade" aria-label="Proposito e Felicidade — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3A5.5 5.5 0 0 0 4 8.5c0 2.3 1.3 4.3 3.2 5.4V20h9v-6.1c1.9-1.1 3.2-3.1 3.2-5.4A5.5 5.5 0 0 0 14 3a5.5 5.5 0 0 0-4.5 0z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Proposito e Felicidade</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="saude-mental" data-theme-card="crencas-limitantes" aria-label="Crencas Limitantes — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3A5.5 5.5 0 0 0 4 8.5c0 2.3 1.3 4.3 3.2 5.4V20h9v-6.1c1.9-1.1 3.2-3.1 3.2-5.4A5.5 5.5 0 0 0 14 3a5.5 5.5 0 0 0-4.5 0z"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Crencas Limitantes</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="lideranca" data-theme-card="habitos-e-pessoas-eficazes" aria-label="Hábitos e Pessoas Eficazes — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat"></span>
-        <h3 class="talk-card__title">Hábitos e Pessoas Eficazes</h3>
-        
-      </div></div>
-        <div class="talk-card talk-card--soon" data-category="diversidade" data-theme-card="tea-inclusao-e-respeito" aria-label="TEA - Inclusão e Respeito — em breve" aria-disabled="true">
-      <div class="talk-card__thumb">
-        <div class="thumb-placeholder" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 19c0-3 2.7-5 6-5h6c3.3 0 6 2 6 5"/></svg></div>
-        <span class="talk-card__badge talk-card__badge--soon">Em breve</span>
-      </div>
-      <div class="talk-card__body">
-        <span class="talk-card__cat">Diversidade, Inclusão e Cultura</span>
-        <h3 class="talk-card__title">TEA - Inclusão e Respeito</h3>
-        
-      </div></div>
+        <span class="talk-card__cat">Segurança do Trabalho</span>
+        <h3 class="talk-card__title">Segurança e as Regras de Ouro</h3>
+        <span class="talk-card__link-hint">Ver palestra <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div></a>
         </div>
       </div>
     </section>
@@ -631,8 +454,10 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="/" class="logo" aria-label="Palestras 360">
-            <span class="logo__palestras">PALESTRAS</span>
-            <span class="logo__360">360</span>
+            <picture>
+              <source type="image/webp" srcset="/assets/img/logo/logo-palestras360-white-web.webp">
+              <img src="/assets/img/logo/logo-palestras360-white-web.png" alt="Palestras 360" width="320" height="175" class="logo__img">
+            </picture>
           </a>
           <p class="footer__tagline">Central Nacional de Palestras Corporativas. Mais de 40 temas, presencial ou online, em todo o Brasil.</p>
           <p class="footer__phone"><a href="tel:08006055544">0800 605 5544</a></p>
@@ -659,6 +484,7 @@
       <div class="footer__bottom">
         <span>&copy; 2026 Palestras 360. Todos os direitos reservados.</span>
         <span>Palestras corporativas para empresas de todo o Brasil.</span>
+        <span>Desenvolvido por <a href="https://edmarsantos.com.br" target="_blank" rel="noopener">Edmar Santos</a></span>
       </div>
     </div>
   </footer>
@@ -668,6 +494,9 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.7-1.8-3.6-3.3-.3-.5.3-.4.8-1.5.1-.2 0-.3 0-.5-.1-.2-.7-1.7-1-2.3-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.7 1.2 2.9.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 2-1.3.2-.6.2-1.1.1-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.4 5.2L2 22l4.9-1.3C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg> SOLICITAR ORÇAMENTO
     </a>
   </div>
+  <a href="https://wa.me/5508006055544?text=Ol%C3%A1!%20Tenho%20interesse%20na%20palestra%20sobre%20Palestras%20Corporativas%20para%20minha%20empresa%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="wa-float" data-wa data-wa-theme="Palestras Corporativas" data-wa-location="Float" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.7-1.8-3.6-3.3-.3-.5.3-.4.8-1.5.1-.2 0-.3 0-.5-.1-.2-.7-1.7-1-2.3-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.7 1.2 2.9.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 2-1.3.2-.6.2-1.1.1-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.4 5.2L2 22l4.9-1.3C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+  </a>
 
   <script src="/assets/js/main.js" defer></script>
   <script>

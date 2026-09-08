@@ -1,7 +1,7 @@
 {
   "meta": {
     "projeto": "Palestras 360 - Central Nacional de Palestras Corporativas",
-    "posicionamento": "Palestras Corporativas para Empresas de Todo o Brasil. Mais de 40 temas, presencial ou online, o ano inteiro. NAO comunicar marca pessoal, sem foto do palestrante e sem depoimentos - formato catalogo focado em conversao.",
+    "posicionamento": "Palestras Corporativas para Empresas de Todo o Brasil. Mais de 40 temas, presencial ou online, o ano inteiro. Catálogo focado em conversão, sem marca pessoal, sem foto de palestrante e sem depoimentos.",
     "dominio": "palestras360.com.br",
     "padrao_url": "/palestra-<slug>/",
     "hero_padrao": {
@@ -9,18 +9,18 @@
       "subtitulo": "Leve uma palestra profissional para sua empresa, presencial ou online, em qualquer região do Brasil.",
       "checks": [
         "Presencial ou online",
-        "Mais de 40 temas disponiveis",
+        "Mais de 40 temas disponíveis",
         "Atendimento para empresas de todo o Brasil"
       ],
-      "cta": "SOLICITAR ORCAMENTO PELO WHATSAPP"
+      "cta": "Solicitar orçamento pelo WhatsApp"
     },
     "value_props_home": [
-      "Palestras para todas as tematicas do ano",
+      "Palestras para todas as temáticas do ano",
       "Palestras em qualquer localidade",
       "Palestras presenciais",
       "Palestras online",
       "Palestras para SIPAT",
-      "Palestras para convencoes",
+      "Palestras para convenções",
       "Palestras com dinâmicas",
       "Palestras teatralizadas",
       "Palestras produzidas para o seu objetivo"
@@ -28,8 +28,14 @@
     "contato": {
       "whatsapp": "5508006055544",
       "whatsapp_exibicao": "0800 605 5544",
-      "status_whatsapp": "CONFIRMADO por teste em api.whatsapp.com (abriu a conversa).",
-      "conflito": "O resumo enviado pelo Jackson cita 0800 484 1234, mas o WhatsApp testado e confirmado e o 0800 605 5544. Usando 5508006055544. Confirmar com o cliente qual e o oficial."
+      "obs": "Número WhatsApp oficial confirmado por teste. Usar sempre 5508006055544 no wa.me. NUNCA usar placeholder."
+    },
+    "regras_projeto": {
+      "cta_primario": "Cor de ação ciano (--color-action). Botão retangular 10px.",
+      "botao_flutuante_whatsapp": "Botão flutuante fixo verde oficial #25D366 no canto inferior direito de todas as páginas.",
+      "sem_becos_sem_saida": "Todo card/tema converte: se a LP existe, linka para ela; se não, abre WhatsApp pré-preenchido com o tema. Nunca 'Em breve' sem ação.",
+      "logo": "Logo oficial Palestras 360: versão branca/mono em fundos escuros; versão colorida em fundos claros.",
+      "credito_dev": "Rodapé discreto: 'Desenvolvido por Edmar Santos' com link para https://edmarsantos.com.br"
     },
     "eventos_tracking": [
       "view_page",
@@ -38,11 +44,7 @@
       "scroll_depth",
       "click_whatsapp",
       "generate_lead"
-    ],
-    "legenda_status": {
-      "publicar": "Conteúdo real do Jackson, pronto para gerar a LP.",
-      "catalogo": "Stub com resumo real; expandir ao gerar a LP."
-    }
+    ]
   },
   "categorias": [
     {
@@ -50,15 +52,15 @@
       "nome": "Campanhas e Datas do Ano"
     },
     {
-      "id": "saúde-mental",
+      "id": "saude-mental",
       "nome": "Saúde Mental e Emocional"
     },
     {
-      "id": "segurança",
+      "id": "seguranca",
       "nome": "Segurança do Trabalho"
     },
     {
-      "id": "saúde-qualidade",
+      "id": "saude-qualidade",
       "nome": "Saúde e Qualidade de Vida"
     },
     {
@@ -66,7 +68,7 @@
       "nome": "Ergonomia"
     },
     {
-      "id": "liderança",
+      "id": "lideranca",
       "nome": "Liderança, Gestão e Comportamento"
     },
     {
@@ -79,17 +81,23 @@
       "slug": "setembro-amarelo",
       "categoria": "campanhas",
       "status": "publicar",
+      "completo": true,
       "prioridade": 1,
       "titulo": "Setembro Amarelo",
-      "frase": "Falar e a melhor solução: reconhecer sinais, acolher e buscar ajuda são atos de coragem e cuidado com a vida.",
+      "frase": "Falar sobre a vida também é cuidar: informação, acolhimento e apoio podem fazer diferença.",
       "h1": "Palestra Setembro Amarelo para Empresas",
       "meta_title": "Palestra Setembro Amarelo para Empresas | Presencial e Online",
-      "meta_description": "Palestra de Setembro Amarelo para empresas, presencial ou online, em todo o Brasil. Valorização da vida e saúde emocional. Solicite orçamento pelo WhatsApp.",
-      "intro": "Uma palestra que estimula as pessoas a reconhecerem a importância da saúde emocional e a compreenderem que falar sobre sentimentos, dificuldades e momentos de crise é um passo importante para buscar ajuda.",
-      "sobre": "Alinhada ao movimento Setembro Amarelo, a palestra mostra como identificar sinais de sofrimento emocional, como acolher alguém que apresenta mudanças de comportamento e quais atitudes ajudam diante de ansiedade, tristeza e desesperança. Reforca a importância de ouvir sem julgamentos, fortalecer redes de apoio e buscar ajuda profissional quando necessario - lembrando que pedir ajuda é um ato de coragem.",
+      "meta_description": "Palestra de Setembro Amarelo para empresas, presencial ou online, em todo o Brasil. Valorização da vida e saúde emocional no trabalho. Peça um orçamento.",
+      "intro": "Uma palestra de conscientização alinhada ao Setembro Amarelo, que estimula as pessoas a reconhecerem a importância da saúde emocional e a compreenderem que falar sobre sentimentos, dificuldades e momentos de crise é um passo importante para buscar ajuda.",
+      "sobre": [
+        "Setembro Amarelo é a maior campanha de valorização da vida e prevenção ao suicídio do país, mas esta palestra vai além da data: ela abre, dentro da empresa, um espaço seguro e acolhedor para falar de um assunto que ainda carrega muito silêncio e preconceito. O ponto de partida é simples e poderoso — falar sobre o que sentimos já é uma forma de cuidado, e pedir ajuda é um ato de coragem, não de fraqueza.",
+        "Com uma abordagem sensível e responsável, a palestra ajuda os participantes a reconhecerem sinais de que alguém pode estar passando por sofrimento emocional: mudanças de comportamento, isolamento, desânimo persistente, alterações no humor e na rotina. Mais do que identificar, ela ensina como agir — como se aproximar, como ouvir sem julgamentos, sem minimizar a dor do outro e sem oferecer respostas prontas. O acolhimento genuíno, muitas vezes, começa por uma escuta atenta.",
+        "São trabalhadas atitudes práticas diante de quem demonstra ansiedade, tristeza profunda ou desesperança, e a importância de fortalecer as redes de apoio dentro e fora do ambiente de trabalho — colegas, líderes, família e serviços profissionais de saúde mental. A mensagem central é a de que ninguém precisa enfrentar sozinho os momentos difíceis, e que a empresa pode ser um ambiente que salva vidas ao normalizar o cuidado emocional.",
+        "A palestra tem caráter educativo e de conscientização. Não realiza diagnósticos, não substitui acompanhamento profissional e sempre orienta a busca por ajuda especializada — reforçando canais como o CVV (188) e os serviços de saúde disponíveis. O objetivo é transformar informação em empatia e empatia em atitude, deixando cada participante mais preparado para cuidar de si e do outro."
+      ],
       "topicos": [
         "A importância de falar sobre saúde emocional",
-        "Como identificar sinais de sofrimento emocional",
+        "Como identificar sinais de sofrimento",
         "Como acolher alguém com mudanças de comportamento",
         "Atitudes diante de ansiedade, tristeza e desesperança",
         "Como fortalecer redes de apoio",
@@ -97,9 +105,9 @@
       ],
       "para_quem": [
         "Empresas na campanha Setembro Amarelo",
-        "Equipes e liderancas",
-        "RH, CIPA e programas de QVT",
-        "SIPAT, convencoes e eventos corporativos",
+        "Equipes e lideranças",
+        "RH e programas de QVT",
+        "SIPAT, convenções e eventos",
         "Semana interna de saúde emocional"
       ],
       "formatos": [
@@ -113,21 +121,21 @@
           "a": "Sim. O conteúdo é ajustado ao perfil da equipe e ao objetivo da campanha."
         },
         {
-          "q": "O tema e tratado de forma responsável?",
-          "a": "Sim. Abordagem acolhedora e responsável, de carater educativo, com orientação para buscar ajuda profissional. Não substitui atendimento."
+          "q": "O tema é tratado de forma responsável?",
+          "a": "Sim. Abordagem acolhedora e educativa, com orientação para buscar ajuda profissional. Não substitui atendimento nem realiza diagnósticos."
         },
         {
-          "q": "Atende presencial e online em todo o Brasil?",
-          "a": "Sim, atendimento nacional, presencial ou online ao vivo."
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo, para empresas de qualquer região."
         },
         {
           "q": "Como solicitar um orçamento?",
-          "a": "Pelo botao de WhatsApp, com a mensagem ja preenchida com o tema."
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema. Retornamos com a proposta."
         }
       ],
       "keywords": [
         "palestra setembro amarelo empresa",
-        "palestra setembro amarelo preco",
+        "palestra setembro amarelo preço",
         "palestra setembro amarelo online",
         "palestra setembro amarelo colaboradores",
         "palestra setembro amarelo corporativa"
@@ -140,25 +148,31 @@
       ],
       "imagens": {
         "hero": "palestra-setembro-amarelo-empresas-hero",
-        "hero_alt": "Conversa de apoio e escuta entre dois profissionais em escritorio iluminado, representando acolhimento"
+        "hero_alt": "Conversa de apoio e escuta entre dois profissionais em escritório iluminado, representando acolhimento"
       }
     },
     {
       "slug": "outubro-rosa",
       "categoria": "campanhas",
       "status": "publicar",
+      "completo": true,
       "prioridade": 2,
       "titulo": "Outubro Rosa",
-      "frase": "Cuidar da saúde é um ato de amor próprio: conhecer o corpo, reconhecer sinais e buscar cuidado e viver mais e melhor.",
+      "frase": "Cuidar da saúde é um ato de amor próprio: quanto antes você conhece seu corpo e busca cuidado, maiores as chances de viver mais e melhor.",
       "h1": "Palestra Outubro Rosa para Empresas",
       "meta_title": "Palestra Outubro Rosa para Empresas | Presencial e Online",
-      "meta_description": "Palestra de Outubro Rosa para empresas, com profissional de saúde, presencial ou online. Saúde da mulher e prevenção. Solicite orçamento pelo WhatsApp.",
-      "intro": "Conduzida por profissional da area da saúde: uma exposicao sobre a saúde da mulher e seus cuidados preventivos, com dicas para viver mais e melhor nas esferas biopsicossocial.",
-      "sobre": "Comeca pela saúde da mulher e cuidados preventivos, aponta como Viver Mais e Melhor com dicas de qualidade de vida e bem-estar feminino e encerra em roda de conversa, respondendo perguntas e desmistificando mitos e verdades do universo da saúde feminina.",
+      "meta_description": "Palestra de Outubro Rosa para empresas, com profissional de saúde, presencial ou online. Saúde da mulher, prevenção e qualidade de vida. Peça um orçamento.",
+      "intro": "Conduzida por uma profissional da área da saúde, uma abordagem dedicada à saúde da mulher: prevenção, autocuidado e qualidade de vida, alinhada ao espírito do Outubro Rosa e ampliada para a saúde feminina como um todo.",
+      "sobre": [
+        "Conduzida por uma profissional da área da saúde, esta palestra usa a força do Outubro Rosa para ir muito além da prevenção do câncer de mama: ela propõe um olhar completo e humano sobre a saúde da mulher. O ponto de partida é o autoconhecimento — conhecer o próprio corpo, entender o que é normal para si e perceber sinais que merecem atenção — porque o cuidado preventivo e o diagnóstico precoce são, comprovadamente, os maiores aliados na proteção da vida.",
+        "A partir daí, a conversa se amplia para uma visão biopsicossocial do bem-estar feminino, resumida no conceito de Viver Mais e Melhor. São abordados pilares que sustentam a qualidade de vida ao longo dos anos: alimentação equilibrada, movimento, qualidade do sono, hidratação, equilíbrio emocional e a construção de uma rede de apoio. A palestra reforça, com delicadeza e firmeza, que cuidar de si não é egoísmo — é condição para cuidar de tudo o mais.",
+        "A saúde emocional recebe atenção especial, reconhecendo as múltiplas jornadas e sobrecargas que muitas mulheres carregam no trabalho, em casa e na vida. Falar de autocuidado, limites e saúde mental faz parte, aqui, de falar de saúde da mulher como um todo, sem separar corpo e mente.",
+        "O encontro é adaptado ao perfil do público e costuma se encerrar em roda de conversa, com espaço para dúvidas e para desmistificar mitos e verdades sobre prevenção, exames e cuidados. Tem caráter educativo e informativo, não substitui a avaliação médica individual, e deixa cada participante mais consciente e protagonista da própria saúde."
+      ],
       "topicos": [
-        "Saúde da mulher e cuidados preventivos",
-        "Viver Mais e Melhor: qualidade de vida",
-        "Bem-estar feminino (biopsicossocial)",
+        "Cuidados preventivos e saúde das mamas",
+        "Conhecer o próprio corpo e reconhecer sinais",
+        "Viver Mais e Melhor (biopsicossocial)",
         "Autocuidado não é egoísmo",
         "Saúde emocional da mulher",
         "Roda de conversa: mitos e verdades"
@@ -166,9 +180,9 @@
       "para_quem": [
         "Empresas na campanha Outubro Rosa",
         "Equipes e colaboradoras",
-        "RH, CIPA e programas de QVT",
-        "Convencoes, SIPAT e eventos corporativos",
-        "Acoes de endomarketing"
+        "RH e programas de QVT",
+        "Convenções e eventos corporativos",
+        "Ações de endomarketing"
       ],
       "formatos": [
         "presencial",
@@ -181,21 +195,21 @@
           "a": "Sim, com linguagem acessível e responsável."
         },
         {
-          "q": "Da para adaptar ao nosso público?",
-          "a": "Sim. Conteúdo e dinâmica ajustados ao perfil e ao objetivo da ação."
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e dinâmica são ajustados ao perfil e ao objetivo da ação."
         },
         {
-          "q": "Atende em todo o Brasil?",
-          "a": "Sim, presencial ou online ao vivo."
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
         },
         {
-          "q": "Como funciona o orçamento?",
-          "a": "Clique no WhatsApp e envie a mensagem ja preenchida com o tema."
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
         }
       ],
       "keywords": [
         "palestra outubro rosa empresa",
-        "palestra outubro rosa preco",
+        "palestra outubro rosa preço",
         "palestra outubro rosa online",
         "palestra outubro rosa colaboradores",
         "palestra outubro rosa corporativa"
@@ -215,28 +229,34 @@
       "slug": "novembro-azul",
       "categoria": "campanhas",
       "status": "publicar",
+      "completo": true,
       "prioridade": 3,
       "titulo": "Novembro Azul",
-      "frase": "Cuidar da saúde também e atitude de homem: prevenir, acompanhar e pedir ajuda são sinais de responsabilidade.",
+      "frase": "Cuidar da saúde também é atitude de homem: prevenir, acompanhar e pedir ajuda são sinais de responsabilidade, não de fraqueza.",
       "h1": "Palestra Novembro Azul para Empresas",
       "meta_title": "Palestra Novembro Azul para Empresas | Presencial e Online",
-      "meta_description": "Palestra de Novembro Azul para empresas, com profissional de saúde, presencial ou online. Saúde do homem e prevenção. Solicite orçamento pelo WhatsApp.",
-      "intro": "Trata da prevenção do câncer de próstata e de outros cuidados com a saúde masculina, com exposicao sobre a saúde do homem e dicas para viver mais e melhor.",
-      "sobre": "Aborda a importância da prevenção do câncer de próstata e amplia para a saúde masculina como um todo. Aponta como Viver Mais e Melhor e encerra em roda de conversa, respondendo perguntas e desmistificando mitos e verdades do universo da saúde do homem.",
+      "meta_description": "Palestra de Novembro Azul para empresas, com profissional de saúde, presencial ou online. Saúde do homem, prevenção e qualidade de vida. Peça um orçamento.",
+      "intro": "Conduzida por um profissional da área da saúde, uma abordagem voltada à saúde masculina, usando o Novembro Azul para ampliar a conscientização sobre prevenção, autocuidado e qualidade de vida.",
+      "sobre": [
+        "Conduzida por um profissional da área da saúde, esta palestra aproveita o Novembro Azul para enfrentar um desafio real: a resistência histórica do homem em cuidar da própria saúde. Mais do que lembrar da importância do exame de próstata, ela trabalha a mudança de cultura necessária para que prevenir, acompanhar e pedir ajuda deixem de ser vistos como fraqueza e passem a ser entendidos como responsabilidade e maturidade.",
+        "O conteúdo começa pela conscientização sobre a prevenção do câncer de próstata e o diagnóstico precoce, mas se expande para uma visão ampla da saúde masculina — física, emocional e comportamental. Sob o conceito de Viver Mais e Melhor, são discutidos hábitos que impactam diretamente a qualidade e a expectativa de vida: alimentação, atividade física, sono, controle do estresse, consumo de álcool e tabaco, e a importância dos check-ups periódicos que tantos homens adiam.",
+        "A saúde emocional masculina ganha destaque, num tema ainda cercado de tabus. A palestra mostra, com respeito e sem julgamentos, que reconhecer sentimentos, falar sobre pressões e buscar apoio não diminui ninguém — pelo contrário, fortalece. Trata-se de romper a ideia de que o homem precisa dar conta de tudo sozinho.",
+        "O encontro é adaptado ao público e costuma encerrar em roda de conversa, separando mitos de verdades e abrindo espaço para perguntas. Tem caráter educativo, não substitui consulta, diagnóstico ou tratamento médico, e busca deixar cada participante mais consciente de que cuidar da saúde é, também, uma atitude de homem."
+      ],
       "topicos": [
         "Prevenção do câncer de próstata",
-        "Cuidados com a saúde masculina",
-        "Viver Mais e Melhor: qualidade de vida",
         "Vencer a resistência em procurar atendimento",
+        "Saúde masculina além da próstata",
+        "Viver Mais e Melhor: hábitos saudáveis",
         "Saúde emocional masculina",
         "Roda de conversa: mitos e verdades"
       ],
       "para_quem": [
         "Empresas na campanha Novembro Azul",
         "Equipes e colaboradores",
-        "RH, CIPA e programas de QVT",
-        "Convencoes, SIPAT e eventos corporativos",
-        "Acoes de endomarketing"
+        "RH e programas de QVT",
+        "Convenções e eventos corporativos",
+        "Ações de endomarketing"
       ],
       "formatos": [
         "presencial",
@@ -249,21 +269,21 @@
           "a": "Sim, de forma clara e sem alarmismo."
         },
         {
-          "q": "Da para adaptar ao nosso público?",
-          "a": "Sim. Conteúdo e dinâmica ajustados a equipe e ao evento."
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e dinâmica ajustados à equipe e ao evento."
         },
         {
-          "q": "Atende em todo o Brasil?",
-          "a": "Sim, presencial ou online ao vivo."
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
         },
         {
-          "q": "Como pedir um orçamento?",
-          "a": "Pelo botao de WhatsApp, com a mensagem ja preenchida com o tema."
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
         }
       ],
       "keywords": [
         "palestra novembro azul empresa",
-        "palestra novembro azul preco",
+        "palestra novembro azul preço",
         "palestra novembro azul online",
         "palestra novembro azul colaboradores",
         "palestra novembro azul corporativa"
@@ -276,34 +296,41 @@
       ],
       "imagens": {
         "hero": "palestra-novembro-azul-empresas-hero",
-        "hero_alt": "Homens em ambiente corporativo contemporaneo, representando cuidado e saúde masculina"
+        "hero_alt": "Homens em ambiente corporativo contemporâneo, representando cuidado e saúde masculina"
       }
     },
     {
       "slug": "saude-mental",
       "categoria": "saude-mental",
       "status": "publicar",
+      "completo": true,
       "prioridade": 4,
       "titulo": "Saúde Mental",
-      "frase": "Cuidar da mente e desenvolver recursos para enfrentar as adversidades com mais equilibrio e esperança.",
+      "frase": "Cuidar da mente não é fugir dos problemas; é desenvolver recursos para enfrentá-los com mais equilíbrio, consciência e esperança.",
       "h1": "Palestra de Saúde Mental para Empresas",
       "meta_title": "Palestra de Saúde Mental para Empresas | Presencial e Online",
-      "meta_description": "Palestra corporativa de saúde mental, presencial ou online, em todo o Brasil, com conteúdo adaptado a sua equipe. Solicite um orçamento pelo WhatsApp.",
-      "intro": "Ajuda as pessoas a lidarem com as adversidades e a buscarem o bem-estar emocional: entender os sentimentos, lidar com ansiedade, depressão e tristeza e superar crises.",
-      "sobre": "Estimula uma relação mais consciente com pensamentos, sentimentos e emoções. Trata dos principais fatores que impedem a saúde mental, das terapias e tratamentos acessíveis hoje e de como enfrentar momentos de crise - com informação e acolhimento, sem transformar o tema em diagnóstico.",
+      "meta_description": "Palestra corporativa de saúde mental, presencial ou online, em todo o Brasil, com conteúdo adaptado à sua equipe. Solicite um orçamento pelo WhatsApp.",
+      "intro": "Uma palestra de conscientização e reflexão que ajuda as pessoas a desenvolverem uma relação mais consciente com seus pensamentos, sentimentos e emoções — e a saberem a hora de buscar ajuda.",
+      "sobre": [
+        "A saúde mental influencia diretamente como pensamos, sentimos, decidimos, nos relacionamos e trabalhamos — e, ainda assim, costuma receber muito menos atenção do que a saúde física. Esta palestra propõe uma mudança de olhar madura e necessária: o sofrimento emocional é legítimo, merece cuidado, e buscar ajuda é sinal de força, não de fraqueza. É um convite para que cada pessoa desenvolva uma relação mais consciente com seus próprios pensamentos, sentimentos e emoções.",
+        "O conteúdo ajuda os participantes a entenderem melhor o que sentem e a reconhecerem os fatores que prejudicam a saúde mental no dia a dia — pressão excessiva, excesso de estímulos e cobranças, falta de descanso, isolamento e a dificuldade de estabelecer limites. A partir daí, são trabalhadas formas saudáveis de lidar com a ansiedade, com a depressão e com a tristeza, diferenciando emoções naturais da vida de sinais que merecem atenção e cuidado profissional.",
+        "A palestra apresenta caminhos concretos de cuidado disponíveis hoje — da terapia às redes de apoio — e discute como enfrentar momentos de crise e adversidade sem enfrentá-los sozinho. Dá destaque ao papel das relações humanas e do próprio ambiente de trabalho no bem-estar: um clima de respeito, escuta e acolhimento faz diferença real na saúde emocional das equipes.",
+        "Ao combater mitos e preconceitos com informação e empatia, a palestra reduz o estigma que ainda cerca o tema e incentiva atitudes de autocuidado e de cuidado com o outro. Tem caráter educativo e de conscientização, não realiza diagnósticos nem substitui acompanhamento psicológico ou psiquiátrico, e é facilmente adaptável a campanhas como Setembro Amarelo e Janeiro Branco."
+      ],
       "topicos": [
         "Como entender os próprios sentimentos",
-        "Fatores que impedem a saúde mental",
+        "Fatores que prejudicam a saúde mental",
         "Como lidar com ansiedade e depressão",
         "Como lidar com a tristeza",
-        "Como superar crises",
-        "Terapias e tratamentos acessíveis hoje"
+        "Como enfrentar crises e adversidades",
+        "Terapias e tratamentos acessíveis hoje",
+        "Mitos e preconceitos sobre saúde mental"
       ],
       "para_quem": [
-        "Empresas de todos os portes e setores",
-        "Equipes e liderancas",
-        "Programas de QVT",
-        "SIPAT, convencoes e eventos",
+        "Empresas de todos os portes",
+        "Equipes e lideranças",
+        "RH e programas de QVT",
+        "SIPAT, convenções e eventos",
         "Campanhas internas (Setembro Amarelo, Janeiro Branco)"
       ],
       "formatos": [
@@ -317,21 +344,21 @@
           "a": "Sim. O conteúdo é ajustado ao perfil da equipe, ao setor e ao objetivo do evento."
         },
         {
-          "q": "Atende presencialmente em todo o Brasil?",
-          "a": "Sim, presencial ou online ao vivo, em todo o pais."
+          "q": "Substitui acompanhamento psicológico?",
+          "a": "Não. Tem caráter educativo; não realiza diagnósticos nem substitui atendimento profissional."
         },
         {
-          "q": "Substitui acompanhamento psicológico?",
-          "a": "Não. Tem carater educativo; não realiza diagnósticos nem substitui atendimento profissional."
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
         },
         {
           "q": "Como solicitar um orçamento?",
-          "a": "Clique no WhatsApp e envie a mensagem ja preenchida com o tema."
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
         }
       ],
       "keywords": [
         "palestra saúde mental empresa",
-        "palestra saúde mental preco",
+        "palestra saúde mental preço",
         "palestra saúde mental online",
         "palestra saúde mental colaboradores",
         "palestra saúde mental corporativa"
@@ -343,14 +370,15 @@
         "inteligencia-emocional"
       ],
       "imagens": {
-        "hero": "palestra-saúde-mental-trabalho-hero",
-        "hero_alt": "Profissional em ambiente de trabalho tranquilo, com sensacao de equilibrio e bem-estar"
+        "hero": "palestra-saude-mental-trabalho-hero",
+        "hero_alt": "Profissional em ambiente de trabalho tranquilo, com sensação de equilíbrio e bem-estar"
       }
     },
     {
       "slug": "sipat",
       "categoria": "seguranca",
       "status": "publicar",
+      "completo": true,
       "prioridade": 5,
       "tipo": "programa",
       "titulo": "SIPAT",
@@ -358,21 +386,26 @@
       "h1": "Palestras para SIPAT em Todo o Brasil",
       "meta_title": "Palestras para SIPAT | Programação para Empresas - Brasil",
       "meta_description": "Palestras e programação completa para a SIPAT da sua empresa, presencial ou online: segurança, saúde e qualidade de vida. Solicite orçamento pelo WhatsApp.",
-      "intro": "Programação de palestras para a Semana Interna de Prevenção de Acidentes do Trabalho, combinando segurança, saúde e bem-estar de forma dinâmica e envolvente.",
-      "sobre": "Montamos uma grade sob medida para a sua SIPAT, combinando temas do catalogo (comportamento seguro, saúde mental, ergonomia, qualidade de vida, trajeto seguro, entre outros), com palestras dinâmicas, interativas e ate teatralizadas que engajam os colaboradores e reforcam a cultura de prevenção.",
+      "intro": "Programação de palestras para a Semana Interna de Prevenção de Acidentes do Trabalho, combinando segurança, saúde e bem-estar de forma dinâmica, interativa e envolvente.",
+      "sobre": [
+        "A SIPAT — Semana Interna de Prevenção de Acidentes do Trabalho — é uma das ações mais importantes do calendário de qualquer empresa, e o seu sucesso depende de uma programação que realmente engaje. É exatamente isso que entregamos: uma grade sob medida, montada a partir de mais de 40 temas do nosso catálogo, combinando segurança, saúde e bem-estar de forma dinâmica, interativa e envolvente — para que a semana seja lembrada e gere resultado, não apenas cumpra tabela.",
+        "A programação é construída com você, considerando o perfil da empresa, os riscos da operação, o público (operacional, administrativo ou misto) e os objetivos da campanha. Podemos combinar temas como comportamento seguro, Pare Pense Aja, ergonomia, trajeto seguro, primeiros socorros, saúde mental, qualidade de vida, assédio, dependência química e muitos outros, criando uma jornada coerente ao longo dos dias.",
+        "O grande diferencial está no formato: as palestras podem ser dinâmicas, interativas e até teatralizadas, saindo do modelo expositivo tradicional para prender a atenção e envolver de verdade os colaboradores. Todo o conteúdo de segurança pode ser adaptado às Regras de Ouro e às diretrizes já adotadas pela empresa, reforçando — e não competindo com — a cultura de prevenção existente.",
+        "Atendemos presencialmente ou online ao vivo, em todo o Brasil, com flexibilidade para caber no seu calendário e no seu orçamento. O resultado é uma SIPAT que engaja, sensibiliza e fortalece a cultura de segurança e cuidado dentro da organização."
+      ],
       "topicos": [
         "Programação personalizada para a sua SIPAT",
         "Combinação de temas: segurança, saúde e bem-estar",
         "Palestras dinâmicas, interativas e teatralizadas",
         "Engajamento e cultura de prevenção",
-        "Presencial ou online, em todo o Brasil",
-        "Adaptação às Regras de Ouro e diretrizes da empresa"
+        "Adaptação às Regras de Ouro da empresa",
+        "Presencial ou online, em todo o Brasil"
       ],
       "para_quem": [
         "Empresas que realizam a SIPAT",
         "CIPA, SESMT e RH",
         "Equipes operacionais e administrativas",
-        "Industrias e empresas de todos os setores"
+        "Indústrias e empresas de todos os setores"
       ],
       "formatos": [
         "presencial",
@@ -385,22 +418,22 @@
           "a": "Sim, uma grade sob medida com os temas mais relevantes para a sua empresa."
         },
         {
-          "q": "Da para combinar varios temas na mesma semana?",
-          "a": "Sim, e a proposta: segurança, saúde e bem-estar em uma programação envolvente."
+          "q": "Dá para combinar vários temas na mesma semana?",
+          "a": "Sim, é a proposta: segurança, saúde e bem-estar em uma programação envolvente."
         },
         {
-          "q": "Atende em todo o Brasil?",
-          "a": "Sim, presencial ou online ao vivo."
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
         },
         {
           "q": "Como solicitar um orçamento?",
-          "a": "Pelo botao de WhatsApp; retornamos com a proposta de programação."
+          "a": "Pelo botão de WhatsApp; retornamos com a proposta de programação."
         }
       ],
       "keywords": [
         "palestra para sipat",
         "palestra sipat empresa",
-        "palestra sipat preco",
+        "palestra sipat preço",
         "palestra sipat online",
         "programação sipat"
       ],
@@ -412,328 +445,2598 @@
       ],
       "imagens": {
         "hero": "palestra-sipat-empresas-hero",
-        "hero_alt": "Colaboradores atentos em sessao de segurança do trabalho em ambiente industrial moderno"
+        "hero_alt": "Colaboradores atentos em sessão de segurança do trabalho em ambiente industrial moderno"
       }
     },
     {
       "slug": "comportamento-seguro",
       "categoria": "seguranca",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": true,
+      "icone": "shield",
       "titulo": "Comportamento Seguro",
-      "resumo": "Abordagem motivacional para um dia a dia mais seguro: Regras de Ouro, Cuidado Ativo, uso de EPIs, analise de riscos e quase acidentes, riscos do celular e trabalho em equipe.",
-      "tema_whatsapp": "Comportamento Seguro"
+      "frase": "Segurança não acontece por acaso: ela começa nas escolhas, atitudes e comportamentos de cada pessoa.",
+      "h1": "Palestra Comportamento Seguro para Empresas",
+      "meta_title": "Palestra Comportamento Seguro para Empresas | Presencial e Online",
+      "meta_description": "Palestra motivacional de comportamento seguro para empresas, presencial ou online. Regras de Ouro, cuidado ativo, EPIs e cultura de prevenção. Peça orçamento.",
+      "intro": "Uma abordagem motivacional, prática e participativa que convida cada colaborador a transformar a segurança em atitude presente em todos os momentos do dia a dia.",
+      "sobre": [
+        "A maioria dos acidentes de trabalho não acontece por falta de norma, mas por desvios de comportamento — o atalho, a pressa, a distração, o excesso de confiança. Por isso, esta palestra tem uma abordagem motivacional, prática e participativa, que convida cada colaborador a transformar a segurança em atitude presente em todos os momentos do dia, e não apenas em uma regra a ser lembrada quando o fiscal está por perto.",
+        "O ponto central é despertar a consciência de que o comportamento individual influencia a própria segurança, a dos colegas e a qualidade de todo o ambiente. A palestra apresenta as Regras de Ouro da segurança, o conceito de Cuidado Ativo — cuidar de si e olhar pelo outro — e o uso correto e consciente dos EPIs, indo além da obrigação para a compreensão do porquê de cada medida.",
+        "De forma interativa, os participantes são levados a exercitar a análise de riscos antes de cada tarefa e a enxergar os quase acidentes como aprendizado valioso, e não como algo a ser escondido. São discutidos também os riscos do uso indevido do celular, a importância do trabalho em equipe na prevenção e as atitudes comportamentais positivas que, repetidas todos os dias, constroem uma verdadeira cultura de segurança.",
+        "Totalmente adaptável às Regras de Ouro, aos valores e às atividades específicas da empresa, a palestra carrega uma mensagem que fica: nenhuma meta, nenhum prazo e nenhuma economia valem mais do que a vida. É um dos temas mais procurados para SIPAT e programas de segurança."
+      ],
+      "topicos": [
+        "Regras de Ouro da segurança",
+        "Cuidado Ativo e responsabilidade coletiva",
+        "Uso correto dos EPIs",
+        "Análise de riscos e quase acidentes",
+        "Riscos do uso indevido do celular",
+        "Trabalho em equipe e cultura de prevenção"
+      ],
+      "para_quem": [
+        "Indústrias e empresas de todos os setores",
+        "Equipes operacionais e administrativas",
+        "CIPA, SESMT e RH",
+        "SIPAT e Semana Interna",
+        "Programas de segurança do trabalho"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "A palestra pode ser adaptada às Regras de Ouro da nossa empresa?",
+          "a": "Sim. O conteúdo é ajustado às diretrizes, valores e atividades da organização."
+        },
+        {
+          "q": "Serve para a nossa SIPAT?",
+          "a": "Sim, é um dos temas mais procurados para a Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Comportamento Seguro",
+      "relacionadas": [
+        "pare-pense-aja",
+        "seguranca-regras-de-ouro",
+        "sipat"
+      ],
+      "imagens": {
+        "hero_alt": "Profissional em ambiente industrial avaliando o entorno antes de uma tarefa"
+      }
     },
     {
       "slug": "burnout",
       "categoria": "saude-mental",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": true,
+      "icone": "brain",
       "titulo": "Burnout Previna-se",
-      "resumo": "Conscientizacao sobre a síndrome do esgotamento profissional: sintomas principais e sinais da fronteira entre estresse cronico e disturbio emocional.",
-      "tema_whatsapp": "Burnout Previna-se"
+      "frase": "Cuidar da mente antes do esgotamento não é sinal de fraqueza; é uma atitude de prevenção, responsabilidade e respeito pela própria vida.",
+      "h1": "Palestra sobre Burnout para Empresas",
+      "meta_title": "Palestra sobre Burnout para Empresas | Prevenção e Bem-estar",
+      "meta_description": "Palestra de conscientização sobre a Síndrome de Burnout para empresas, presencial ou online. Sinais de alerta, limites e prevenção. Solicite um orçamento.",
+      "intro": "Uma palestra de conscientização que aborda de forma clara e responsável a Síndrome de Burnout, ajudando os participantes a reconhecerem sinais de alerta, compreenderem seus limites e buscarem ajuda quando necessário.",
+      "sobre": [
+        "Vivemos em um cenário de cobranças constantes, metas crescentes e conectividade permanente — e, nesse ritmo, o desgaste que se acumula pode deixar de ser um cansaço passageiro e se transformar em algo mais sério. Esta palestra aborda a Síndrome de Burnout, o esgotamento profissional, de forma clara e responsável, ajudando cada participante a reconhecer sinais de alerta, compreender seus limites e entender quando é hora de buscar ajuda.",
+        "O conteúdo diferencia, com cuidado, um período difícil e temporário de um processo persistente de adoecimento. São apresentados os principais sinais e sintomas que merecem atenção: exaustão física e mental que não passa com o descanso, distanciamento e cinismo em relação ao trabalho, queda de desempenho, irritabilidade, alterações de sono e de humor. Reconhecer cedo faz toda a diferença.",
+        "A palestra explora a fronteira entre estresse e esgotamento e a relação, muitas vezes desequilibrada, entre vida profissional e pessoal. Trabalha a importância de estabelecer limites saudáveis, de respeitar pausas e descanso e de não naturalizar o sofrimento em nome da produtividade — mostrando que uma pessoa esgotada não produz mais, produz pior e adoece.",
+        "Por fim, reforça que ninguém deve enfrentar sozinho situações de sofrimento e estimula a responsabilidade coletiva por ambientes de trabalho mais saudáveis, em que líderes e equipes cuidam uns dos outros. Tem caráter educativo e de conscientização; não realiza diagnósticos nem substitui avaliação e acompanhamento profissional."
+      ],
+      "topicos": [
+        "O que caracteriza a Síndrome de Burnout",
+        "Principais sinais e sintomas de alerta",
+        "A fronteira entre estresse e esgotamento",
+        "Limites e equilíbrio vida-trabalho",
+        "Quando e como buscar ajuda",
+        "Responsabilidade coletiva por ambientes saudáveis"
+      ],
+      "para_quem": [
+        "Empresas de todos os portes",
+        "Equipes e lideranças",
+        "RH e programas de QVT",
+        "SIPAT, convenções e eventos",
+        "Campanhas internas de saúde emocional"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "A palestra realiza diagnósticos?",
+          "a": "Não. Tem caráter educativo e de conscientização; não substitui avaliação profissional."
+        },
+        {
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e exemplos ajustados ao perfil da equipe."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Burnout Previna-se",
+      "relacionadas": [
+        "saude-mental",
+        "ansiedade-e-depressao",
+        "qualidade-de-vida"
+      ],
+      "imagens": {
+        "hero_alt": "Profissional fazendo uma pausa consciente no trabalho, com sensação de alívio"
+      }
     },
     {
       "slug": "assedio-zero",
       "categoria": "diversidade",
-      "status": "catalogo",
-      "titulo": "Assedio Zero",
-      "resumo": "Como prevenir, detectar e lidar com assedio moral e sexual no trabalho, unindo a equipe por um ambiente mais saudavel e seguro.",
-      "tema_whatsapp": "Assedio Zero"
+      "status": "publicar",
+      "completo": true,
+      "icone": "users",
+      "titulo": "Assédio Zero",
+      "frase": "Respeito não é apenas uma regra de convivência: é um compromisso coletivo que transforma o ambiente de trabalho.",
+      "h1": "Palestra Assédio Zero para Empresas",
+      "meta_title": "Palestra Assédio Zero para Empresas | Prevenção ao Assédio",
+      "meta_description": "Palestra de prevenção ao assédio moral e sexual no trabalho, presencial ou online. Como reconhecer, acolher e agir pelos canais adequados. Peça um orçamento.",
+      "intro": "Uma palestra de conscientização e prevenção que aborda o assédio moral e sexual no trabalho, mostrando como reconhecer comportamentos inadequados, compreender seus impactos e agir de maneira responsável.",
+      "sobre": [
+        "O respeito no ambiente de trabalho deixou de ser uma questão apenas de boa convivência para se tornar um compromisso ético, legal e cultural inadiável. Esta palestra de conscientização e prevenção aborda o assédio moral e sexual de forma clara e madura, mostrando como reconhecer comportamentos inadequados, compreender seus impactos e agir de maneira responsável — protegendo pessoas e a própria organização.",
+        "O conteúdo ajuda a diferenciar, com precisão, uma cobrança profissional legítima de uma conduta abusiva, um limite que gera muitas dúvidas nas equipes. Trata também do assédio sexual, do respeito, do consentimento e dos limites, deixando claro que piadas ofensivas, exposições constrangedoras e 'brincadeiras' que geram desconforto não devem ser normalizadas nem toleradas.",
+        "A palestra ensina a reconhecer sinais de alerta e a acolher quem passa por situações de assédio, e dá destaque ao papel das testemunhas, das lideranças e de cada colaborador na construção de uma cultura de respeito. Ninguém é neutro diante do assédio: silenciar é, muitas vezes, permitir. São apresentadas também orientações sobre como agir pelos canais internos adequados.",
+        "Podendo considerar as políticas e os canais de denúncia específicos da empresa, a palestra transforma consciência em atitude e respeito em cultura. É especialmente indicada para lideranças, comitês de conduta, campanhas internas e SIPAT, contribuindo para um ambiente mais seguro, saudável e humano para todos."
+      ],
+      "topicos": [
+        "O que caracteriza o assédio moral",
+        "Assédio sexual, consentimento e limites",
+        "Cobrança legítima x conduta abusiva",
+        "Sinais de alerta e acolhimento",
+        "Papel das testemunhas e lideranças",
+        "Como agir pelos canais adequados"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e comitês de conduta",
+        "Lideranças e gestores",
+        "Campanhas internas",
+        "Ações de cultura organizacional"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "A palestra pode ser adaptada às políticas da nossa empresa?",
+          "a": "Sim. Pode considerar os canais e procedimentos internos da organização."
+        },
+        {
+          "q": "É indicada para lideranças?",
+          "a": "Sim, o papel da liderança na prevenção é um dos eixos centrais."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Assédio Zero",
+      "relacionadas": [
+        "diversidade-e-inclusao",
+        "comunicacao-nao-violenta",
+        "clima-organizacional"
+      ],
+      "imagens": {
+        "hero_alt": "Equipe diversa colaborando com respeito mútuo em escritório moderno"
+      }
     },
     {
       "slug": "gestao-do-tempo",
       "categoria": "lideranca",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": true,
+      "icone": "clock",
       "titulo": "Gestão do Tempo",
-      "resumo": "Aproveitar o tempo de forma equilibrada com organização e planejamento, sem cair na ansiedade e na adiccao tecnologica que sabotam a produtividade.",
-      "tema_whatsapp": "Gestão do Tempo"
+      "frase": "Administrar bem o tempo não é fazer mais coisas; é fazer o que realmente importa sem sacrificar saúde e qualidade de vida.",
+      "h1": "Palestra Gestão do Tempo para Empresas",
+      "meta_title": "Palestra Gestão do Tempo para Empresas | Produtividade e Foco",
+      "meta_description": "Palestra de gestão do tempo para empresas, presencial ou online. Prioridades, foco, produtividade com equilíbrio e combate à procrastinação. Peça um orçamento.",
+      "intro": "Uma palestra que convida a repensar como usamos o tempo — mostrando que organização, prioridades e equilíbrio transformam a rotina profissional e pessoal sem virar uma corrida contra o relógio.",
+      "sobre": [
+        "Vivemos com a sensação constante de que o tempo não é suficiente — e, muitas vezes, o problema não é a falta de horas, mas a forma como as usamos. Esta palestra convida a repensar a relação com o tempo, mostrando que organização, prioridades e equilíbrio transformam a rotina profissional e pessoal sem transformá-la em uma corrida angustiante contra o relógio.",
+        "O conteúdo apresenta o planejamento e a definição de prioridades como ferramentas concretas para reduzir a sensação de descontrole, ajudando a diferenciar o que é realmente importante daquilo que apenas parece urgente e grita mais alto. Um ponto essencial: saúde e segurança precisam estar entre as prioridades, já que a pressa mal administrada aumenta erros, retrabalho e riscos.",
+        "A palestra enfrenta o cabo de guerra entre produtividade e ansiedade, a influência da dependência tecnológica e das notificações constantes sobre o foco, e a procrastinação — entendendo suas causas em vez de apenas condenar o comportamento. Fica clara a diferença entre estar ocupado, apenas reagindo a demandas, e ser produtivo, avançando no que de fato importa.",
+        "Mais do que técnicas isoladas, a palestra estimula limites saudáveis, equilíbrio e escolhas conscientes, adaptáveis à realidade de cada pessoa e de cada função. Ideal para líderes, equipes, convenções e treinamentos, entrega uma mensagem central: administrar bem o tempo é fazer o que realmente importa sem sacrificar saúde e qualidade de vida."
+      ],
+      "topicos": [
+        "Planejamento e definição de prioridades",
+        "Importante x urgente",
+        "Foco e recuperação da atenção",
+        "Adicção tecnológica e distrações",
+        "Procrastinação: como vencer",
+        "Ocupado x produtivo"
+      ],
+      "para_quem": [
+        "Líderes e equipes",
+        "RH e desenvolvimento",
+        "Convenções e treinamentos",
+        "Empresas de todos os setores",
+        "Programas de produtividade e QVT"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e exemplos ajustados ao perfil da equipe."
+        },
+        {
+          "q": "Serve para convenção ou treinamento?",
+          "a": "Sim, funciona bem em convenções, kick-offs e treinamentos."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Gestão do Tempo",
+      "relacionadas": [
+        "inteligencia-emocional",
+        "habitos-e-pessoas-eficazes",
+        "qualidade-de-vida"
+      ],
+      "imagens": {
+        "hero_alt": "Profissional organizando o dia em uma mesa limpa, com calma e foco"
+      }
     },
     {
       "slug": "ansiedade-e-depressao",
       "categoria": "saude-mental",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": true,
+      "icone": "brain",
       "titulo": "Ansiedade e Depressão",
-      "resumo": "Com profissional de Psicologia: abordagem introdutoria e roda de conversa desmistificando mitos e verdades sobre ansiedade e depressão.",
-      "tema_whatsapp": "Ansiedade e Depressão"
+      "frase": "Informação quebra preconceitos, diálogo aproxima pessoas e pedir ajuda pode ser o primeiro passo.",
+      "h1": "Palestra sobre Ansiedade e Depressão para Empresas",
+      "meta_title": "Palestra sobre Ansiedade e Depressão para Empresas | Online",
+      "meta_description": "Palestra sobre ansiedade e depressão com profissional de Psicologia, presencial ou online. Roda de conversa, mitos e verdades. Solicite um orçamento.",
+      "intro": "Com um profissional de Psicologia, uma abordagem introdutória seguida de roda de conversa, criando um espaço seguro de diálogo, escuta e participação sobre saúde emocional.",
+      "sobre": [
+        "Ansiedade e depressão estão entre os temas de saúde mental mais presentes — e mais cercados de dúvidas e preconceitos — no ambiente de trabalho. Conduzida por um profissional de Psicologia, esta palestra combina uma abordagem introdutória, clara e acessível, com uma roda de conversa, criando um espaço seguro de diálogo, escuta e participação em que as pessoas se sentem à vontade para trazer suas questões.",
+        "A parte inicial apresenta conceitos fundamentais: o que caracteriza a ansiedade, quando ela deixa de ser uma reação natural e passa a merecer atenção, e como diferenciar a tristeza passageira de um quadro depressivo. Tudo isso sem estimular autodiagnósticos, com o cuidado de informar sem rotular e de acolher sem alarmar.",
+        "Na roda de conversa, o encontro se molda às perguntas e vivências dos participantes. São trabalhados mitos e verdades, orientações sobre como e onde buscar ajuda profissional, e — muito importante — como acolher um colega ou familiar que está em sofrimento emocional, oferecendo presença e escuta em vez de julgamento ou conselhos vazios.",
+        "A palestra respeita a privacidade e os limites individuais, tem caráter educativo e de conscientização e não substitui acompanhamento clínico. Encaixa-se naturalmente em campanhas como Setembro Amarelo e Janeiro Branco e ajuda a construir uma cultura organizacional mais empática e informada sobre saúde emocional."
+      ],
+      "topicos": [
+        "O que é ansiedade e quando merece atenção",
+        "Depressão x tristeza passageira",
+        "Mitos e verdades",
+        "Como acolher alguém em sofrimento",
+        "Quando e como buscar ajuda",
+        "Roda de conversa com profissional de Psicologia"
+      ],
+      "para_quem": [
+        "Empresas de todos os portes",
+        "Equipes e lideranças",
+        "RH e programas de QVT",
+        "SIPAT e campanhas internas",
+        "Setembro Amarelo e Janeiro Branco"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É conduzida por profissional de Psicologia?",
+          "a": "Sim, com abordagem introdutória e roda de conversa."
+        },
+        {
+          "q": "A palestra realiza diagnósticos?",
+          "a": "Não. Tem caráter educativo e não substitui atendimento clínico."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Ansiedade e Depressão",
+      "relacionadas": [
+        "saude-mental",
+        "setembro-amarelo",
+        "burnout"
+      ],
+      "imagens": {
+        "hero_alt": "Roda de conversa acolhedora conduzida por psicólogo em sala iluminada"
+      }
     },
     {
       "slug": "ergonomia-no-dia-a-dia",
       "categoria": "ergonomia",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": true,
+      "icone": "activity",
       "titulo": "Ergonomia no Dia a Dia",
-      "resumo": "Dicas para posições de trabalho em pe (operacional) ou sentada (escritorio): postura, mobiliario e equipamentos para evitar desconfortos e lesoes.",
-      "tema_whatsapp": "Ergonomia no Dia a Dia"
+      "frase": "Ergonomia é aprender a trabalhar melhor, com mais conforto, menos desgaste e mais cuidado com o próprio corpo.",
+      "h1": "Palestra Ergonomia no Dia a Dia para Empresas",
+      "meta_title": "Palestra Ergonomia para Empresas | Presencial e Online",
+      "meta_description": "Palestra prática de ergonomia para empresas, presencial ou online. Postura, mobiliário, movimentos e prevenção de lesões no dia a dia. Peça um orçamento.",
+      "intro": "Uma palestra prática e interativa que apresenta a ergonomia de forma simples e aplicável, mostrando como pequenos ajustes reduzem desconfortos e melhoram a qualidade de vida no trabalho.",
+      "sobre": [
+        "Ergonomia não é um assunto técnico e distante — é, no fundo, aprender a trabalhar melhor, com mais conforto, menos desgaste e mais cuidado com o próprio corpo. Esta palestra prática e interativa apresenta o tema de forma simples e aplicável, mostrando como pequenos ajustes na postura, no posto e nos hábitos reduzem desconfortos e previnem lesões que se instalam silenciosamente ao longo dos anos.",
+        "O conteúdo atende tanto quem trabalha em pé, em atividades operacionais, quanto quem passa horas sentado, no escritório ou em home office. Os participantes são levados a observar o próprio corpo e o ambiente ao redor, identificando aqueles hábitos automáticos — a torção repetida, o esforço mal distribuído, a postura mantida por tempo demais — que aumentam o desgaste sem que a pessoa perceba.",
+        "São abordados a postura correta nas diferentes atividades, a organização do posto de trabalho, a combinação adequada entre mobiliário, equipamentos e ferramentas, os cuidados com movimentos repetitivos e a importância vital de alternar posições e fazer pausas ao longo da jornada. Pequenas mudanças, feitas com consciência, geram grande impacto na disposição e na saúde a longo prazo.",
+        "A palestra reforça que ergonomia é uma responsabilidade compartilhada entre trabalhador e empresa e que dores persistentes não devem ser ignoradas nem naturalizadas. Com linguagem acessível e exemplos do cotidiano, tem caráter educativo, não substitui avaliação profissional e é um dos temas mais valorizados em SIPAT e em programas de qualidade de vida."
+      ],
+      "topicos": [
+        "Postura no trabalho em pé e sentado",
+        "Organização do posto de trabalho",
+        "Mobiliário, equipamentos e ferramentas",
+        "Movimentos repetitivos e esforços indevidos",
+        "Pausas e alternância de posições",
+        "Quando procurar orientação"
+      ],
+      "para_quem": [
+        "Equipes operacionais e/ou administrativas",
+        "RH, SESMT e CIPA",
+        "Programas de ergonomia e QVT",
+        "SIPAT e Semana Interna",
+        "Empresas com trabalho em pé ou sentado"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Serve para escritório e para área operacional?",
+          "a": "Sim, a abordagem contempla os dois contextos e pode ser direcionada."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, é um tema muito procurado para a Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Ergonomia no Dia a Dia",
+      "relacionadas": [
+        "ergonomia-operacional",
+        "ergonomia-escritorio-home-office",
+        "ginastica-laboral"
+      ],
+      "imagens": {
+        "hero_alt": "Especialista ajustando a postura de um trabalhador no posto de trabalho"
+      }
     },
     {
       "slug": "nutricao-e-saude",
       "categoria": "saude-qualidade",
-      "status": "catalogo",
-      "titulo": "A Nutricao e a Saúde",
-      "resumo": "Alimentacao para a saúde: grupos de alimentos, mitos e verdades, sodio, vitaminas, acucares, hidratacao, dietas da moda, saúde intestinal e leitura de rotulos.",
-      "tema_whatsapp": "A Nutricao e a Saúde"
+      "status": "publicar",
+      "completo": true,
+      "icone": "heart",
+      "titulo": "A Nutrição e a Saúde",
+      "frase": "Alimentar-se bem é fazer escolhas conscientes que cuidam do corpo, da mente e da qualidade de vida.",
+      "h1": "Palestra sobre Nutrição e Saúde para Empresas",
+      "meta_title": "Palestra sobre Nutrição e Saúde para Empresas | Online",
+      "meta_description": "Palestra de nutrição e saúde para empresas, presencial ou online. Grupos de alimentos, mitos e verdades, hidratação e leitura de rótulos. Peça um orçamento.",
+      "intro": "Uma palestra que apresenta a alimentação como um dos pilares da saúde e da qualidade de vida, com informações práticas para escolhas mais conscientes.",
+      "sobre": [
+        "A alimentação é um dos pilares mais concretos da saúde e da qualidade de vida — e, ao mesmo tempo, um dos temas mais cercados de informação desencontrada, modismos e culpa. Esta palestra apresenta a nutrição de forma leve, prática e sem terrorismo alimentar, ajudando cada participante a fazer escolhas mais conscientes no dia a dia, dentro da sua própria realidade.",
+        "O conteúdo apresenta os grupos de alimentos e suas funções no organismo, discute necessidades e recomendações nutricionais e trabalha o autocuidado sem imposição de restrições radicais ou dietas de sofrimento. A ideia é dar conhecimento para que a pessoa decida melhor, não gerar culpa por cada escolha.",
+        "São enfrentados de forma direta os principais mitos e verdades da alimentação, além de temas do cotidiano como o excesso de sódio, o papel das vitaminas, a diferença entre açúcares e adoçantes, a importância da hidratação e a saúde intestinal. A palestra também ajuda a olhar com senso crítico para as dietas da moda e ensina algo simples e poderoso: a ler os rótulos dos alimentos e entender o que realmente se está consumindo.",
+        "Transformando a nutrição em conhecimento aplicável, a palestra estimula hábitos sustentáveis que cabem na rotina real das pessoas. Tem caráter educativo, não substitui o acompanhamento individualizado de um nutricionista, e se encaixa muito bem em SIPAT, campanhas de saúde e ações de qualidade de vida."
+      ],
+      "topicos": [
+        "Grupos de alimentos e suas funções",
+        "Mitos e verdades na alimentação",
+        "Sódio, vitaminas, açúcares e adoçantes",
+        "Hidratação e saúde intestinal",
+        "Dietas da moda: cuidados",
+        "Leitura de rótulos"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e programas de QVT",
+        "SIPAT e eventos corporativos",
+        "Campanhas de saúde e bem-estar",
+        "Ações de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e exemplos ajustados ao perfil da equipe."
+        },
+        {
+          "q": "A palestra substitui um nutricionista?",
+          "a": "Não. Tem caráter educativo e não substitui avaliação individualizada."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "A Nutrição e a Saúde",
+      "relacionadas": [
+        "qualidade-de-vida",
+        "emagrecimento-com-saude",
+        "atividade-fisica-x-sedentarismo"
+      ],
+      "imagens": {
+        "hero_alt": "Refeição equilibrada e alimentos frescos sobre mesa moderna e limpa"
+      }
     },
     {
       "slug": "atividade-fisica-x-sedentarismo",
       "categoria": "saude-qualidade",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": true,
+      "icone": "activity",
       "titulo": "Atividade Física x Sedentarismo",
-      "resumo": "Importância da atividade física para o metabolismo e o dia a dia, com dicas sobre emagrecimento, hipertrofia, mobilidade e reabilitacao corporal.",
-      "tema_whatsapp": "Atividade Física x Sedentarismo"
+      "frase": "O corpo foi feito para se movimentar: mais movimento, mais capacidade para viver, trabalhar e envelhecer com qualidade.",
+      "h1": "Palestra Atividade Física x Sedentarismo para Empresas",
+      "meta_title": "Palestra Atividade Física x Sedentarismo | Empresas",
+      "meta_description": "Palestra sobre atividade física e sedentarismo para empresas, presencial ou online. Movimento, condicionamento funcional e qualidade de vida. Peça orçamento.",
+      "intro": "Uma palestra de conscientização sobre a importância do movimento para a saúde e a qualidade de vida, com uma reflexão sobre os impactos do sedentarismo na rotina moderna.",
+      "sobre": [
+        "O corpo humano foi feito para se movimentar — e o sedentarismo, hoje reconhecido como um dos maiores fatores de risco à saúde, cobra um preço alto e silencioso. Esta palestra de conscientização mostra, de forma acessível e motivadora, a importância do movimento para a saúde e a qualidade de vida, e provoca uma reflexão honesta sobre os impactos da vida sedentária na rotina moderna, cada vez mais ligada a telas e cadeiras.",
+        "O conteúdo esclarece a relação entre atividade física e metabolismo e apresenta o conceito de condicionamento útil e funcional — aquele que serve para viver melhor o dia a dia. A mensagem é libertadora: não é preciso ser atleta nem viver na academia; é preciso, sim, sair da inércia. Temas como emagrecimento, hipertrofia, mobilidade e reabilitação são tratados de maneira desmistificada, derrubando ideias equivocadas.",
+        "Um ponto central é a diferença entre se exercitar e reduzir o tempo sedentário: mesmo quem treina pode passar horas demais parado, e isso também faz mal. A palestra aborda ainda a relação profunda entre movimento, envelhecimento e autonomia — quanto mais nos movemos ao longo da vida, mais preservamos nossa capacidade de viver com independência.",
+        "Estimulando uma mudança de comportamento respeitosa às condições individuais, a palestra convida cada pessoa a dar o primeiro passo com segurança. Tem caráter educativo e não substitui avaliação ou prescrição de profissionais de educação física e saúde."
+      ],
+      "topicos": [
+        "Atividade física e metabolismo",
+        "Condicionamento útil e funcional",
+        "Emagrecimento, hipertrofia e mobilidade",
+        "Reduzir o tempo sedentário",
+        "Movimento, envelhecimento e autonomia",
+        "Como começar com segurança"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e programas de QVT",
+        "SIPAT e eventos corporativos",
+        "Campanhas de saúde e bem-estar",
+        "Ações de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e exemplos ajustados ao perfil da equipe."
+        },
+        {
+          "q": "Substitui prescrição de exercícios?",
+          "a": "Não. Tem caráter educativo e não substitui avaliação profissional."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Atividade Física x Sedentarismo",
+      "relacionadas": [
+        "qualidade-de-vida",
+        "ginastica-laboral",
+        "emagrecimento-com-saude"
+      ],
+      "imagens": {
+        "hero_alt": "Profissionais em pausa ativa, alongando-se perto de um escritório iluminado"
+      }
     },
     {
       "slug": "dia-das-mulheres",
       "categoria": "campanhas",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": true,
+      "icone": "calendar",
       "titulo": "Dia das Mulheres - Dia Delas",
-      "resumo": "Encontro para valorizar a mulher: identidade, autoestima, equilibrio emocional, proposito e protagonismo, com mensagens de encorajamento e superacao.",
-      "tema_whatsapp": "Dia das Mulheres"
+      "frase": "Quando uma mulher reconhece seu valor e assume seu propósito, transforma a própria história e o mundo ao redor.",
+      "h1": "Palestra Dia das Mulheres para Empresas",
+      "meta_title": "Palestra Dia das Mulheres para Empresas | Dia Delas",
+      "meta_description": "Palestra para o Dia das Mulheres nas empresas, presencial ou online. Valorização, autoestima, propósito e protagonismo feminino. Solicite um orçamento.",
+      "intro": "Um encontro especial para valorizar, reconhecer e fortalecer o papel feminino — mais do que uma homenagem, uma experiência de reflexão, inspiração e conexão.",
+      "sobre": [
+        "Mais do que uma homenagem protocolar, esta palestra transforma o Dia das Mulheres em uma experiência real de reflexão, inspiração e conexão. É um encontro pensado para valorizar, reconhecer e fortalecer cada mulher — não a partir de clichês, mas de um convite sincero para que cada participante olhe para a própria trajetória e reconheça o valor, a força e o potencial que existem em sua história.",
+        "O conteúdo trabalha identidade e autoestima, autocuidado e equilíbrio emocional, propósito e protagonismo. Reforça, com sensibilidade, que cuidar de si não é egoísmo e que reconhecer o próprio valor é o primeiro passo para viver com mais plenitude — no trabalho, nas relações e na vida pessoal. A mulher é celebrada em seus múltiplos papéis, sem ser reduzida a nenhum deles.",
+        "A palestra também abre espaço para a partilha e a troca de experiências, criando um ambiente de acolhimento e pertencimento entre as participantes. Pode incluir dinâmicas e momentos de interação, tornando o encontro mais leve, envolvente e memorável, de acordo com o perfil do público e o objetivo da empresa.",
+        "Ideal para ações internas, eventos e convenções na semana do Dia Internacional da Mulher, é totalmente adaptável ao contexto da organização — de equipes operacionais a lideranças — e entrega, além de conteúdo, uma experiência que valoriza de verdade as mulheres da empresa."
+      ],
+      "topicos": [
+        "Identidade e valor pessoal",
+        "Autoestima e autocuidado",
+        "Equilíbrio emocional",
+        "Propósito e significado",
+        "Protagonismo feminino",
+        "Interação e partilha de experiências"
+      ],
+      "para_quem": [
+        "Empresas na semana do Dia das Mulheres",
+        "Equipes e colaboradoras",
+        "RH e ações internas",
+        "Convenções e eventos",
+        "Ações de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Dá para incluir dinâmicas e momentos de partilha?",
+          "a": "Sim, o formato pode ser adaptado ao perfil do público."
+        },
+        {
+          "q": "Serve para evento presencial e online?",
+          "a": "Sim, funciona bem nos dois formatos."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Dia das Mulheres",
+      "relacionadas": [
+        "outubro-rosa",
+        "inteligencia-emocional",
+        "proposito-e-felicidade"
+      ],
+      "imagens": {
+        "hero_alt": "Mulheres profissionais juntas, representando empoderamento e celebração"
+      }
     },
     {
       "slug": "trajeto-seguro",
       "categoria": "seguranca",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": true,
+      "icone": "shield",
       "titulo": "Trajeto Seguro",
-      "resumo": "Prevenção de acidentes no percurso casa-trabalho: direcao defensiva, atenção plena, velocidade segura, celular ao volante, fadiga e autocuidado.",
-      "tema_whatsapp": "Trajeto Seguro"
+      "frase": "O trabalho começa quando saímos de casa — e a segurança precisa acompanhar cada quilômetro.",
+      "h1": "Palestra Trajeto Seguro para Empresas",
+      "meta_title": "Palestra Trajeto Seguro para Empresas | Segurança no Trânsito",
+      "meta_description": "Palestra sobre segurança no trajeto casa-trabalho, presencial ou online. Direção defensiva, atenção, fadiga e prevenção de acidentes. Solicite um orçamento.",
+      "intro": "Uma palestra dinâmica e conscientizadora sobre a segurança no trajeto diário entre casa e trabalho, qualquer que seja o meio de transporte.",
+      "sobre": [
+        "O trabalho, na prática, começa no momento em que saímos de casa — e é justamente no trajeto diário que muitos acidentes acontecem, muitas vezes graves. Esta palestra dinâmica e conscientizadora trata da segurança no percurso entre casa e trabalho, qualquer que seja o meio de transporte: carro, moto, bicicleta, transporte coletivo ou a pé.",
+        "O grande risco do trajeto é a familiaridade: por conhecer o caminho de cor, o cérebro entra em piloto automático e cria uma falsa sensação de segurança. A palestra desperta novamente a percepção de risco, abordando direção defensiva, atenção plena, velocidade compatível com as condições da via e o perigo real do uso do celular ao volante — uma das maiores causas de acidentes atuais.",
+        "São tratados os cuidados específicos de cada modal, com atenção especial aos motociclistas e ciclistas, mais expostos e vulneráveis. A palestra também enfrenta fatores humanos decisivos: a fadiga e o sono, a imprudência, a pressa e o excesso de confiança de quem dirige há muitos anos e acredita que 'nunca vai acontecer comigo'.",
+        "Com abordagem leve, interativa e cheia de exemplos do cotidiano, a palestra reforça o autocuidado e a ideia de que a segurança no trânsito é um compromisso individual e coletivo. É um tema central para a SIPAT, já que acidentes de trajeto são equiparados a acidentes de trabalho e impactam diretamente empresa e famílias."
+      ],
+      "topicos": [
+        "Direção defensiva e atenção plena",
+        "Velocidade segura e condições da via",
+        "Celular ao volante e distrações",
+        "Cuidados por meio de transporte",
+        "Fadiga, imprudência e excesso de confiança",
+        "Autocuidado no trânsito"
+      ],
+      "para_quem": [
+        "Indústrias e empresas de todos os setores",
+        "Equipes operacionais e administrativas",
+        "CIPA, SESMT e RH",
+        "SIPAT e Semana Interna",
+        "Programas de segurança do trabalho"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, acidentes de trajeto são um tema central da Semana Interna."
+        },
+        {
+          "q": "Dá para adaptar aos meios de transporte da nossa equipe?",
+          "a": "Sim, o conteúdo pode focar carro, moto, bicicleta ou transporte coletivo."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Trajeto Seguro",
+      "relacionadas": [
+        "comportamento-seguro",
+        "pare-pense-aja",
+        "sipat"
+      ],
+      "imagens": {
+        "hero_alt": "Condutor atento no trânsito urbano, com direção defensiva"
+      }
     },
     {
       "slug": "ists-e-saude-sexual",
       "categoria": "saude-qualidade",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": true,
+      "icone": "heart",
       "titulo": "As ISTs e a Saúde Sexual",
-      "resumo": "Prevenção e educacao sexual: principais ISTs, transmissao, prevenção, vacinacao, diagnóstico precoce e responsabilidade afetiva.",
-      "tema_whatsapp": "As ISTs e a Saúde Sexual"
+      "frase": "Informação protege, prevenção cuida e responsabilidade transforma escolhas em atitudes que preservam vidas.",
+      "h1": "Palestra sobre ISTs e Saúde Sexual para Empresas",
+      "meta_title": "Palestra sobre ISTs e Saúde Sexual para Empresas | Online",
+      "meta_description": "Palestra educativa sobre ISTs e saúde sexual para empresas, presencial ou online. Prevenção, vacinação, diagnóstico precoce e responsabilidade. Peça orçamento.",
+      "intro": "Uma palestra educativa e responsável sobre prevenção e saúde sexual, promovendo conhecimento sobre as Infecções Sexualmente Transmissíveis e a importância do diagnóstico e do cuidado.",
+      "sobre": [
+        "Falar de saúde sexual com seriedade, respeito e informação de qualidade ainda é raro — e necessário. Esta palestra educativa aborda a prevenção e a saúde sexual promovendo conhecimento sobre as Infecções Sexualmente Transmissíveis (ISTs) e a importância do diagnóstico precoce e do cuidado, com uma linguagem madura, sem constrangimento e sem julgamentos.",
+        "O conteúdo apresenta as principais ISTs, suas formas de transmissão, sinais e sintomas, e reforça um alerta essencial: a ausência de sintomas não significa ausência de infecção, o que torna a testagem regular ainda mais importante. São detalhados os métodos de prevenção, incluindo o uso correto do preservativo, a testagem e a vacinação disponível, sempre com base em informação confiável.",
+        "A palestra discute mitos e verdades sobre sexualidade e trabalha temas mais amplos como a responsabilidade afetiva, o autocuidado e os impactos físicos e emocionais das ISTs. Reforça a importância do diagnóstico precoce e do diálogo aberto com profissionais de saúde, combatendo o medo e a desinformação que muitas vezes atrasam o cuidado.",
+        "Adaptável para diferentes públicos — de adolescentes a adultos — conforme o contexto, a palestra tem caráter educativo e não substitui atendimento individual. É um tema relevante para campanhas de saúde, SIPAT e ações de qualidade de vida, sempre tratado com a seriedade e o respeito que merece."
+      ],
+      "topicos": [
+        "Principais ISTs e formas de transmissão",
+        "Prevenção e uso correto do preservativo",
+        "Testagem e vacinação",
+        "Mitos e verdades sobre sexualidade",
+        "Responsabilidade afetiva e autocuidado",
+        "Diagnóstico precoce e diálogo com a saúde"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e programas de QVT",
+        "SIPAT e eventos corporativos",
+        "Campanhas de saúde",
+        "Ações de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Pode ser adaptada para diferentes públicos?",
+          "a": "Sim, a linguagem se ajusta a adolescentes ou adultos, conforme o contexto."
+        },
+        {
+          "q": "A palestra realiza diagnósticos?",
+          "a": "Não. Tem caráter educativo e não substitui atendimento individual."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "As ISTs e a Saúde Sexual",
+      "relacionadas": [
+        "qualidade-de-vida",
+        "saude-mental",
+        "nutricao-e-saude"
+      ],
+      "imagens": {
+        "hero_alt": "Profissional de saúde em conversa educativa e respeitosa com adultos"
+      }
     },
     {
       "slug": "pare-pense-aja",
       "categoria": "seguranca",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": true,
+      "icone": "shield",
       "titulo": "Pare, Pense, Aja",
-      "resumo": "Cultura do cuidado: parar, pensar nos riscos e agir com segurança antes de qualquer atividade, com percepção de riscos e responsabilidade coletiva.",
-      "tema_whatsapp": "Pare, Pense, Aja"
+      "frase": "Antes de fazer, pare. Antes de decidir, pense. Antes de continuar, aja com segurança.",
+      "h1": "Palestra Pare, Pense, Aja para Empresas",
+      "meta_title": "Palestra Pare, Pense, Aja | Segurança do Trabalho",
+      "meta_description": "Palestra de segurança do trabalho Pare, Pense, Aja, presencial ou online. Percepção de risco, análise e decisão segura antes da tarefa. Solicite um orçamento.",
+      "intro": "Uma palestra de conscientização que coloca a segurança como escolha diária: parar para observar, pensar nos riscos e agir com segurança antes de cada tarefa.",
+      "sobre": [
+        "Pare, Pense, Aja parte de uma ideia simples e poderosa: muitos acidentes graves poderiam ser evitados por um único instante de pausa e reflexão antes da ação. Esta palestra de conscientização transforma esse princípio em um hábito mental e comportamental, mostrando que a segurança é uma escolha feita a cada tarefa, o dia inteiro, dentro e fora do trabalho.",
+        "O método é trabalhado em três movimentos claros e memoráveis. PARE: interromper o piloto automático, observar o ambiente, conferir as condições, os equipamentos e o entorno antes de começar. PENSE: avaliar os perigos presentes, imaginar o que pode dar errado e quais seriam as consequências para si e para os colegas. AJA: agir de forma segura, corrigindo o que for necessário e transformando a percepção de risco em atitude concreta.",
+        "A partir desse tripé, a palestra aprofunda a percepção e a análise de riscos, a responsabilidade coletiva pela segurança e o cumprimento consciente das normas — não por medo da punição, mas por entendimento. Um alerta importante é desmontado: o fato de nunca ter acontecido um acidente não significa que o comportamento é seguro; significa, muitas vezes, apenas que a sorte ainda não acabou.",
+        "Com exemplos adaptáveis às atividades críticas da empresa e linguagem acessível, é uma das palestras mais eficazes para SIPAT e para o reforço diário da cultura de prevenção, deixando um lema prático que a equipe leva para o dia a dia."
+      ],
+      "topicos": [
+        "PARE: observar antes de agir",
+        "PENSE: avaliar riscos e consequências",
+        "AJA: transformar percepção em atitude",
+        "Percepção e análise de riscos",
+        "Responsabilidade coletiva",
+        "Cumprimento consciente de normas"
+      ],
+      "para_quem": [
+        "Indústrias e empresas de todos os setores",
+        "Equipes operacionais e administrativas",
+        "CIPA, SESMT e RH",
+        "SIPAT e Semana Interna",
+        "Programas de segurança do trabalho"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Pode ser adaptada às nossas atividades críticas?",
+          "a": "Sim, os exemplos podem refletir a realidade da operação."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, é um dos temas mais procurados para a Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Pare, Pense, Aja",
+      "relacionadas": [
+        "comportamento-seguro",
+        "seguranca-regras-de-ouro",
+        "sipat"
+      ],
+      "imagens": {
+        "hero_alt": "Trabalhador parando para pensar antes de agir em ambiente industrial"
+      }
     },
     {
       "slug": "governanca-e-gestao-de-riscos",
       "categoria": "lideranca",
-      "status": "catalogo",
-      "titulo": "Governanca e Gestão de Riscos",
-      "resumo": "Para lideres e gestores públicos: governar em tempos de incerteza, antecipar riscos, integridade, transparencia e geracao de valor público.",
-      "tema_whatsapp": "Governanca e Gestão de Riscos"
+      "status": "publicar",
+      "completo": true,
+      "icone": "target",
+      "titulo": "Governança e Gestão de Riscos",
+      "frase": "Governar bem é antecipar o que pode dar errado e decidir com responsabilidade.",
+      "h1": "Palestra Governança e Gestão de Riscos",
+      "meta_title": "Palestra Governança e Gestão de Riscos | Liderança Pública",
+      "meta_description": "Palestra sobre governança e gestão de riscos para líderes e gestores, presencial ou online. Decisão em cenários de incerteza e valor público. Peça orçamento.",
+      "intro": "Uma palestra para líderes e gestores sobre como tomar melhores decisões em ambientes marcados por incerteza, mudanças e riscos cada vez mais complexos.",
+      "sobre": [
+        "Em um mundo marcado por incertezas, mudanças rápidas e riscos cada vez mais complexos, a capacidade de tomar boas decisões sob pressão tornou-se uma das competências mais valiosas para líderes e gestores. Esta palestra apresenta a governança e a gestão de riscos não como um amontoado de normas burocráticas, mas como elementos estratégicos para fortalecer instituições, qualificar decisões e ampliar a capacidade de entregar resultados consistentes.",
+        "O conteúdo parte de uma pergunta provocativa: por que algumas organizações atravessam crises com relativa segurança enquanto outras são surpreendidas por problemas que, no fundo, eram previsíveis? A resposta passa por cultura, preparo e maturidade na forma de perceber e tratar riscos — e é isso que a palestra desenvolve, conectando teoria e prática de gestão.",
+        "São trabalhados temas como a cultura de percepção de riscos em todos os níveis, a integridade e a transparência como base da confiança, a decisão fundamentada em evidências e dados em vez de achismos, e a resiliência institucional — a capacidade de resistir, adaptar-se e se recuperar diante de adversidades. A proposta é migrar de uma postura reativa, que apaga incêndios, para uma atuação antecipatória e responsável.",
+        "Aplicável tanto à gestão pública quanto à privada, com exemplos adaptados ao contexto do público, a palestra é ideal para lideranças, convenções e treinamentos de gestão. Entrega uma mudança de mentalidade: governar bem é, antes de tudo, antecipar o que pode dar errado e decidir com responsabilidade e visão de longo prazo."
+      ],
+      "topicos": [
+        "Governança, liderança e decisão",
+        "Gestão de riscos como planejamento",
+        "Cultura de percepção de riscos",
+        "Integridade e transparência",
+        "Decisão baseada em evidências",
+        "Resiliência institucional"
+      ],
+      "para_quem": [
+        "Líderes e gestores públicos e privados",
+        "Alta e média liderança",
+        "Áreas de risco, controle e compliance",
+        "Convenções e treinamentos de gestão",
+        "Organizações de todos os setores"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Serve para gestão pública e privada?",
+          "a": "Sim, os princípios se aplicam a ambos, com exemplos adaptados."
+        },
+        {
+          "q": "É indicada para convenção de liderança?",
+          "a": "Sim, funciona bem em convenções e treinamentos executivos."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Governança e Gestão de Riscos",
+      "relacionadas": [
+        "qualidade-e-excelencia",
+        "clima-organizacional",
+        "habitos-e-pessoas-eficazes"
+      ],
+      "imagens": {
+        "hero_alt": "Líderes em reunião estratégica de decisão, com dados em tela"
+      }
     },
     {
       "slug": "qualidade-de-vida",
       "categoria": "saude-qualidade",
-      "status": "catalogo",
-      "titulo": "Qualidade de Vida e Estilo de Vida Saudavel",
-      "resumo": "Hábitos saudaveis para viver melhor: alimentacao, atividade física, sono, saúde emocional, estresse, hidratacao e prevenção de doencas cronicas.",
-      "tema_whatsapp": "Qualidade de Vida"
+      "status": "publicar",
+      "completo": true,
+      "icone": "heart",
+      "titulo": "Qualidade de Vida e Estilo de Vida Saudável",
+      "frase": "Qualidade de vida é construída diariamente pelas escolhas que fazemos e pelos hábitos que cultivamos.",
+      "h1": "Palestra Qualidade de Vida para Empresas",
+      "meta_title": "Palestra Qualidade de Vida para Empresas | Bem-estar",
+      "meta_description": "Palestra de qualidade de vida e estilo de vida saudável para empresas, presencial ou online. Alimentação, sono, saúde emocional e prevenção. Peça orçamento.",
+      "intro": "Uma palestra de conscientização e motivação que convida a cuidar da saúde antes que ela cobre a conta, com hábitos práticos e sustentáveis para o dia a dia.",
+      "sobre": [
+        "Qualidade de vida não é resultado de uma grande decisão isolada, mas da soma de pequenas escolhas repetidas todos os dias. Esta palestra de conscientização e motivação faz um convite direto e transformador: cuidar da saúde antes que ela cobre a conta. Com abordagem prática e realista, mostra como hábitos construídos ao longo da vida moldam nossa disposição, bem-estar, produtividade e saúde no presente e no futuro.",
+        "O conteúdo passa pelos grandes pilares de um estilo de vida saudável: alimentação equilibrada, atividade física regular, qualidade do sono, saúde mental e emocional, gerenciamento do estresse, hidratação e o equilíbrio — tão desafiador hoje — entre vida pessoal e profissional. Cada tema é tratado de forma acessível, com foco no que é possível aplicar na rotina real.",
+        "São abordadas também a redução de hábitos nocivos, a importância do autocuidado e da prevenção de doenças crônicas, e o valor do acompanhamento periódico da saúde — os check-ups que tantas pessoas adiam. A palestra desfaz a ideia paralisante de que é preciso mudar tudo de uma vez, mostrando que a transformação começa com um único passo.",
+        "Com uma mensagem inspiradora e prática, a palestra motiva cada participante a assumir o protagonismo da própria saúde. É um dos temas mais versáteis do catálogo, ideal para SIPAT, campanhas de bem-estar, convenções e ações de endomarketing em empresas de qualquer setor."
+      ],
+      "topicos": [
+        "Alimentação equilibrada",
+        "Atividade física e sono",
+        "Saúde mental e gestão do estresse",
+        "Equilíbrio vida pessoal e profissional",
+        "Redução de hábitos nocivos",
+        "Prevenção de doenças crônicas"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e programas de QVT",
+        "SIPAT e eventos corporativos",
+        "Campanhas de saúde e bem-estar",
+        "Ações de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e exemplos ajustados ao perfil da equipe."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, é um tema muito procurado para a Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Qualidade de Vida",
+      "relacionadas": [
+        "nutricao-e-saude",
+        "atividade-fisica-x-sedentarismo",
+        "saude-mental"
+      ],
+      "imagens": {
+        "hero_alt": "Profissional em rotina de bem-estar, com luz natural, calma e vitalidade"
+      }
     },
     {
       "slug": "seguranca-regras-de-ouro",
       "categoria": "seguranca",
-      "status": "catalogo",
-      "titulo": "Segurança e às Regras de Ouro",
-      "resumo": "Prevenção de acidentes dentro e fora do trabalho, adaptavel às Regras de Ouro da empresa: percepção de riscos, EPIs, comunicação e atividades criticas.",
-      "tema_whatsapp": "Segurança e às Regras de Ouro"
+      "status": "publicar",
+      "completo": true,
+      "icone": "shield",
+      "titulo": "Segurança e as Regras de Ouro",
+      "frase": "Segurança não é apenas uma regra para cumprir no trabalho; é uma atitude para preservar a vida em todos os lugares.",
+      "h1": "Palestra Segurança e as Regras de Ouro",
+      "meta_title": "Palestra Segurança e as Regras de Ouro | Empresas",
+      "meta_description": "Palestra de segurança e Regras de Ouro para empresas, presencial ou online. Prevenção de acidentes dentro e fora do trabalho. Solicite um orçamento.",
+      "intro": "Uma palestra de conscientização que fortalece a cultura de prevenção e o comportamento seguro, mostrando que segurança é uma atitude diante da vida — no trabalho, no trânsito, em casa e no lazer.",
+      "sobre": [
+        "Esta palestra de conscientização fortalece a cultura de prevenção mostrando que segurança não é apenas uma regra a cumprir no trabalho — é uma atitude diante da vida, válida no chão de fábrica, no trânsito, em casa e no lazer. O grande diferencial é a total adaptabilidade às Regras de Ouro, aos valores e aos procedimentos já adotados pela empresa, reforçando o que a organização já construiu em vez de trazer um discurso genérico.",
+        "O conteúdo trabalha a percepção e a análise de riscos, a importância de avaliar cada tarefa antes da execução, o comportamento seguro e o uso correto dos EPIs. Reforça a ideia de responsabilidade individual e compartilhada: cada um responde pela própria segurança, mas também tem o dever de olhar pelo colega e de comunicar situações de risco em vez de ignorá-las.",
+        "As Regras de Ouro — aquelas normas inegociáveis ligadas às atividades de maior risco — são colocadas em destaque, com a compreensão do porquê de cada uma existir. A palestra mostra que a regra mais importante é sempre aquela que protege a vida, e que segui-la é um ato de respeito consigo mesmo e com quem espera cada trabalhador em casa.",
+        "Ao ampliar o conceito de segurança para além dos portões da empresa, a palestra ajuda a criar uma consciência que acompanha a pessoa 24 horas por dia. A cultura de segurança mais forte, afinal, é aquela que continua existindo mesmo quando ninguém está olhando."
+      ],
+      "topicos": [
+        "Percepção e análise de riscos",
+        "Comportamento seguro e atitudes preventivas",
+        "Uso correto dos EPIs",
+        "Responsabilidade individual e compartilhada",
+        "Regras de Ouro e atividades críticas",
+        "Segurança dentro e fora do trabalho"
+      ],
+      "para_quem": [
+        "Indústrias e empresas de todos os setores",
+        "Equipes operacionais e administrativas",
+        "CIPA, SESMT e RH",
+        "SIPAT e Semana Interna",
+        "Programas de segurança do trabalho"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "A palestra pode ser adaptada às nossas Regras de Ouro?",
+          "a": "Sim, esse é justamente um dos diferenciais do conteúdo."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, é um dos temas mais procurados para a Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Segurança e as Regras de Ouro",
+      "relacionadas": [
+        "comportamento-seguro",
+        "pare-pense-aja",
+        "sipat"
+      ],
+      "imagens": {
+        "hero_alt": "Trabalhador seguindo regras de ouro de segurança no chão de fábrica"
+      }
     },
     {
       "slug": "ergonomia-operacional",
       "categoria": "ergonomia",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "activity",
       "titulo": "Ergonomia Operacional",
-      "resumo": "Ergonomia em ambientes operacionais: postura, uso de maquinas, levantamento de cargas, LER/DORT, pausas e consciencia corporal.",
-      "tema_whatsapp": "Ergonomia Operacional"
+      "frase": "Trabalhar com força é necessário; trabalhar com inteligência é essencial. Ergonomia é proteger o corpo enquanto trabalhamos.",
+      "h1": "Palestra Ergonomia Operacional para Empresas",
+      "meta_title": "Palestra Ergonomia Operacional | Prevenção de Lesões",
+      "meta_description": "Palestra de ergonomia operacional para empresas, presencial ou online. Postura, levantamento de cargas, LER/DORT e prevenção da fadiga. Peça um orçamento.",
+      "intro": "Uma palestra prática voltada a profissionais de atividades operacionais, mostrando como pequenos ajustes preservam a saúde e a capacidade física do trabalhador.",
+      "sobre": [
+        "Voltada a quem levanta cargas, opera máquinas e realiza movimentos repetitivos, a palestra desenvolve a consciência ergonômica: postura durante a execução, uso correto de ferramentas e equipamentos, movimentação e levantamento de cargas, e prevenção de LER/DORT.",
+        "Trata da organização do posto, das pausas e da alternância de atividades, da consciência corporal e da prevenção da fadiga física, mostrando que ergonomia e produtividade caminham juntas. Reforça a comunicação de desconfortos e não substitui avaliações profissionais."
+      ],
+      "topicos": [
+        "Postura na execução das atividades",
+        "Levantamento e movimentação de cargas",
+        "Uso correto de máquinas e ferramentas",
+        "Prevenção de LER/DORT",
+        "Pausas e alternância de atividades",
+        "Consciência corporal e fadiga"
+      ],
+      "para_quem": [
+        "Equipes operacionais e industriais",
+        "RH, SESMT e CIPA",
+        "Programas de ergonomia e QVT",
+        "SIPAT e Semana Interna",
+        "Empresas com esforço físico no trabalho"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É focada em atividades operacionais?",
+          "a": "Sim, com exemplos do dia a dia da operação."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, é um tema muito procurado para a Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Ergonomia Operacional",
+      "relacionadas": [
+        "ergonomia-no-dia-a-dia",
+        "ginastica-laboral",
+        "sipat"
+      ],
+      "imagens": {
+        "hero_alt": "Trabalhador levantando carga com postura correta orientado por especialista"
+      }
     },
     {
       "slug": "ergonomia-escritorio-home-office",
       "categoria": "ergonomia",
-      "status": "catalogo",
-      "titulo": "Ergonomia para Escritorios e Home Office",
-      "resumo": "Ergonomia para quem trabalha sentado: regulagem da cadeira e estacao, telas, teclado e mouse, pausas ativas, fadiga visual e LER/DORT.",
-      "tema_whatsapp": "Ergonomia para Escritorios e Home Office"
+      "status": "publicar",
+      "completo": false,
+      "icone": "activity",
+      "titulo": "Ergonomia para Escritórios e Home Office",
+      "frase": "Seu corpo também trabalha quando você está sentado: organize seu espaço, movimente-se e transforme conforto em saúde.",
+      "h1": "Palestra Ergonomia para Escritório e Home Office",
+      "meta_title": "Palestra Ergonomia Escritório e Home Office | Empresas",
+      "meta_description": "Palestra de ergonomia para escritório e home office, presencial ou online. Postura, estação de trabalho, pausas ativas e fadiga visual. Solicite um orçamento.",
+      "intro": "Uma palestra prática para quem trabalha sentado em escritórios ou home office, mostrando como organizar o espaço e movimentar-se para reduzir dores e desconfortos.",
+      "sobre": [
+        "A palestra trata da postura e da organização da estação de trabalho: regulagem da cadeira, posicionamento da tela, teclado e mouse — inclusive os desafios dos notebooks. Reforça a importância das pausas ativas e da movimentação, já que não basta ter uma boa estação se o corpo fica imóvel por horas.",
+        "Aborda a prevenção de LER/DORT, a fadiga visual, o impacto do uso excessivo de telas e as situações típicas do home office (sofá, cama, mesa da cozinha). Mostra como conforto, concentração e produtividade estão conectados. Não substitui avaliação profissional."
+      ],
+      "topicos": [
+        "Postura e organização da estação",
+        "Cadeira, tela, teclado e mouse",
+        "Pausas ativas e movimentação",
+        "Prevenção de LER/DORT",
+        "Fadiga visual e uso de telas",
+        "Adaptações para o home office"
+      ],
+      "para_quem": [
+        "Equipes administrativas e de escritório",
+        "Times em home office ou híbrido",
+        "RH, SESMT e CIPA",
+        "Programas de ergonomia e QVT",
+        "SIPAT e Semana Interna"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Serve para equipes em home office?",
+          "a": "Sim, com orientações específicas para o trabalho remoto."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, especialmente para áreas administrativas."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Ergonomia para Escritórios e Home Office",
+      "relacionadas": [
+        "ergonomia-no-dia-a-dia",
+        "ginastica-laboral",
+        "qualidade-de-vida"
+      ],
+      "imagens": {
+        "hero_alt": "Estação de home office bem organizada, com montagem ergonômica e luz natural"
+      }
     },
     {
       "slug": "inteligencia-emocional",
       "categoria": "saude-mental",
-      "status": "catalogo",
-      "titulo": "Inteligencia Emocional",
-      "resumo": "Competencia-chave do trabalho: autoconhecimento, autocontrole, empatia, comunicação assertiva, resiliencia e gestão de conflitos.",
-      "tema_whatsapp": "Inteligencia Emocional"
+      "status": "publicar",
+      "completo": false,
+      "icone": "brain",
+      "titulo": "Inteligência Emocional",
+      "frase": "Reconhecer e administrar as próprias emoções é uma das competências mais valiosas no trabalho e na vida.",
+      "h1": "Palestra Inteligência Emocional para Empresas",
+      "meta_title": "Palestra Inteligência Emocional para Empresas | Online",
+      "meta_description": "Palestra de inteligência emocional para empresas, presencial ou online. Autoconhecimento, empatia, comunicação assertiva e gestão de conflitos. Peça orçamento.",
+      "intro": "Uma palestra sobre inteligência emocional como competência-chave para o desenvolvimento pessoal e profissional, relações mais saudáveis e ambientes mais produtivos.",
+      "sobre": [
+        "A palestra trabalha autoconhecimento, autocontrole emocional, empatia, comunicação assertiva e resiliência, apresentando estratégias práticas para identificar, compreender e administrar as próprias emoções diante de pressões, desafios e mudanças.",
+        "Aborda a gestão do estresse, a resolução de conflitos, o trabalho em equipe e a tomada de decisões conscientes, contribuindo para um ambiente mais colaborativo, seguro e humanizado."
+      ],
+      "topicos": [
+        "Autoconhecimento e autocontrole",
+        "Empatia e comunicação assertiva",
+        "Resiliência diante de desafios",
+        "Gestão do estresse",
+        "Resolução de conflitos",
+        "Decisões conscientes e trabalho em equipe"
+      ],
+      "para_quem": [
+        "Líderes e equipes",
+        "RH e desenvolvimento",
+        "Convenções e treinamentos",
+        "Empresas de todos os setores",
+        "Programas de liderança e QVT"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É indicada para lideranças?",
+          "a": "Sim, é muito procurada para desenvolvimento de líderes e equipes."
+        },
+        {
+          "q": "Serve para convenção ou treinamento?",
+          "a": "Sim, funciona bem em convenções e programas de desenvolvimento."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Inteligência Emocional",
+      "relacionadas": [
+        "saude-mental",
+        "comunicacao-nao-violenta",
+        "gestao-do-tempo"
+      ],
+      "imagens": {
+        "hero_alt": "Profissional equilibrado e consciente em meio à rotina de trabalho"
+      }
     },
     {
       "slug": "educacao-financeira",
       "categoria": "saude-qualidade",
-      "status": "catalogo",
-      "titulo": "Educacao Financeira e a Saúde",
-      "resumo": "Financas com qualidade de vida: orçamento, consumo consciente, credito, juros, reserva de emergencia e metas financeiras.",
-      "tema_whatsapp": "Educacao Financeira"
+      "status": "publicar",
+      "completo": false,
+      "icone": "target",
+      "titulo": "Educação Financeira e a Saúde",
+      "frase": "Organizar as finanças é reduzir o estresse e conquistar mais equilíbrio e qualidade de vida.",
+      "h1": "Palestra Educação Financeira para Empresas",
+      "meta_title": "Palestra Educação Financeira para Empresas | Online",
+      "meta_description": "Palestra de educação financeira para empresas, presencial ou online. Orçamento, consumo consciente, crédito, reserva e metas financeiras. Peça um orçamento.",
+      "intro": "Uma palestra sobre educação financeira como ferramenta para promover qualidade de vida, reduzir o estresse e trazer mais equilíbrio às finanças pessoais e familiares.",
+      "sobre": [
+        "A palestra aborda economia doméstica, planejamento financeiro, elaboração de orçamento e controle de receitas e despesas. Trata do consumo consciente, do uso responsável do crédito, de juros, endividamento e da formação de reserva de emergência.",
+        "Ajuda os participantes a definir metas e a organizar as finanças no curto, médio e longo prazo, desenvolvendo hábitos financeiros saudáveis e mais segurança e tranquilidade para si e sua família."
+      ],
+      "topicos": [
+        "Orçamento e controle de receitas e despesas",
+        "Consumo consciente",
+        "Uso responsável do crédito e juros",
+        "Endividamento e como sair dele",
+        "Reserva de emergência",
+        "Metas e planejamento financeiro"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e programas de QVT",
+        "SIPAT e eventos corporativos",
+        "Campanhas de bem-estar financeiro",
+        "Ações de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e exemplos ajustados ao perfil da equipe."
+        },
+        {
+          "q": "É indicada para a SIPAT ou semana de bem-estar?",
+          "a": "Sim, o bem-estar financeiro é um tema cada vez mais procurado."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Educação Financeira",
+      "relacionadas": [
+        "qualidade-de-vida",
+        "habitos-e-pessoas-eficazes",
+        "proposito-e-felicidade"
+      ],
+      "imagens": {
+        "hero_alt": "Pessoa organizando as finanças com planejamento em mesa limpa"
+      }
     },
     {
       "slug": "adiccao-tecnologica",
       "categoria": "saude-mental",
-      "status": "catalogo",
-      "titulo": "Adiccao Tecnologica",
-      "resumo": "Prevenindo a dependencia digital: uso consciente de telas, foco e produtividade, sono, saúde mental e equilibrio entre o digital e a vida real.",
-      "tema_whatsapp": "Adiccao Tecnologica"
+      "status": "publicar",
+      "completo": false,
+      "icone": "brain",
+      "titulo": "Adicção Tecnológica",
+      "frase": "Aprender a controlar a tecnologia, em vez de ser controlado por ela, é essencial para o foco e o bem-estar.",
+      "h1": "Palestra Adicção Tecnológica para Empresas",
+      "meta_title": "Palestra Dependência Digital para Empresas | Online",
+      "meta_description": "Palestra sobre adicção tecnológica e dependência digital para empresas, presencial ou online. Uso consciente, foco, sono e equilíbrio. Solicite um orçamento.",
+      "intro": "Uma palestra sobre os impactos do uso excessivo da tecnologia na saúde física, mental e emocional e nos relacionamentos, com estratégias para uma relação mais saudável com o digital.",
+      "sobre": [
+        "A palestra trata da dependência de telas, do uso consciente de smartphones, redes sociais e aplicativos, do excesso de notificações e das distrações digitais que prejudicam o foco, a produtividade e a qualidade do sono.",
+        "Apresenta estratégias práticas para equilibrar o mundo digital e a vida real, ajudando os participantes a fazer um uso inteligente dos recursos e a recuperar concentração, bem-estar e desempenho."
+      ],
+      "topicos": [
+        "Dependência de telas e notificações",
+        "Uso consciente de redes e apps",
+        "Foco, produtividade e distrações",
+        "Impacto no sono e na saúde mental",
+        "Equilíbrio entre digital e vida real",
+        "Estratégias de uso saudável"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "Líderes e RH",
+        "SIPAT e eventos corporativos",
+        "Campanhas de saúde e produtividade",
+        "Ações de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e exemplos ajustados ao perfil da equipe."
+        },
+        {
+          "q": "Ajuda na produtividade da equipe?",
+          "a": "Sim, foco e uso consciente da tecnologia são eixos centrais."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Adicção Tecnológica",
+      "relacionadas": [
+        "gestao-do-tempo",
+        "saude-mental",
+        "qualidade-de-vida"
+      ],
+      "imagens": {
+        "hero_alt": "Profissional deixando o celular de lado para focar no trabalho"
+      }
     },
     {
       "slug": "primeiros-socorros",
       "categoria": "seguranca",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "shield",
       "titulo": "Primeiros Socorros",
-      "resumo": "Procedimentos básicos de primeiros socorros: avaliação da vitima, acionamento de emergencia e o que fazer (e o que não fazer) em cada situação.",
-      "tema_whatsapp": "Primeiros Socorros"
+      "frase": "Saber o que fazer — e o que não fazer — nos primeiros minutos pode preservar vidas.",
+      "h1": "Palestra Primeiros Socorros para Empresas",
+      "meta_title": "Palestra Primeiros Socorros para Empresas | Online",
+      "meta_description": "Palestra de primeiros socorros para empresas, presencial ou online. Avaliação da vítima, acionamento de emergência e condutas seguras. Solicite um orçamento.",
+      "intro": "Uma palestra sobre procedimentos básicos de primeiros socorros e a importância de agir com rapidez, segurança e responsabilidade diante de emergências.",
+      "sobre": [
+        "A palestra aborda a avaliação inicial da vítima, o acionamento correto do serviço de emergência e, mediante briefing, condutas em situações como desmaios, engasgos, crises convulsivas, controle de hemorragias e cuidados com torções, luxações e fraturas.",
+        "Enfatiza o que deve e, principalmente, o que não deve ser feito em cada situação, capacitando os participantes a adotar condutas preventivas e seguras até a chegada do atendimento especializado, dentro e fora do trabalho."
+      ],
+      "topicos": [
+        "Avaliação inicial da vítima",
+        "Acionamento do serviço de emergência",
+        "Desmaios, engasgos e convulsões",
+        "Controle de hemorragias",
+        "Torções, luxações e fraturas",
+        "O que fazer e o que não fazer"
+      ],
+      "para_quem": [
+        "Indústrias e empresas de todos os setores",
+        "CIPA, SESMT e brigadas",
+        "Equipes operacionais e administrativas",
+        "SIPAT e Semana Interna",
+        "Programas de segurança do trabalho"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "O conteúdo pode ser direcionado por briefing?",
+          "a": "Sim, os temas priorizados podem ser definidos conforme a realidade da empresa."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, é um tema muito procurado para a Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Primeiros Socorros",
+      "relacionadas": [
+        "comportamento-seguro",
+        "sipat",
+        "seguranca-regras-de-ouro"
+      ],
+      "imagens": {
+        "hero_alt": "Instrutor demonstrando primeiros socorros para colaboradores atentos"
+      }
     },
     {
       "slug": "cinco-sensos-5s",
       "categoria": "lideranca",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "target",
       "titulo": "5S - Cinco Sensos no Trabalho e na Vida",
-      "resumo": "Metodologia 5S de organização, disciplina e melhoria continua para ambientes mais seguros, produtivos e eficientes.",
-      "tema_whatsapp": "5S - Cinco Sensos"
+      "frase": "Organização, disciplina e melhoria contínua transformam o ambiente de trabalho e a vida.",
+      "h1": "Palestra 5S para Empresas",
+      "meta_title": "Palestra 5S para Empresas | Organização e Qualidade",
+      "meta_description": "Palestra sobre o programa 5S para empresas, presencial ou online. Organização, padronização, disciplina e melhoria contínua. Solicite um orçamento.",
+      "intro": "Uma palestra sobre a metodologia 5S como ferramenta de organização, disciplina e melhoria contínua, capaz de transformar o ambiente de trabalho e refletir na vida pessoal.",
+      "sobre": [
+        "A palestra apresenta os cinco sensos — Utilização, Ordenação, Limpeza, Padronização e Disciplina — seus conceitos, objetivos e benefícios para segurança, produtividade, qualidade e bem-estar.",
+        "Demonstra como aplicar os princípios do 5S no dia a dia, promovendo ambientes mais organizados, limpos, eficientes e seguros, reduzindo desperdícios, prevenindo acidentes e incentivando uma cultura de excelência e melhoria contínua."
+      ],
+      "topicos": [
+        "Seiri – Utilização",
+        "Seiton – Ordenação",
+        "Seiso – Limpeza",
+        "Seiketsu – Padronização",
+        "Shitsuke – Disciplina",
+        "5S na prática e melhoria contínua"
+      ],
+      "para_quem": [
+        "Indústrias e empresas de todos os setores",
+        "Equipes operacionais e administrativas",
+        "RH, qualidade e SESMT",
+        "SIPAT e Semana Interna",
+        "Programas de qualidade e excelência"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Serve para área operacional e administrativa?",
+          "a": "Sim, os princípios se aplicam a qualquer ambiente."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, é um tema muito procurado para a Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "5S - Cinco Sensos",
+      "relacionadas": [
+        "qualidade-e-excelencia",
+        "comportamento-seguro",
+        "sipat"
+      ],
+      "imagens": {
+        "hero_alt": "Ambiente de trabalho impecavelmente organizado, com ordem e eficiência"
+      }
     },
     {
       "slug": "shisa-kanko",
       "categoria": "seguranca",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "shield",
       "titulo": "Shisa Kanko - Apontar e Falar",
-      "resumo": "Técnica japonesa de prevenção de erros e acidentes: percepção de riscos, confirmacao de procedimentos e disciplina operacional.",
-      "tema_whatsapp": "Shisa Kanko"
+      "frase": "Apontar e falar: uma técnica simples que aumenta a atenção e reduz erros e acidentes.",
+      "h1": "Palestra Shisa Kanko para Empresas",
+      "meta_title": "Palestra Shisa Kanko | Prevenção de Erros e Acidentes",
+      "meta_description": "Palestra sobre Shisa Kanko (apontar e falar) para empresas, presencial ou online. Atenção, confirmação de procedimentos e disciplina operacional. Peça orçamento.",
+      "intro": "Uma palestra sobre o Shisa Kanko, método japonês de apontar e falar, usado para aumentar a atenção, a concentração e a segurança na execução das atividades.",
+      "sobre": [
+        "A palestra apresenta como a integração entre observação, apontamento e verbalização reduz erros por desatenção e fortalece a cultura de prevenção. Trabalha percepção de riscos, fatores humanos, comportamento seguro e comunicação assertiva.",
+        "Mostra a aplicação prática da técnica na confirmação de procedimentos e na disciplina operacional, aumentando a confiabilidade dos processos e a segurança nas operações."
+      ],
+      "topicos": [
+        "O que é o Shisa Kanko",
+        "Observar, apontar e verbalizar",
+        "Fatores humanos e desatenção",
+        "Confirmação de procedimentos",
+        "Comportamento seguro e comunicação",
+        "Aplicação prática na operação"
+      ],
+      "para_quem": [
+        "Indústrias e operações críticas",
+        "Equipes operacionais",
+        "CIPA, SESMT e qualidade",
+        "SIPAT e Semana Interna",
+        "Programas de segurança e confiabilidade"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Serve para operações críticas?",
+          "a": "Sim, a técnica é especialmente útil onde a atenção é essencial."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, é um tema diferenciado para a Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Shisa Kanko",
+      "relacionadas": [
+        "pare-pense-aja",
+        "comportamento-seguro",
+        "sipat"
+      ],
+      "imagens": {
+        "hero_alt": "Operador apontando e confirmando um procedimento em painel de controle"
+      }
     },
     {
       "slug": "saude-bucal",
       "categoria": "saude-qualidade",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "heart",
       "titulo": "Saúde Bucal",
-      "resumo": "Higiene e cuidados para a qualidade de vida: escovacao e fio dental, prevenção de caries e gengivite, alimentacao e consultas periodicas.",
-      "tema_whatsapp": "Saúde Bucal"
+      "frase": "Cuidar da boca é cuidar da saúde geral e da qualidade de vida.",
+      "h1": "Palestra Saúde Bucal para Empresas",
+      "meta_title": "Palestra Saúde Bucal para Empresas | Online",
+      "meta_description": "Palestra de saúde bucal para empresas, presencial ou online. Higiene, prevenção de cáries e gengivite e hábitos saudáveis. Solicite um orçamento.",
+      "intro": "Uma palestra sobre a importância da saúde bucal para a qualidade de vida, o bem-estar e a prevenção de doenças que impactam a saúde geral.",
+      "sobre": [
+        "A palestra aborda a higiene bucal adequada, as técnicas corretas de escovação e uso do fio dental, a prevenção de cáries, gengivite e doença periodontal, o mau hálito e a influência da alimentação, do tabagismo e do açúcar.",
+        "Reforça a importância das consultas periódicas ao dentista e dos hábitos que mantêm um sorriso saudável, tratando a saúde bucal como parte essencial da saúde integral."
+      ],
+      "topicos": [
+        "Higiene bucal e técnicas de escovação",
+        "Uso do fio dental",
+        "Prevenção de cáries e gengivite",
+        "Mau hálito e alimentação",
+        "Tabagismo e açúcar",
+        "Consultas periódicas e autocuidado"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e programas de QVT",
+        "SIPAT e eventos corporativos",
+        "Campanhas de saúde",
+        "Ações de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e exemplos ajustados ao perfil da equipe."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, é um tema de saúde muito bem recebido na Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Saúde Bucal",
+      "relacionadas": [
+        "qualidade-de-vida",
+        "nutricao-e-saude",
+        "tabagismo"
+      ],
+      "imagens": {
+        "hero_alt": "Profissional de saúde bucal orientando o autocuidado em ambiente iluminado"
+      }
     },
     {
       "slug": "clima-organizacional",
       "categoria": "lideranca",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "users",
       "titulo": "Clima Organizacional e Mente Positiva",
-      "resumo": "Clima saudavel e mentalidade positiva: comunicação, trabalho em equipe, gestão de conflitos, resiliencia e senso de pertencimento.",
-      "tema_whatsapp": "Clima Organizacional"
+      "frase": "Um bom clima e uma mente positiva fortalecem o engajamento, a produtividade e as relações.",
+      "h1": "Palestra Clima Organizacional e Mente Positiva",
+      "meta_title": "Palestra Clima Organizacional para Empresas | Online",
+      "meta_description": "Palestra sobre clima organizacional e mente positiva para empresas, presencial ou online. Comunicação, colaboração e engajamento. Solicite um orçamento.",
+      "intro": "Uma palestra sobre a importância de um clima organizacional saudável e de uma mentalidade positiva para fortalecer engajamento, produtividade e qualidade das relações.",
+      "sobre": [
+        "A palestra trabalha comunicação eficaz, trabalho em equipe, inteligência emocional, respeito, colaboração e motivação, apresentando estratégias práticas para comportamentos que favorecem um ambiente mais harmonioso e inspirador.",
+        "Aborda gestão de conflitos, atitude positiva, resiliência e senso de pertencimento, contribuindo para o bem-estar dos colaboradores, a melhoria dos resultados e o fortalecimento da cultura organizacional."
+      ],
+      "topicos": [
+        "Comunicação eficaz",
+        "Trabalho em equipe e colaboração",
+        "Inteligência emocional e respeito",
+        "Gestão de conflitos",
+        "Atitude positiva e resiliência",
+        "Senso de pertencimento"
+      ],
+      "para_quem": [
+        "Líderes e equipes",
+        "RH e desenvolvimento",
+        "Convenções e kick-offs",
+        "Empresas de todos os setores",
+        "Programas de cultura e engajamento"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É indicada para convenção ou kick-off?",
+          "a": "Sim, funciona muito bem para engajar equipes."
+        },
+        {
+          "q": "Dá para adaptar ao nosso momento?",
+          "a": "Sim. Conteúdo ajustado ao contexto e aos objetivos da empresa."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Clima Organizacional",
+      "relacionadas": [
+        "comunicacao-nao-violenta",
+        "inteligencia-emocional",
+        "proposito-e-felicidade"
+      ],
+      "imagens": {
+        "hero_alt": "Equipe engajada e positiva colaborando em escritório moderno"
+      }
     },
     {
       "slug": "gestantes",
       "categoria": "saude-qualidade",
-      "status": "catalogo",
-      "titulo": "Gestantes - Cuidados na Gestacao",
-      "resumo": "Cuidados com o corpo na gestacao, mitos e verdades: alimentacao, atividade orientada, postura, saúde emocional e sinais de alerta.",
-      "tema_whatsapp": "Gestantes"
+      "status": "publicar",
+      "completo": false,
+      "icone": "heart",
+      "titulo": "Gestantes - Cuidados na Gestação",
+      "frase": "Informação e cuidado para uma gestação mais tranquila, saudável e segura.",
+      "h1": "Palestra para Gestantes nas Empresas",
+      "meta_title": "Palestra Gestantes - Cuidados na Gestação | Empresas",
+      "meta_description": "Palestra sobre cuidados na gestação para empresas, presencial ou online. Alimentação, postura, saúde emocional e sinais de alerta. Solicite um orçamento.",
+      "intro": "Uma palestra sobre os principais cuidados com a saúde da gestante, promovendo conhecimento, segurança e qualidade de vida durante a gravidez.",
+      "sobre": [
+        "A palestra aborda as mudanças fisiológicas da gestação, alimentação saudável, atividade física orientada, postura e ergonomia, saúde emocional, qualidade do sono, hidratação e sinais de alerta.",
+        "Trata também da preparação para o parto e dos cuidados com o bebê, além dos principais mitos e verdades desse período, com orientações baseadas em evidências para uma vivência mais tranquila e segura para mãe e bebê."
+      ],
+      "topicos": [
+        "Mudanças fisiológicas da gestação",
+        "Alimentação e atividade orientada",
+        "Postura e ergonomia",
+        "Saúde emocional e sono",
+        "Sinais de alerta",
+        "Mitos e verdades da gravidez"
+      ],
+      "para_quem": [
+        "Empresas com colaboradoras gestantes",
+        "RH e programas de QVT",
+        "Ações de saúde da mulher",
+        "Campanhas internas",
+        "Programas de maternidade"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É baseada em evidências?",
+          "a": "Sim, com orientações responsáveis e caráter educativo."
+        },
+        {
+          "q": "Substitui o acompanhamento pré-natal?",
+          "a": "Não. Não substitui a avaliação profissional individualizada."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Gestantes",
+      "relacionadas": [
+        "qualidade-de-vida",
+        "nutricao-e-saude",
+        "outubro-rosa"
+      ],
+      "imagens": {
+        "hero_alt": "Gestante profissional serena em ambiente tranquilo e iluminado"
+      }
     },
     {
       "slug": "tabagismo",
       "categoria": "saude-qualidade",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "heart",
       "titulo": "Tabagismo",
-      "resumo": "Prevenção e conscientizacao: impactos do cigarro, dependencia da nicotina, beneficios da cessacao e estrategias de apoio.",
-      "tema_whatsapp": "Tabagismo"
+      "frase": "Parar de fumar é uma conquista de saúde, qualidade de vida e liberdade.",
+      "h1": "Palestra sobre Tabagismo para Empresas",
+      "meta_title": "Palestra sobre Tabagismo para Empresas | Online",
+      "meta_description": "Palestra sobre tabagismo para empresas, presencial ou online. Impactos do cigarro, dependência da nicotina e apoio à cessação. Solicite um orçamento.",
+      "intro": "Uma palestra de prevenção e conscientização sobre os impactos do tabagismo na saúde, na qualidade de vida e no desempenho físico e mental.",
+      "sobre": [
+        "A palestra aborda a dependência da nicotina, os riscos do tabagismo ativo e passivo, a saúde cardiovascular e respiratória e os benefícios da cessação do cigarro.",
+        "Apresenta estratégias terapêuticas e naturais de apoio ao abandono do hábito, a mudança de comportamentos, o fortalecimento da motivação e as redes de apoio, incentivando escolhas mais saudáveis."
+      ],
+      "topicos": [
+        "Dependência da nicotina",
+        "Riscos do tabagismo ativo e passivo",
+        "Saúde cardiovascular e respiratória",
+        "Benefícios da cessação",
+        "Estratégias de apoio ao abandono",
+        "Motivação e redes de apoio"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e programas de QVT",
+        "SIPAT e eventos corporativos",
+        "Campanhas de saúde",
+        "Ações de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e exemplos ajustados ao perfil da equipe."
+        },
+        {
+          "q": "É indicada para campanhas de saúde?",
+          "a": "Sim, funciona bem em campanhas e na SIPAT."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Tabagismo",
+      "relacionadas": [
+        "qualidade-de-vida",
+        "atividade-fisica-x-sedentarismo",
+        "alcoolismo-e-drogas"
+      ],
+      "imagens": {
+        "hero_alt": "Pessoa escolhendo a saúde e o ar livre, representando liberdade do cigarro"
+      }
     },
     {
       "slug": "alcoolismo-e-drogas",
       "categoria": "saude-qualidade",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "heart",
       "titulo": "Alcoolismo e Drogas",
-      "resumo": "Prevenção e escolhas saudaveis: fatores de risco, consequências, impacto na segurança e na produtividade e como dizer não.",
-      "tema_whatsapp": "Alcoolismo e Drogas"
+      "frase": "Prevenção, consciência e escolhas saudáveis constroem um futuro mais seguro.",
+      "h1": "Palestra Alcoolismo e Drogas para Empresas",
+      "meta_title": "Palestra Alcoolismo e Drogas para Empresas | Prevenção",
+      "meta_description": "Palestra de prevenção ao alcoolismo e às drogas para empresas, presencial ou online. Fatores de risco, impactos e escolhas saudáveis. Solicite um orçamento.",
+      "intro": "Uma palestra de prevenção e conscientização sobre os impactos do consumo abusivo de álcool e outras drogas na saúde, na família, no trabalho e na sociedade.",
+      "sobre": [
+        "A palestra aborda fatores de risco, consequências físicas, emocionais e sociais da dependência química e os impactos na segurança e na produtividade, além da prevenção de acidentes.",
+        "Trata da influência do ambiente e das amizades, do fortalecimento da autoestima, da tomada de decisões e da capacidade de dizer não, incentivando hábitos saudáveis e a construção de um futuro mais seguro."
+      ],
+      "topicos": [
+        "Fatores de risco da dependência",
+        "Consequências físicas, emocionais e sociais",
+        "Impacto na segurança e produtividade",
+        "Influência do ambiente e das amizades",
+        "Autoestima e tomada de decisão",
+        "Saber dizer não"
+      ],
+      "para_quem": [
+        "Indústrias e empresas de todos os setores",
+        "RH, SESMT e CIPA",
+        "Equipes operacionais e administrativas",
+        "SIPAT e Semana Interna",
+        "Campanhas de saúde e segurança"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, especialmente pela relação com segurança e produtividade."
+        },
+        {
+          "q": "A abordagem é sem julgamentos?",
+          "a": "Sim, com foco em conscientização, prevenção e apoio."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Alcoolismo e Drogas",
+      "relacionadas": [
+        "qualidade-de-vida",
+        "saude-mental",
+        "comportamento-seguro"
+      ],
+      "imagens": {
+        "hero_alt": "Conversa de apoio e prevenção em ambiente acolhedor"
+      }
     },
     {
       "slug": "meio-ambiente",
       "categoria": "diversidade",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "target",
       "titulo": "Meio Ambiente e Sustentabilidade",
-      "resumo": "Responsabilidade socioambiental: consumo consciente, reciclagem, uso racional de agua e energia e boas práticas no trabalho.",
-      "tema_whatsapp": "Meio Ambiente"
+      "frase": "Pequenas atitudes geram grandes impactos para o meio ambiente e as futuras gerações.",
+      "h1": "Palestra Meio Ambiente e Sustentabilidade",
+      "meta_title": "Palestra Meio Ambiente e Sustentabilidade | Empresas",
+      "meta_description": "Palestra sobre meio ambiente e sustentabilidade para empresas, presencial ou online. Consumo consciente, resíduos e responsabilidade socioambiental. Peça orçamento.",
+      "intro": "Uma palestra sobre a importância da sustentabilidade e da responsabilidade socioambiental na construção de um futuro mais equilibrado e consciente.",
+      "sobre": [
+        "A palestra aborda a preservação dos recursos naturais, o consumo consciente, a redução de desperdícios, a reciclagem, a coleta seletiva e o uso racional de água e energia, além da gestão de resíduos e da economia circular.",
+        "Apresenta boas práticas ambientais aplicáveis ao trabalho e ao cotidiano, com exemplos e cases inspiradores que mostram como pequenas atitudes fortalecem a cultura da sustentabilidade."
+      ],
+      "topicos": [
+        "Preservação de recursos naturais",
+        "Consumo consciente e redução de desperdícios",
+        "Reciclagem e coleta seletiva",
+        "Uso racional de água e energia",
+        "Gestão de resíduos e economia circular",
+        "Boas práticas no trabalho e no dia a dia"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e comitês de sustentabilidade",
+        "SIPAT e SIPATMA",
+        "Campanhas ambientais",
+        "Ações de cultura organizacional"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É indicada para a SIPATMA?",
+          "a": "Sim, é um tema central para semanas de meio ambiente."
+        },
+        {
+          "q": "Dá para incluir cases do nosso setor?",
+          "a": "Sim, o conteúdo pode ser contextualizado."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Meio Ambiente",
+      "relacionadas": [
+        "qualidade-e-excelencia",
+        "cinco-sensos-5s",
+        "diversidade-e-inclusao"
+      ],
+      "imagens": {
+        "hero_alt": "Profissionais engajados em sustentabilidade no trabalho, com áreas verdes"
+      }
     },
     {
       "slug": "qualidade-e-excelencia",
       "categoria": "lideranca",
-      "status": "catalogo",
-      "titulo": "Qualidade e Excelencia no Trabalho",
-      "resumo": "Cultura da qualidade e melhoria continua: comprometimento, padronizacao, foco em resultados e alta performance.",
-      "tema_whatsapp": "Qualidade e Excelencia"
+      "status": "publicar",
+      "completo": false,
+      "icone": "target",
+      "titulo": "Qualidade e Excelência no Trabalho",
+      "frase": "Qualidade e excelência são construídas por atitudes que se repetem todos os dias.",
+      "h1": "Palestra Qualidade e Excelência para Empresas",
+      "meta_title": "Palestra Qualidade e Excelência no Trabalho | Empresas",
+      "meta_description": "Palestra sobre qualidade e excelência no trabalho para empresas, presencial ou online. Melhoria contínua, foco em resultados e alta performance. Peça orçamento.",
+      "intro": "Uma palestra sobre qualidade e excelência como pilares do crescimento profissional, da competitividade e da melhoria contínua dos processos.",
+      "sobre": [
+        "A palestra trabalha cultura da qualidade, comprometimento, responsabilidade, organização, padronização e foco em resultados, mostrando como atitudes cotidianas constroem a excelência.",
+        "Aborda o atendimento a normas e procedimentos, o trabalho em equipe, a redução de desperdícios, a prevenção de falhas e a satisfação do cliente, estimulando o senso de pertencimento e a alta performance."
+      ],
+      "topicos": [
+        "Cultura da qualidade e melhoria contínua",
+        "Comprometimento e responsabilidade",
+        "Padronização e foco em resultados",
+        "Trabalho em equipe",
+        "Redução de desperdícios e falhas",
+        "Satisfação do cliente e alta performance"
+      ],
+      "para_quem": [
+        "Líderes e equipes",
+        "Áreas de qualidade e operações",
+        "RH e desenvolvimento",
+        "Convenções e treinamentos",
+        "Empresas de todos os setores"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É indicada para convenção ou treinamento?",
+          "a": "Sim, funciona bem para alinhar times em torno de metas."
+        },
+        {
+          "q": "Dá para adaptar ao nosso setor?",
+          "a": "Sim. Conteúdo e exemplos contextualizados."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Qualidade e Excelência",
+      "relacionadas": [
+        "cinco-sensos-5s",
+        "clima-organizacional",
+        "habitos-e-pessoas-eficazes"
+      ],
+      "imagens": {
+        "hero_alt": "Equipe de alta performance revisando resultados de qualidade com orgulho"
+      }
     },
     {
       "slug": "comunicacao-nao-violenta",
       "categoria": "lideranca",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "users",
       "titulo": "CNV - Comunicação Não Violenta",
-      "resumo": "Comunicação, conflitos e relações no trabalho: escuta ativa, empatia, comunicação assertiva e feedback construtivo.",
-      "tema_whatsapp": "Comunicação Não Violenta"
+      "frase": "Escuta ativa e empatia constroem relações mais colaboradoras e saudáveis.",
+      "h1": "Palestra Comunicação Não Violenta para Empresas",
+      "meta_title": "Palestra Comunicação Não Violenta (CNV) para Empresas",
+      "meta_description": "Palestra de Comunicação Não Violenta para empresas, presencial ou online. Escuta ativa, empatia, feedback e gestão de conflitos. Solicite um orçamento.",
+      "intro": "Uma palestra sobre a Comunicação Não Violenta como ferramenta para fortalecer relacionamentos, promover respeito e construir ambientes mais colaborativos.",
+      "sobre": [
+        "A palestra trabalha escuta ativa, empatia, comunicação assertiva, identificação de sentimentos e necessidades, gestão de conflitos e feedback construtivo.",
+        "Apresenta estratégias práticas para melhorar a comunicação no trabalho e na vida pessoal, reduzindo conflitos, fortalecendo o trabalho em equipe e construindo uma cultura baseada no respeito, na confiança e na colaboração."
+      ],
+      "topicos": [
+        "Escuta ativa e empatia",
+        "Comunicação assertiva",
+        "Sentimentos e necessidades",
+        "Feedback construtivo",
+        "Gestão de conflitos",
+        "Cultura de respeito e confiança"
+      ],
+      "para_quem": [
+        "Líderes e equipes",
+        "RH e desenvolvimento",
+        "Convenções e treinamentos",
+        "Empresas de todos os setores",
+        "Programas de liderança"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É indicada para lideranças?",
+          "a": "Sim, é muito procurada para desenvolvimento de líderes e times."
+        },
+        {
+          "q": "Dá para adaptar ao nosso momento?",
+          "a": "Sim. Conteúdo ajustado ao contexto da empresa."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Comunicação Não Violenta",
+      "relacionadas": [
+        "inteligencia-emocional",
+        "clima-organizacional",
+        "assedio-zero"
+      ],
+      "imagens": {
+        "hero_alt": "Dois colegas em conversa empática e respeitosa, com escuta ativa"
+      }
     },
     {
       "slug": "diversidade-e-inclusao",
       "categoria": "diversidade",
-      "status": "catalogo",
-      "titulo": "Respeito a Diversidade e Inclusão",
-      "resumo": "Diversidade, equidade e inclusão: combate ao preconceito, inclusão de PcD, respeito as diferenças e igualdade de oportunidades.",
-      "tema_whatsapp": "Diversidade e Inclusão"
+      "status": "publicar",
+      "completo": false,
+      "icone": "users",
+      "titulo": "Respeito à Diversidade e Inclusão",
+      "frase": "Respeitar as diferenças é construir ambientes mais humanos, inovadores e produtivos.",
+      "h1": "Palestra Diversidade e Inclusão para Empresas",
+      "meta_title": "Palestra Diversidade e Inclusão para Empresas | Online",
+      "meta_description": "Palestra sobre diversidade, equidade e inclusão para empresas, presencial ou online. Respeito às diferenças e igualdade de oportunidades. Peça um orçamento.",
+      "intro": "Uma palestra sobre a importância do respeito às diferenças e da promoção de uma cultura de diversidade, equidade e inclusão no trabalho e na sociedade.",
+      "sobre": [
+        "A palestra aborda a valorização das diferenças, o combate ao preconceito e à discriminação, a inclusão de pessoas com deficiência e o respeito às diversas culturas, gerações e individualidades.",
+        "Trabalha empatia, comunicação respeitosa, convivência harmoniosa e a responsabilidade de cada colaborador na construção de um ambiente mais acolhedor, com estratégias práticas para promover igualdade de oportunidades."
+      ],
+      "topicos": [
+        "Valorização das diferenças",
+        "Combate ao preconceito e discriminação",
+        "Inclusão de pessoas com deficiência",
+        "Respeito a culturas e gerações",
+        "Empatia e comunicação respeitosa",
+        "Igualdade de oportunidades"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e comitês de diversidade",
+        "Lideranças",
+        "Campanhas internas",
+        "Ações de cultura organizacional"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Dá para adaptar à nossa política de D&I?",
+          "a": "Sim, o conteúdo pode considerar as diretrizes da empresa."
+        },
+        {
+          "q": "É indicada para lideranças?",
+          "a": "Sim, o papel da liderança na inclusão é abordado."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Diversidade e Inclusão",
+      "relacionadas": [
+        "assedio-zero",
+        "tea-inclusao-e-respeito",
+        "clima-organizacional"
+      ],
+      "imagens": {
+        "hero_alt": "Equipe diversa e inclusiva de diferentes idades colaborando com respeito"
+      }
     },
     {
       "slug": "ginastica-laboral",
       "categoria": "saude-qualidade",
-      "status": "catalogo",
-      "titulo": "Ginastica Laboral",
-      "resumo": "Prática preventiva no trabalho: prevenção de LER/DORT, alivio do estresse, melhora da postura e da disposicao com pausas ativas.",
-      "tema_whatsapp": "Ginastica Laboral"
+      "status": "publicar",
+      "completo": false,
+      "icone": "activity",
+      "titulo": "Ginástica Laboral",
+      "frase": "Pausas ativas e exercícios simples melhoram a saúde, a disposição e a produtividade.",
+      "h1": "Palestra Ginástica Laboral para Empresas",
+      "meta_title": "Palestra Ginástica Laboral para Empresas | Online",
+      "meta_description": "Palestra sobre ginástica laboral para empresas, presencial ou online. Prevenção de LER/DORT, pausas ativas e disposição. Solicite um orçamento.",
+      "intro": "Uma palestra sobre a importância da ginástica laboral como prática preventiva voltada à promoção da saúde, do bem-estar e da qualidade de vida no trabalho.",
+      "sobre": [
+        "A palestra aborda a prevenção de LER/DORT, a redução de tensões musculares, a melhora da postura, o alívio do estresse e o aumento da disposição e da produtividade.",
+        "Demonstra a importância das pausas ativas e de exercícios simples realizados no próprio ambiente de trabalho, contribuindo para reduzir o sedentarismo e fortalecer a cultura de cuidado com a saúde física e mental."
+      ],
+      "topicos": [
+        "Prevenção de LER/DORT",
+        "Redução de tensões musculares",
+        "Melhora da postura",
+        "Alívio do estresse",
+        "Pausas ativas na rotina",
+        "Disposição e produtividade"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH, SESMT e CIPA",
+        "Programas de QVT e ergonomia",
+        "SIPAT e Semana Interna",
+        "Áreas operacionais e administrativas"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Pode incluir uma prática demonstrativa?",
+          "a": "Sim, é possível incluir exercícios simples e guiados."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, é um tema muito bem recebido na Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Ginástica Laboral",
+      "relacionadas": [
+        "ergonomia-no-dia-a-dia",
+        "atividade-fisica-x-sedentarismo",
+        "qualidade-de-vida"
+      ],
+      "imagens": {
+        "hero_alt": "Colaboradores fazendo alongamento guiado no ambiente de trabalho"
+      }
     },
     {
       "slug": "emagrecimento-com-saude",
       "categoria": "saude-qualidade",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "heart",
       "titulo": "Emagrecimento com Saúde",
-      "resumo": "Emagrecimento saudavel: equilibrio calorico, alimentacao, hidratacao, leitura de rotulos e o papel do HIIT.",
-      "tema_whatsapp": "Emagrecimento com Saúde"
+      "frase": "Emagrecer com saúde é equilíbrio, hábitos consistentes e escolhas sustentáveis.",
+      "h1": "Palestra Emagrecimento com Saúde para Empresas",
+      "meta_title": "Palestra Emagrecimento com Saúde para Empresas | Online",
+      "meta_description": "Palestra sobre emagrecimento saudável para empresas, presencial ou online. Equilíbrio calórico, alimentação, hidratação e atividade física. Peça um orçamento.",
+      "intro": "Uma palestra sobre o processo de emagrecimento de forma saudável, compreendendo o equilíbrio entre gasto e consumo de calorias como base para o controle de peso e a qualidade de vida.",
+      "sobre": [
+        "A palestra aborda a alimentação equilibrada, estratégias para redução do consumo calórico, controle de porções, hidratação, leitura de rótulos e o impacto do excesso de sal e de alimentos industrializados.",
+        "Apresenta a importância da atividade física regular e o conceito de HIIT no estímulo ao metabolismo, reforçando a importância de hábitos consistentes e sustentáveis para a saúde a longo prazo."
+      ],
+      "topicos": [
+        "Equilíbrio entre gasto e consumo calórico",
+        "Alimentação e controle de porções",
+        "Hidratação e leitura de rótulos",
+        "Sal e alimentos industrializados",
+        "Atividade física e HIIT",
+        "Hábitos consistentes e sustentáveis"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e programas de QVT",
+        "SIPAT e eventos corporativos",
+        "Campanhas de saúde e bem-estar",
+        "Ações de endomarketing"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "Substitui acompanhamento nutricional?",
+          "a": "Não. Tem caráter educativo e não substitui avaliação individualizada."
+        },
+        {
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e exemplos ajustados ao perfil da equipe."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Emagrecimento com Saúde",
+      "relacionadas": [
+        "nutricao-e-saude",
+        "atividade-fisica-x-sedentarismo",
+        "qualidade-de-vida"
+      ],
+      "imagens": {
+        "hero_alt": "Cena de estilo de vida saudável, com alimentação equilibrada e vitalidade"
+      }
     },
     {
       "slug": "cipa-lideranca",
       "categoria": "seguranca",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "shield",
       "titulo": "CIPA - Liderança para Cipeiros",
-      "resumo": "Postura de liderança para a CIPA: comunicação, engajamento e o cipeiro como agente multiplicador e coach de prevenção.",
-      "tema_whatsapp": "CIPA - Liderança para Cipeiros"
+      "frase": "O cipeiro é um agente multiplicador da cultura de prevenção.",
+      "h1": "Palestra CIPA - Liderança para Cipeiros",
+      "meta_title": "Palestra CIPA - Liderança para Cipeiros | Empresas",
+      "meta_description": "Palestra de liderança para cipeiros (CIPA), presencial ou online. Comunicação, engajamento e o cipeiro como agente de prevenção. Solicite um orçamento.",
+      "intro": "Uma palestra sobre o desenvolvimento da postura de liderança aplicada aos membros da CIPA, fortalecendo a cultura de prevenção e a atuação ativa na segurança.",
+      "sobre": [
+        "A palestra trabalha atitude e comportamento do líder em prevenção, comunicação eficaz com as equipes, engajamento e fidelização de colaboradores para práticas seguras e estilos de liderança aplicados à realidade do cipeiro.",
+        "Apresenta estratégias práticas para motivar, orientar e conquistar pessoas para a segurança, fortalecendo o compromisso com a prevenção de acidentes e o papel do cipeiro como agente multiplicador e coach de prevenção."
+      ],
+      "topicos": [
+        "Postura de liderança em prevenção",
+        "Comunicação eficaz com equipes",
+        "Engajamento para práticas seguras",
+        "Estilos de liderança do cipeiro",
+        "Influência positiva no coletivo",
+        "O cipeiro como agente multiplicador"
+      ],
+      "para_quem": [
+        "Membros da CIPA e cipeiros",
+        "SESMT e RH",
+        "Lideranças de segurança",
+        "SIPAT e Semana Interna",
+        "Indústrias e empresas de todos os setores"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É voltada especificamente para a CIPA?",
+          "a": "Sim, com foco na liderança e atuação dos cipeiros."
+        },
+        {
+          "q": "É indicada para a SIPAT?",
+          "a": "Sim, complementa muito bem a Semana Interna."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "CIPA - Liderança para Cipeiros",
+      "relacionadas": [
+        "comportamento-seguro",
+        "sipat",
+        "seguranca-regras-de-ouro"
+      ],
+      "imagens": {
+        "hero_alt": "Líder de segurança conduzindo um briefing de equipe no chão de fábrica"
+      }
     },
     {
       "slug": "radio-pirata",
       "categoria": "lideranca",
-      "status": "catalogo",
-      "titulo": "Radio Pirata - Combate a Fofoca",
-      "resumo": "Impactos da fofoca e dos boatos no clima organizacional; comunicação responsável, etica e cultura de confiança.",
-      "tema_whatsapp": "Radio Pirata"
+      "status": "publicar",
+      "completo": false,
+      "icone": "users",
+      "titulo": "Rádio Pirata - Combate à Fofoca",
+      "frase": "Comunicação responsável e confiança valem mais que boatos e mexericos.",
+      "h1": "Palestra Rádio Pirata - Combate à Fofoca",
+      "meta_title": "Palestra Combate à Fofoca no Trabalho | Rádio Pirata",
+      "meta_description": "Palestra sobre combate à fofoca e aos boatos no trabalho, presencial ou online. Comunicação responsável, ética e cultura de confiança. Solicite um orçamento.",
+      "intro": "Uma palestra sobre os impactos negativos da fofoca, dos boatos e dos mexericos no ambiente de trabalho e como esses comportamentos prejudicam o clima e a confiança.",
+      "sobre": [
+        "A palestra aborda como a 'rádio pirata' afeta o clima organizacional, a confiança entre equipes, a produtividade e a segurança das informações, tratando de comunicação responsável e ética profissional.",
+        "Apresenta estratégias práticas para combater ruídos de comunicação e a disseminação de informações não verificadas, promovendo um ambiente mais saudável, transparente e baseado no respeito e na verdade."
+      ],
+      "topicos": [
+        "Impactos da fofoca no clima",
+        "Comunicação responsável e ética",
+        "Ruídos e informações não verificadas",
+        "Confiança entre equipes",
+        "Convivência saudável",
+        "Responsabilidade na forma de comunicar"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "Líderes e RH",
+        "Convenções e treinamentos",
+        "Programas de cultura",
+        "Ações de clima organizacional"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É uma palestra leve e envolvente?",
+          "a": "Sim, aborda um tema sério de forma dinâmica e prática."
+        },
+        {
+          "q": "Dá para adaptar ao nosso momento?",
+          "a": "Sim. Conteúdo ajustado ao contexto da empresa."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Rádio Pirata",
+      "relacionadas": [
+        "comunicacao-nao-violenta",
+        "clima-organizacional",
+        "assedio-zero"
+      ],
+      "imagens": {
+        "hero_alt": "Ambiente de trabalho com comunicação honesta e respeitosa, confiança entre colegas"
+      }
     },
     {
       "slug": "proposito-e-felicidade",
       "categoria": "saude-mental",
-      "status": "catalogo",
-      "titulo": "Proposito e Felicidade",
-      "resumo": "Proposito de vida como base do bem-estar e da motivacao: autoconhecimento, valores, sentido do trabalho e metas.",
-      "tema_whatsapp": "Proposito e Felicidade"
+      "status": "publicar",
+      "completo": false,
+      "icone": "brain",
+      "titulo": "Propósito e Felicidade",
+      "frase": "Viver com propósito dá sentido ao trabalho e mais qualidade à vida.",
+      "h1": "Palestra Propósito e Felicidade para Empresas",
+      "meta_title": "Palestra Propósito e Felicidade para Empresas | Online",
+      "meta_description": "Palestra sobre propósito e felicidade para empresas, presencial ou online. Autoconhecimento, sentido do trabalho e motivação. Solicite um orçamento.",
+      "intro": "Uma palestra sobre a importância do propósito de vida como elemento fundamental para o bem-estar, a motivação e a realização pessoal e profissional.",
+      "sobre": [
+        "A palestra trabalha autoconhecimento, valores pessoais, sentido do trabalho, motivação intrínseca, equilíbrio emocional e resiliência, ajudando cada participante a refletir sobre o que dá significado à sua caminhada.",
+        "Explora a relação entre propósito e felicidade, mostrando como escolhas conscientes, atitudes positivas e o alinhamento entre vida pessoal e profissional contribuem para uma vida mais plena e satisfatória."
+      ],
+      "topicos": [
+        "Autoconhecimento e valores",
+        "Sentido do trabalho",
+        "Motivação intrínseca",
+        "Equilíbrio emocional e resiliência",
+        "Propósito e felicidade",
+        "Rotina com mais significado"
+      ],
+      "para_quem": [
+        "Líderes e equipes",
+        "RH e desenvolvimento",
+        "Convenções e eventos",
+        "Empresas de todos os setores",
+        "Programas de engajamento e QVT"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É indicada para convenção ou encerramento de ano?",
+          "a": "Sim, é uma palestra inspiradora para esses momentos."
+        },
+        {
+          "q": "Dá para adaptar ao nosso momento?",
+          "a": "Sim. Conteúdo ajustado ao contexto da empresa."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Propósito e Felicidade",
+      "relacionadas": [
+        "inteligencia-emocional",
+        "crencas-limitantes",
+        "clima-organizacional"
+      ],
+      "imagens": {
+        "hero_alt": "Profissional realizado, com sentido de propósito em espaço inspirador"
+      }
     },
     {
       "slug": "crencas-limitantes",
       "categoria": "saude-mental",
-      "status": "catalogo",
-      "titulo": "Crencas Limitantes",
-      "resumo": "Transformar crencas limitantes em fortalecedoras: autossabotagem, mentalidade de crescimento e autoconfianca.",
-      "tema_whatsapp": "Crencas Limitantes"
+      "status": "publicar",
+      "completo": false,
+      "icone": "brain",
+      "titulo": "Crenças Limitantes",
+      "frase": "Transformar crenças limitantes em fortalecedoras abre caminho para novos resultados.",
+      "h1": "Palestra Crenças Limitantes para Empresas",
+      "meta_title": "Palestra Crenças Limitantes para Empresas | Online",
+      "meta_description": "Palestra sobre crenças limitantes para empresas, presencial ou online. Autossabotagem, mentalidade de crescimento e autoconfiança. Solicite um orçamento.",
+      "intro": "Uma palestra sobre o impacto das crenças limitantes no comportamento, no desempenho profissional e na construção de resultados pessoais e organizacionais.",
+      "sobre": [
+        "A palestra aborda a autossabotagem, os padrões mentais negativos, a formação de crenças ao longo da vida e a influência do ambiente e das experiências passadas.",
+        "Apresenta a mentalidade de crescimento, a autoconfiança e a ressignificação de pensamentos, com estratégias práticas para identificar e transformar crenças limitantes em crenças fortalecedoras."
+      ],
+      "topicos": [
+        "Autossabotagem e padrões negativos",
+        "Como se formam as crenças",
+        "Influência do ambiente e das experiências",
+        "Mentalidade de crescimento",
+        "Autoconfiança e ressignificação",
+        "Superação de barreiras internas"
+      ],
+      "para_quem": [
+        "Líderes e equipes",
+        "RH e desenvolvimento",
+        "Convenções e treinamentos",
+        "Empresas de todos os setores",
+        "Programas de desenvolvimento pessoal"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É indicada para desenvolvimento de equipes?",
+          "a": "Sim, é muito procurada para engajamento e alta performance."
+        },
+        {
+          "q": "Dá para adaptar ao nosso momento?",
+          "a": "Sim. Conteúdo ajustado ao contexto da empresa."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Crenças Limitantes",
+      "relacionadas": [
+        "inteligencia-emocional",
+        "proposito-e-felicidade",
+        "habitos-e-pessoas-eficazes"
+      ],
+      "imagens": {
+        "hero_alt": "Profissional determinado superando uma barreira, mentalidade de crescimento"
+      }
     },
     {
       "slug": "habitos-e-pessoas-eficazes",
       "categoria": "lideranca",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "target",
       "titulo": "Hábitos e Pessoas Eficazes",
-      "resumo": "Como hábitos diarios geram resultados: disciplina, foco, priorizacao e caracteristicas das pessoas eficazes.",
-      "tema_whatsapp": "Hábitos e Pessoas Eficazes"
+      "frase": "Pequenas atitudes diárias constroem grandes resultados.",
+      "h1": "Palestra Hábitos e Pessoas Eficazes para Empresas",
+      "meta_title": "Palestra Hábitos e Pessoas Eficazes | Empresas",
+      "meta_description": "Palestra sobre hábitos e eficácia pessoal para empresas, presencial ou online. Disciplina, foco, priorização e produtividade. Solicite um orçamento.",
+      "intro": "Uma palestra sobre a importância dos hábitos na construção da eficácia pessoal e profissional e como pequenas atitudes diárias influenciam os resultados.",
+      "sobre": [
+        "A palestra aborda a formação e a mudança de hábitos, disciplina, organização, gestão do tempo, foco, priorização de tarefas, responsabilidade e proatividade.",
+        "Explora as características das pessoas eficazes — consistência, planejamento, comunicação assertiva e capacidade de execução — com estratégias práticas para uma rotina mais produtiva e orientada a resultados."
+      ],
+      "topicos": [
+        "Formação e mudança de hábitos",
+        "Disciplina e organização",
+        "Foco e priorização",
+        "Responsabilidade e proatividade",
+        "Consistência e execução",
+        "Rotina orientada a resultados"
+      ],
+      "para_quem": [
+        "Líderes e equipes",
+        "RH e desenvolvimento",
+        "Convenções e treinamentos",
+        "Empresas de todos os setores",
+        "Programas de produtividade"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É indicada para convenção ou treinamento?",
+          "a": "Sim, funciona bem para engajar e alinhar equipes."
+        },
+        {
+          "q": "Dá para adaptar ao nosso público?",
+          "a": "Sim. Conteúdo e exemplos ajustados ao perfil da equipe."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "Hábitos e Pessoas Eficazes",
+      "relacionadas": [
+        "gestao-do-tempo",
+        "crencas-limitantes",
+        "qualidade-e-excelencia"
+      ],
+      "imagens": {
+        "hero_alt": "Profissional disciplinado seguindo uma rotina produtiva, foco e consistência"
+      }
     },
     {
       "slug": "tea-inclusao-e-respeito",
       "categoria": "diversidade",
-      "status": "catalogo",
+      "status": "publicar",
+      "completo": false,
+      "icone": "users",
       "titulo": "TEA - Inclusão e Respeito",
-      "resumo": "O que é o Transtorno do Espectro Autista, desmistificando conceitos e orientando para ambientes mais inclusivos e acolhedores.",
-      "tema_whatsapp": "TEA - Inclusão e Respeito"
+      "frase": "Informação e empatia constroem ambientes mais inclusivos e acolhedores.",
+      "h1": "Palestra TEA - Inclusão e Respeito para Empresas",
+      "meta_title": "Palestra TEA - Inclusão e Respeito | Empresas",
+      "meta_description": "Palestra sobre o Transtorno do Espectro Autista (TEA), inclusão e respeito, presencial ou online. Ambientes mais acolhedores no trabalho. Peça um orçamento.",
+      "intro": "Uma palestra clara e acessível sobre o que é o Transtorno do Espectro Autista, desmistificando conceitos e promovendo ambientes mais inclusivos e respeitosos.",
+      "sobre": [
+        "A palestra apresenta as principais características do TEA e desmistifica conceitos equivocados, com foco no cotidiano do trabalho e das relações sociais.",
+        "Traz orientações práticas sobre como promover um ambiente mais inclusivo, respeitoso e acolhedor, sensibilizando os participantes para a empatia, a comunicação adequada e a valorização das diferenças."
+      ],
+      "topicos": [
+        "O que é o TEA",
+        "Desmistificando conceitos equivocados",
+        "Inclusão no ambiente de trabalho",
+        "Comunicação adequada",
+        "Empatia e respeito às diferenças",
+        "Convivência mais humana e colaborativa"
+      ],
+      "para_quem": [
+        "Empresas e equipes",
+        "RH e comitês de diversidade",
+        "Lideranças",
+        "Campanhas internas",
+        "Ações de cultura organizacional"
+      ],
+      "formatos": [
+        "presencial",
+        "online",
+        "personalizada"
+      ],
+      "faq": [
+        {
+          "q": "É acessível para todos os públicos?",
+          "a": "Sim, com linguagem clara e prática."
+        },
+        {
+          "q": "É indicada para ações de diversidade?",
+          "a": "Sim, fortalece a cultura de inclusão da empresa."
+        },
+        {
+          "q": "Vocês atendem em todo o Brasil?",
+          "a": "Sim. Atendimento nacional, presencial ou online ao vivo."
+        },
+        {
+          "q": "Como solicitar um orçamento?",
+          "a": "Pelo botão de WhatsApp, com a mensagem já preenchida com o tema."
+        }
+      ],
+      "tema_whatsapp": "TEA - Inclusão e Respeito",
+      "relacionadas": [
+        "diversidade-e-inclusao",
+        "assedio-zero",
+        "clima-organizacional"
+      ],
+      "imagens": {
+        "hero_alt": "Ambiente de trabalho inclusivo acolhendo a neurodiversidade, colaboração humana"
+      }
     }
   ]
 }

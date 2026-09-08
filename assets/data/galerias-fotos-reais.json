@@ -1,0 +1,26 @@
+{
+  "_obs": "Fotos reais aprovadas na curadoria, apenas para LPs 100% fechadas. Regra: >=2 fotos vira galeria; 1 foto vira imagem única na seção. src = nome original dentro de Fotos_reais.zip. Nenhuma dessas tem rosto identificável em close (aprovadas). O pipeline recorta 16:9/4:3, otimiza e renomeia por slug.",
+  "comportamento-seguro": [
+    { "src": "site-palestras-360 (2).jpeg",  "alt": "Dinâmica de comportamento seguro com equipe em pé durante palestra corporativa" },
+    { "src": "site-palestras-360 (3).jpeg",  "alt": "Colaboradores participando de dinâmica de segurança do trabalho" },
+    { "src": "site-palestras-360 (23).jpeg", "alt": "Atividade Caça aos Riscos identificando perigos em uma palestra de segurança" }
+  ],
+  "pare-pense-aja": [
+    { "src": "site-palestras-360 (4).jpeg", "alt": "Palestra de segurança na campanha Abril Verde: acidentes de trabalho podem ser evitados" }
+  ],
+  "seguranca-regras-de-ouro": [
+    { "src": "site-palestras-360 (5).jpeg", "alt": "Palestra de segurança destacando as Regras de Ouro e o valor da vida" }
+  ],
+  "assedio-zero": [
+    { "src": "site-palestras-360 (8).jpeg",  "alt": "Palestra de prevenção ao assédio moral e sexual para colaboradores" },
+    { "src": "site-palestras-360 (21).jpeg", "alt": "Palestra de SIPAT abordando o tema assédio no ambiente de trabalho" }
+  ],
+  "sipat": [
+    { "src": "site-palestras-360 (12).jpeg", "alt": "Decoração de SIPAT em ambiente corporativo preparado para a Semana Interna" },
+    { "src": "site-palestras-360 (15).jpeg", "alt": "Palestra de inteligência emocional durante a programação de SIPAT" },
+    { "src": "site-palestras-360 (16).jpeg", "alt": "Programação de SIPAT com palestra corporativa e recepção aos colaboradores" }
+  ],
+  "saude-mental": [
+    { "src": "site-palestras-360 (25).jpeg", "alt": "Momento de acolhimento e conexão em grupo em uma palestra de saúde mental" }
+  ]
+}

@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Palestras 360 — Pipeline de imagens hero.
+Palestras 360 — Pipeline de imagens.
 
-Fluxo:
-  1. Lê os originais em _raw-img/hero/ (mapeados por slug).
-  2. Crop central 16:9.
-  3. Aplica grade cinematográfico PREMIUM, porém SUTIL (contraste suave,
-     leve tom frio navy/ciano — sem exagero).
-  4. Redimensiona para 1920 / 1280 / 768 px de largura.
-  5. Exporta AVIF + WebP + JPG (qualidade ~80).
-     Se AVIF falhar, gera só WebP + JPG e avisa.
-  6. Nomeia <nome-final>-<largura>w.<ext> em assets/img/<slug>/.
-  7. Atualiza assets/data/images.json com o alt vindo de palestras.json
-     (imagens.hero_alt — não inventa texto).
-  8. Imprime antes/depois (dimensões, KB) e a árvore de assets/img/.
+ETAPA 2 — Heros:
+  1. Lê originais em assets/img/_hero-staging/ (nomes: palestra-<slug>-*-src.ext ou home-hero-src.ext).
+  2. Crop central 16:9 + grade cinematográfico sutil.
+  3. Redimensiona para 1920 / 1280 / 768 px.
+  4. Exporta AVIF + WebP + JPG em assets/img/hero/ (flat).
+  5. Thumbnails 4:3 (640/480/320) em assets/img/thumb/ (flat).
+  6. Escreve assets/data/images.json com alt vindo de palestras.json.
 
-Uso:  python scripts/process-images.py
+ETAPA 3 — Galerias de fotos reais:
+  1. Lê assets/data/galerias-fotos-reais.json (src = nome em "Fotos reais/").
+  2. Crop 16:9 + grading, larguras 1280/768.
+  3. Salva em assets/img/galeria/<slug>-01-1280w.avif, -01-768w.avif, etc.
+
+Uso: python scripts/process-images.py
 """
 
 import json
@@ -25,250 +25,267 @@ from pathlib import Path
 
 from PIL import Image, ImageEnhance
 
-# Console Windows costuma ser cp1252 — força UTF-8 para não quebrar nos prints.
 try:
     sys.stdout.reconfigure(encoding="utf-8")
     sys.stderr.reconfigure(encoding="utf-8")
-except Exception:  # pragma: no cover
+except Exception:
     pass
 
-# AVIF é opcional — degrada graciosamente para WebP + JPG.
 try:
-    import pillow_avif  # noqa: F401  (registra o encoder AVIF no Pillow)
+    import pillow_avif  # noqa: F401
     AVIF_OK = True
-except Exception:  # pragma: no cover
+except Exception:
     AVIF_OK = False
 
 # ── Caminhos ──────────────────────────────────────────────────────────────────
-ROOT     = Path(__file__).resolve().parent.parent
-RAW_DIR  = ROOT / "_raw-img" / "hero"
-OUT_DIR  = ROOT / "assets" / "img"
-DATA_DIR = ROOT / "assets" / "data"
+ROOT          = Path(__file__).resolve().parent.parent
+STAGING_DIR   = ROOT / "assets" / "img" / "_hero-staging"
+HERO_OUT      = ROOT / "assets" / "img" / "hero"
+THUMB_OUT     = ROOT / "assets" / "img" / "thumb"
+GALERIA_OUT   = ROOT / "assets" / "img" / "galeria"
+FOTOS_DIR     = ROOT / "Fotos reais"
+DATA_DIR      = ROOT / "assets" / "data"
 PALESTRAS_JSON = DATA_DIR / "palestras.json"
 IMAGES_JSON    = DATA_DIR / "images.json"
+GALERIAS_JSON  = DATA_DIR / "galerias-fotos-reais.json"
 
-# ── Configuração do pipeline ──────────────────────────────────────────────────
-WIDTHS       = [1920, 1280, 768]
-QUALITY      = 80
-ASPECT       = (16, 9)
+# ── Config ────────────────────────────────────────────────────────────────────
+HERO_WIDTHS  = [1920, 1280, 768]
 THUMB_WIDTHS = [640, 480, 320]
-THUMB_ASPECT = (4, 3)
-
-# Mapa: slug → (arquivo de origem, nome-final).
-# Confirmado com o cliente. Nomes finais sem sufixo de dimensão nem ano.
-SOURCES = {
-    "setembro-amarelo": (
-        "palestra-setembro-amarelo-empresas-hero-1920x1080.jpeg",
-        "palestra-setembro-amarelo-empresas-hero",
-    ),
-    "outubro-rosa": (
-        "palestra-outubro-rosa-empresas-hero-1920x1080.jpeg",
-        "palestra-outubro-rosa-empresas-hero",
-    ),
-    "novembro-azul": (
-        "palestra-novembro-azul-empresas-hero-1920x1080.jpeg",
-        "palestra-novembro-azul-empresas-hero",
-    ),
-    "sipat": (
-        "palestra-sipat-2027-empresas-hero-1920x1080.jpeg",
-        "palestra-sipat-empresas-hero",  # sem ano no nome final
-    ),
-    "saude-mental": (
-        "palestra-saude-mental-trabalho-hero-1920x1080.jpeg",
-        "palestra-saude-mental-trabalho-hero",
-    ),
-}
-
+GAL_WIDTHS   = [1280, 768]
+QUALITY      = 80
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
+
 def kb(path: Path) -> float:
     return path.stat().st_size / 1024.0
 
 
-def load_alts() -> dict:
-    """Extrai imagens.hero_alt de cada palestra do palestras.json."""
-    data = json.loads(PALESTRAS_JSON.read_text(encoding="utf-8"))
-    alts = {}
-    for p in data.get("palestras", []):
-        img = p.get("imagens") or {}
-        if "hero_alt" in img:
-            alts[p["slug"]] = img["hero_alt"]
-    return alts
-
-
-def crop_center_4x3(im: Image.Image) -> Image.Image:
-    """Corta o retângulo central com proporção 4:3 (thumbnail de card)."""
+def crop_16x9(im: Image.Image) -> Image.Image:
     w, h = im.size
-    target = THUMB_ASPECT[0] / THUMB_ASPECT[1]
-    current = w / h
-    if current > target:
-        new_w = int(round(h * target))
-        left = (w - new_w) // 2
-        box = (left, 0, left + new_w, h)
+    t = 16 / 9
+    c = w / h
+    if c > t:
+        nw = int(round(h * t)); left = (w - nw) // 2; box = (left, 0, left + nw, h)
     else:
-        new_h = int(round(w / target))
-        top = (h - new_h) // 2
-        box = (0, top, w, top + new_h)
+        nh = int(round(w / t)); top = (h - nh) // 2; box = (0, top, w, top + nh)
     return im.crop(box)
 
 
-def crop_center_16x9(im: Image.Image) -> Image.Image:
-    """Corta o retângulo central com proporção 16:9."""
+def crop_4x3(im: Image.Image) -> Image.Image:
     w, h = im.size
-    target = ASPECT[0] / ASPECT[1]
-    current = w / h
-    if current > target:          # largo demais → corta laterais
-        new_w = int(round(h * target))
-        left = (w - new_w) // 2
-        box = (left, 0, left + new_w, h)
-    else:                          # alto demais → corta topo/base
-        new_h = int(round(w / target))
-        top = (h - new_h) // 2
-        box = (0, top, w, top + new_h)
+    t = 4 / 3
+    c = w / h
+    if c > t:
+        nw = int(round(h * t)); left = (w - nw) // 2; box = (left, 0, left + nw, h)
+    else:
+        nh = int(round(w / t)); top = (h - nh) // 2; box = (0, top, w, top + nh)
     return im.crop(box)
 
 
-def apply_cinematic_grade(im: Image.Image) -> Image.Image:
-    """
-    Grade cinematográfico PREMIUM e SUTIL:
-      - contraste levemente suavizado (menos "duro", mais filme);
-      - leve dessaturação para tom editorial;
-      - deslocamento frio muito discreto rumo a navy/ciano nas sombras/realces.
-    Nada de exagero — os deltas ficam em ±3–5%.
-    """
+def grade(im: Image.Image) -> Image.Image:
+    """Grade cinematográfico sutil: contraste suave, tom frio navy/ciano."""
     im = im.convert("RGB")
-
-    # 1) Contraste suave (curva mais macia) + micro-lift de brilho.
     im = ImageEnhance.Contrast(im).enhance(0.96)
     im = ImageEnhance.Brightness(im).enhance(1.01)
-
-    # 2) Dessaturação editorial discreta.
     im = ImageEnhance.Color(im).enhance(0.93)
-
-    # 3) Tom frio navy/ciano por canal (multiplicadores muito próximos de 1).
-    #    Reduz vermelho, mantém verde, valoriza azul de leve.
     r, g, b = im.split()
     r = r.point(lambda v: min(255, int(v * 0.985)))
     g = g.point(lambda v: min(255, int(v * 0.997)))
     b = b.point(lambda v: min(255, int(v * 1.012 + 2)))
-    im = Image.merge("RGB", (r, g, b))
-
-    return im
+    return Image.merge("RGB", (r, g, b))
 
 
 def export(im: Image.Image, out_base: Path) -> list:
-    """Salva AVIF (se disponível) + WebP + JPG. Retorna lista de formatos ok."""
-    formats = []
-
+    """Salva AVIF (se disponível) + WebP + JPG. Retorna formatos gerados."""
+    fmts = []
     if AVIF_OK:
         try:
             im.save(out_base.with_suffix(".avif"), format="AVIF", quality=QUALITY)
-            formats.append("avif")
-        except Exception as e:  # pragma: no cover
-            print(f"    [aviso] AVIF falhou ({e}); seguindo com WebP+JPG.")
-
+            fmts.append("avif")
+        except Exception as e:
+            print(f"    [aviso] AVIF falhou ({e}); usando WebP+JPG.")
     im.save(out_base.with_suffix(".webp"), format="WEBP", quality=QUALITY, method=6)
-    formats.append("webp")
-
-    im.save(out_base.with_suffix(".jpg"), format="JPEG",
-            quality=QUALITY, optimize=True, progressive=True)
-    formats.append("jpg")
-
-    return formats
+    fmts.append("webp")
+    im.save(out_base.with_suffix(".jpg"), format="JPEG", quality=QUALITY, optimize=True, progressive=True)
+    fmts.append("jpg")
+    return fmts
 
 
-# ── Pipeline principal ────────────────────────────────────────────────────────
-def main() -> int:
-    if not RAW_DIR.exists():
-        print(f"ERRO: pasta de originais não encontrada: {RAW_DIR}")
-        return 1
+def load_palestras() -> tuple:
+    """Retorna (hero_to_slug, slug_to_alt, slug_to_h1, all_slugs)."""
+    import re as _re
+    data = json.loads(PALESTRAS_JSON.read_text(encoding="utf-8"))
+    hero_to_slug = {}
+    slug_to_alt  = {}
+    slug_to_h1   = {}
+    all_slugs    = set()
+    for p in data.get("palestras", []):
+        all_slugs.add(p["slug"])
+        img = p.get("imagens") or {}
+        if "hero" in img:
+            hero_to_slug[img["hero"]] = p["slug"]
+        if "hero_alt" in img:
+            slug_to_alt[p["slug"]] = img["hero_alt"]
+        if "h1" in p:
+            slug_to_h1[p["slug"]] = p["h1"]
+    return hero_to_slug, slug_to_alt, slug_to_h1, all_slugs
+
+
+def slug_from_final_name(final_name: str, all_slugs: set) -> str | None:
+    """Extrai slug de 'palestra-<slug>-empresas-hero' ou 'palestra-<slug>-trabalho-hero'."""
+    import re as _re
+    s = _re.sub(r'^palestra-', '', final_name)
+    s = _re.sub(r'-(?:empresas|trabalho)-hero$', '', s)
+    s = _re.sub(r'-hero$', '', s)
+    return s if s in all_slugs else None
+
+
+# ── ETAPA 2: heros ────────────────────────────────────────────────────────────
+
+def process_heroes() -> dict:
+    if not STAGING_DIR.exists():
+        print(f"[aviso] Staging não encontrado: {STAGING_DIR} — pulando heros.")
+        return {}
+
+    HERO_OUT.mkdir(parents=True, exist_ok=True)
+    THUMB_OUT.mkdir(parents=True, exist_ok=True)
 
     if not AVIF_OK:
         print("[aviso] pillow-avif-plugin indisponível — gerando apenas WebP + JPG.\n")
 
-    alts = load_alts()
+    hero_to_slug, slug_to_alt, slug_to_h1, all_slugs = load_palestras()
     images_manifest = {}
-    report_rows = []  # (slug, largura, antes_dims, antes_kb, depois_dims, depois_kb)
 
-    for slug, (src_name, final_name) in SOURCES.items():
-        src = RAW_DIR / src_name
-        if not src.exists():
-            print(f"[pulado] origem ausente para '{slug}': {src_name}")
+    for f in sorted(STAGING_DIR.iterdir()):
+        if not f.is_file() or f.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp", ".avif"}:
             continue
 
-        alt = alts.get(slug)
-        if not alt:
-            print(f"[aviso] sem hero_alt em palestras.json para '{slug}' — alt ficará vazio.")
-            alt = ""
+        stem = f.stem
+        if not stem.endswith("-src"):
+            print(f"[pulado] sem sufixo -src: {f.name}")
+            continue
 
-        out_slug_dir = OUT_DIR / slug
-        out_slug_dir.mkdir(parents=True, exist_ok=True)
+        final_name = stem[:-4]  # ex: "palestra-setembro-amarelo-empresas-hero"
+        is_home = (final_name == "home-hero")
 
-        with Image.open(src) as original:
-            src_dims = original.size
-            src_kb = kb(src)
-            cropped = crop_center_16x9(original)
-            graded = apply_cinematic_grade(cropped)
+        if is_home:
+            slug = "home"
+            alt  = "Central de palestras corporativas presenciais e online para empresas de todo o Brasil"
+        else:
+            slug = hero_to_slug.get(final_name) or slug_from_final_name(final_name, all_slugs)
+            if not slug:
+                print(f"[pulado] slug nao encontrado para: {final_name}")
+                continue
+            alt = slug_to_alt.get(slug, "") or slug_to_h1.get(slug, "")
+            if not alt:
+                print(f"[aviso] sem alt para slug '{slug}'")
 
-            formats_final = []
-            for w in WIDTHS:
-                h = int(round(w * ASPECT[1] / ASPECT[0]))
-                resized = graded.resize((w, h), Image.LANCZOS)
-                out_base = out_slug_dir / f"{final_name}-{w}w"
-                formats_final = export(resized, out_base)
+        with Image.open(f) as original:
+            cropped = crop_16x9(original)
+            graded  = grade(cropped)
 
-                # Reporta o JPG do width como referência de tamanho.
-                jpg_path = out_base.with_suffix(".jpg")
-                report_rows.append(
-                    (slug, w, f"{src_dims[0]}x{src_dims[1]}", src_kb,
-                     f"{w}x{h}", kb(jpg_path))
-                )
+            hero_fmts = []
+            for w in HERO_WIDTHS:
+                h   = int(round(w * 9 / 16))
+                out = HERO_OUT / f"{final_name}-{w}w"
+                hero_fmts = export(graded.resize((w, h), Image.LANCZOS), out)
 
-        # ── Thumbnails 4:3 ───────────────────────────────────────────────────
-        thumb_dir  = out_slug_dir / "thumb"
-        thumb_dir.mkdir(exist_ok=True)
-        thumb_name = f"{final_name}-thumb"
-        thumb_cropped = crop_center_4x3(graded)
-        thumb_formats: list = []
-        for tw in THUMB_WIDTHS:
-            th_h = int(round(tw * THUMB_ASPECT[1] / THUMB_ASPECT[0]))
-            resized_thumb = thumb_cropped.resize((tw, th_h), Image.LANCZOS)
-            out_thumb_base = thumb_dir / f"{thumb_name}-{tw}w"
-            thumb_formats = export(resized_thumb, out_thumb_base)
+            if is_home:
+                images_manifest["home"] = {
+                    "hero_base": final_name,
+                    "larguras":  HERO_WIDTHS,
+                    "formatos":  hero_fmts,
+                    "alt":       alt,
+                }
+                print(f"[ok] home hero: {len(HERO_WIDTHS)}w × {len(hero_fmts)} formatos")
+                continue
 
-        images_manifest[slug] = {
-            "hero_base": final_name,
-            "larguras": WIDTHS,
-            "formatos": formats_final,
-            "alt": alt,
-            "thumb": {
-                "base": thumb_name,
-                "larguras": THUMB_WIDTHS,
-                "formatos": thumb_formats,
-            },
-        }
-        print(f"[ok] {slug}: {len(WIDTHS)} larguras × {len(formats_final)} formatos "
-              f"({', '.join(formats_final)}) + thumb {len(THUMB_WIDTHS)}w")
+            thumb_name    = f"{final_name}-thumb"
+            thumb_cropped = crop_4x3(graded)
+            thumb_fmts    = []
+            for tw in THUMB_WIDTHS:
+                th_h = int(round(tw * 3 / 4))
+                out  = THUMB_OUT / f"{thumb_name}-{tw}w"
+                thumb_fmts = export(thumb_cropped.resize((tw, th_h), Image.LANCZOS), out)
 
-    # Escreve o manifesto.
-    IMAGES_JSON.write_text(
-        json.dumps(images_manifest, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-    print(f"\n→ manifesto escrito: {IMAGES_JSON.relative_to(ROOT)}")
+            images_manifest[slug] = {
+                "hero_base": final_name,
+                "larguras":  HERO_WIDTHS,
+                "formatos":  hero_fmts,
+                "alt":       alt,
+                "thumb": {
+                    "base":     thumb_name,
+                    "larguras": THUMB_WIDTHS,
+                    "formatos": thumb_fmts,
+                },
+            }
+            print(f"[ok] {slug}: {len(HERO_WIDTHS)}w × {len(hero_fmts)} formatos + thumb")
 
-    # ── Relatório antes/depois ────────────────────────────────────────────────
-    print("\n" + "=" * 78)
-    print("ANTES / DEPOIS  (JPG como referência de tamanho por largura)")
-    print("=" * 78)
-    print(f"{'slug':<18}{'largura':<9}{'origem':<14}{'orig KB':>9} "
-          f"{'saída':<12}{'out KB':>9}")
-    print("-" * 78)
-    for slug, w, sdim, skb, ddim, dkb in report_rows:
-        print(f"{slug:<18}{str(w)+'w':<9}{sdim:<14}{skb:>8.0f} "
-              f"{ddim:<12}{dkb:>8.0f}")
-    print("=" * 78)
+    return images_manifest
 
+
+# ── ETAPA 3: galerias de fotos reais ─────────────────────────────────────────
+
+def process_galleries():
+    if not FOTOS_DIR.exists():
+        print(f"[aviso] Pasta 'Fotos reais' não encontrada: {FOTOS_DIR} — pulando galerias.")
+        return
+
+    if not GALERIAS_JSON.exists():
+        print(f"[aviso] {GALERIAS_JSON} não encontrado — pulando galerias.")
+        return
+
+    GALERIA_OUT.mkdir(parents=True, exist_ok=True)
+    galerias = json.loads(GALERIAS_JSON.read_text(encoding="utf-8"))
+
+    for slug, fotos in galerias.items():
+        if slug == "_obs":
+            continue
+        for i, foto in enumerate(fotos):
+            src_path = FOTOS_DIR / foto["src"]
+            if not src_path.exists():
+                print(f"[pulado] foto não encontrada: {src_path.name}")
+                continue
+
+            num = str(i + 1).zfill(2)
+
+            with Image.open(src_path) as original:
+                cropped = crop_16x9(original)
+                graded  = grade(cropped)
+
+                for w in GAL_WIDTHS:
+                    h   = int(round(w * 9 / 16))
+                    out = GALERIA_OUT / f"{slug}-{num}-{w}w"
+                    export(graded.resize((w, h), Image.LANCZOS), out)
+
+            print(f"[ok] galeria {slug}-{num}: {len(GAL_WIDTHS)}w")
+
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+
+def main() -> int:
+    print("\n=== ETAPA 2: Heros ===\n")
+    images_manifest = process_heroes()
+
+    if images_manifest:
+        existing = {}
+        if IMAGES_JSON.exists():
+            try:
+                existing = json.loads(IMAGES_JSON.read_text(encoding="utf-8"))
+            except Exception:
+                pass
+        existing.update(images_manifest)
+        IMAGES_JSON.write_text(
+            json.dumps(existing, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        print(f"\n→ images.json atualizado: {len(existing)} entradas")
+
+    print("\n=== ETAPA 3: Galerias de fotos reais ===\n")
+    process_galleries()
+
+    print("\n✅ Pipeline concluído.\n")
     return 0
 
 
