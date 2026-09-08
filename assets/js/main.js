@@ -47,11 +47,9 @@ const P360 = (() => {
       /* Atualiza href para acessibilidade e fallback sem JS */
       if (el.tagName === 'A') el.href = link;
 
-      el.addEventListener('click', (e) => {
-        if (el.tagName === 'A') e.preventDefault();
+      el.addEventListener('click', () => {
         track('click_whatsapp', { theme, cta_location: location });
         track('generate_lead',  { theme, source: 'whatsapp' });
-        window.open(link, '_blank', 'noopener,noreferrer');
       });
     });
   }
