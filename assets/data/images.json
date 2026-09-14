@@ -552,5 +552,680 @@
         "jpg"
       ]
     }
+  },
+  "adiccao-tecnologica": {
+    "hero_base": "palestra-adiccao-tecnologica-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional deixando o celular de lado para focar no trabalho",
+    "thumb": {
+      "base": "palestra-adiccao-tecnologica-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "alcoolismo-e-drogas": {
+    "hero_base": "palestra-alcoolismo-e-drogas-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Conversa de apoio e prevenção em ambiente acolhedor",
+    "thumb": {
+      "base": "palestra-alcoolismo-e-drogas-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "cinco-sensos-5s": {
+    "hero_base": "palestra-cinco-sensos-5s-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Ambiente de trabalho impecavelmente organizado, com ordem e eficiência",
+    "thumb": {
+      "base": "palestra-cinco-sensos-5s-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "cipa-lideranca": {
+    "hero_base": "palestra-cipa-lideranca-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Líder de segurança conduzindo um briefing de equipe no chão de fábrica",
+    "thumb": {
+      "base": "palestra-cipa-lideranca-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "clima-organizacional": {
+    "hero_base": "palestra-clima-organizacional-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Equipe engajada e positiva colaborando em escritório moderno",
+    "thumb": {
+      "base": "palestra-clima-organizacional-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "comunicacao-nao-violenta": {
+    "hero_base": "palestra-comunicacao-nao-violenta-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Dois colegas em conversa empática e respeitosa, com escuta ativa",
+    "thumb": {
+      "base": "palestra-comunicacao-nao-violenta-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "crencas-limitantes": {
+    "hero_base": "palestra-crencas-limitantes-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional determinado superando uma barreira, mentalidade de crescimento",
+    "thumb": {
+      "base": "palestra-crencas-limitantes-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "diversidade-e-inclusao": {
+    "hero_base": "palestra-diversidade-e-inclusao-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Equipe diversa e inclusiva de diferentes idades colaborando com respeito",
+    "thumb": {
+      "base": "palestra-diversidade-e-inclusao-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "educacao-financeira": {
+    "hero_base": "palestra-educacao-financeira-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Pessoa organizando as finanças com planejamento em mesa limpa",
+    "thumb": {
+      "base": "palestra-educacao-financeira-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "emagrecimento-com-saude": {
+    "hero_base": "palestra-emagrecimento-com-saude-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Cena de estilo de vida saudável, com alimentação equilibrada e vitalidade",
+    "thumb": {
+      "base": "palestra-emagrecimento-com-saude-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "ergonomia-escritorio-home-office": {
+    "hero_base": "palestra-ergonomia-escritorio-home-office-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Estação de home office bem organizada, com montagem ergonômica e luz natural",
+    "thumb": {
+      "base": "palestra-ergonomia-escritorio-home-office-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "ergonomia-operacional": {
+    "hero_base": "palestra-ergonomia-operacional-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Trabalhador levantando carga com postura correta orientado por especialista",
+    "thumb": {
+      "base": "palestra-ergonomia-operacional-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "gestantes": {
+    "hero_base": "palestra-gestantes-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Gestante profissional serena em ambiente tranquilo e iluminado",
+    "thumb": {
+      "base": "palestra-gestantes-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "ginastica-laboral": {
+    "hero_base": "palestra-ginastica-laboral-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Colaboradores fazendo alongamento guiado no ambiente de trabalho",
+    "thumb": {
+      "base": "palestra-ginastica-laboral-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "habitos-e-pessoas-eficazes": {
+    "hero_base": "palestra-habitos-e-pessoas-eficazes-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional disciplinado seguindo uma rotina produtiva, foco e consistência",
+    "thumb": {
+      "base": "palestra-habitos-e-pessoas-eficazes-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "inteligencia-emocional": {
+    "hero_base": "palestra-inteligencia-emocional-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional equilibrado e consciente em meio à rotina de trabalho",
+    "thumb": {
+      "base": "palestra-inteligencia-emocional-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "meio-ambiente": {
+    "hero_base": "palestra-meio-ambiente-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissionais engajados em sustentabilidade no trabalho, com áreas verdes",
+    "thumb": {
+      "base": "palestra-meio-ambiente-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "primeiros-socorros": {
+    "hero_base": "palestra-primeiros-socorros-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Instrutor demonstrando primeiros socorros para colaboradores atentos",
+    "thumb": {
+      "base": "palestra-primeiros-socorros-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "proposito-e-felicidade": {
+    "hero_base": "palestra-proposito-e-felicidade-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional realizado, com sentido de propósito em espaço inspirador",
+    "thumb": {
+      "base": "palestra-proposito-e-felicidade-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "qualidade-e-excelencia": {
+    "hero_base": "palestra-qualidade-e-excelencia-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Equipe de alta performance revisando resultados de qualidade com orgulho",
+    "thumb": {
+      "base": "palestra-qualidade-e-excelencia-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "radio-pirata": {
+    "hero_base": "palestra-radio-pirata-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Ambiente de trabalho com comunicação honesta e respeitosa, confiança entre colegas",
+    "thumb": {
+      "base": "palestra-radio-pirata-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "saude-bucal": {
+    "hero_base": "palestra-saude-bucal-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Profissional de saúde bucal orientando o autocuidado em ambiente iluminado",
+    "thumb": {
+      "base": "palestra-saude-bucal-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "shisa-kanko": {
+    "hero_base": "palestra-shisa-kanko-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Operador apontando e confirmando um procedimento em painel de controle",
+    "thumb": {
+      "base": "palestra-shisa-kanko-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "tabagismo": {
+    "hero_base": "palestra-tabagismo-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Pessoa escolhendo a saúde e o ar livre, representando liberdade do cigarro",
+    "thumb": {
+      "base": "palestra-tabagismo-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
+  },
+  "tea-inclusao-e-respeito": {
+    "hero_base": "palestra-tea-inclusao-e-respeito-empresas-hero",
+    "larguras": [
+      1920,
+      1280,
+      768
+    ],
+    "formatos": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "alt": "Ambiente de trabalho inclusivo acolhendo a neurodiversidade, colaboração humana",
+    "thumb": {
+      "base": "palestra-tea-inclusao-e-respeito-empresas-hero-thumb",
+      "larguras": [
+        640,
+        480,
+        320
+      ],
+      "formatos": [
+        "avif",
+        "webp",
+        "jpg"
+      ]
+    }
   }
 }
