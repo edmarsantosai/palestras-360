@@ -1487,6 +1487,8 @@ a.talk-card:hover .talk-card__thumb::after {
 
 /* ── 29. PROVA SOCIAL STRIP ──────────────────────────────────────────────── */
 
+.prova-strip .section__header { margin-bottom: var(--space-6); }
+
 .prova-strip__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
