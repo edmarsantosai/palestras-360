@@ -744,7 +744,7 @@ function buildProvaSocialStrip() {
   const logos = primeiros12.map((l, i) => {
     const loading = i < 4 ? 'eager' : 'lazy';
     return `          <li class="prova-strip__logo">
-            <img src="/assets/img/empresas-atendidas/_raw/${esc(l.arquivo_png)}"
+            <img src="/assets/img/prova-social/${esc(l.arquivo_png)}"
                  alt="${esc(l.alt_seo)}"
                  title="${esc(l.title_seo)}"
                  width="240" height="80"
@@ -781,7 +781,7 @@ function buildProvaSocial() {
     const loading = i < 8 ? 'eager' : 'lazy';
     return `        <li class="prova-grid__item">
           <figure>
-            <img src="/assets/img/empresas-atendidas/_raw/${esc(l.arquivo_png)}"
+            <img src="/assets/img/prova-social/${esc(l.arquivo_png)}"
                  alt="${esc(l.alt_seo)}"
                  title="${esc(l.title_seo)}"
                  width="240" height="80"
