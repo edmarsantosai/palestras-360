@@ -102,6 +102,7 @@ function buildHeader() {
         <nav class="header__nav" aria-label="Navegação principal">
           <a href="/" class="nav__link">Catálogo</a>
           <a href="/palestra-sipat/" class="nav__link">SIPAT</a>
+          <a href="/empresas-atendidas/" class="nav__link">Empresas Atendidas</a>
           <a href="${waLink('Palestras Corporativas')}" class="nav__phone" data-wa data-wa-theme="Palestras Corporativas" data-wa-location="Header" target="_blank" rel="noopener noreferrer">${WA_DISPLAY}</a>
         </nav>
       </div>
@@ -134,6 +135,7 @@ function buildFooter() {
             <li><a href="/palestra-novembro-azul/">Novembro Azul</a></li>
             <li><a href="/palestra-saude-mental/">Saúde Mental</a></li>
             <li><a href="/palestra-sipat/">SIPAT</a></li>
+            <li><a href="/empresas-atendidas/">Empresas Atendidas</a></li>
             <li><a href="/">Ver catálogo completo</a></li>
           </ul>
         </div>
