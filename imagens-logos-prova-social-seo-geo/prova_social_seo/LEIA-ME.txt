@@ -1,0 +1,30 @@
+Palestras 360 — logos para prova social
+Numeração = ordem do PDF original (01 a 72)
+
+Pastas
+  png/   fundo transparente (use no site)
+  jpg/   fundo branco (use se o tema não aceitar PNG)
+
+Padrão do arquivo
+  NN-logo-[marca]-[setor]-[territorio]-palestra-corporativa-palestras360.png
+
+Exemplos
+  01-logo-camisc-cooperativa-agroindustrial-santa-catarina-palestra-corporativa-palestras360.png
+  20-logo-banco-do-brasil-banco-brasil-palestra-corporativa-palestras360.png
+  70-logo-portonave-porto-logistica-navegantes-sc-palestra-corporativa-palestras360.png
+
+Como publicar
+  1. Envie a pasta png/ para /wp-content/uploads/prova-social/ (ou /assets/prova-social/).
+  2. Crie a página /empresas-atendidas (indexável).
+  3. Cole o alt e o title da planilha em cada <img>.
+  4. Não use as logos como background-image: o Google não lê alt de CSS.
+  5. Primeira fileira com loading="eager"; demais com loading="lazy".
+
+Planilha
+  planilha-seo-geo-prova-social.xlsx
+    aba "Como usar no site"  — title, H1, meta, schema, GEO
+    aba "Catalogo 01-72"     — tudo
+    aba "Alt text pronto"    — copiar e colar
+
+JSON para desenvolvedor
+  catalogo-prova-social.json

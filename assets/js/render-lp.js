@@ -43,7 +43,7 @@ const CAT_ICON = {
 const FORMAT_DATA = {
   presencial:    {
     title: 'Presencial',
-    desc:  'Palestra ao vivo na sua empresa, para grupos de qualquer tamanho.',
+    desc:  'Palestra ao vivo na sua empresa, adaptada ao perfil e ao número de participantes.',
     icon:  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>`,
   },
   online:        {
@@ -142,12 +142,13 @@ function buildFooter() {
           <ul class="footer__links">
             <li><a href="${waLink('Palestras Corporativas')}" target="_blank" rel="noopener noreferrer">${WA_DISPLAY}</a></li>
             <li><a href="${waLink('Palestras Corporativas')}" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:contato@palestras360.com.br">contato@palestras360.com.br</a></li>
           </ul>
         </div>
       </div>
       <div class="footer__bottom">
         <span>&copy; ${year} Palestras 360. Todos os direitos reservados.</span>
-        <span>Palestras corporativas para empresas de todo o Brasil.</span>
+        <span>Palestras corporativas para empresas em todo o Brasil.</span>
         <span>Desenvolvido por <a href="https://edmarsantos.com.br" target="_blank" rel="noopener">Edmar Santos</a></span>
       </div>
     </div>
@@ -253,7 +254,7 @@ function jsonLdHome() {
     '@id':      `${DOMAIN}/#org`,
     name:       'Palestras 360',
     url:        DOMAIN,
-    description:'Central Nacional de Palestras Corporativas para Empresas de Todo o Brasil.',
+    description:'Central Nacional de Palestras Corporativas para Empresas em Todo o Brasil.',
     areaServed: { '@type': 'Country', name: 'Brazil' },
     contactPoint: {
       '@type':           'ContactPoint',
@@ -340,8 +341,9 @@ function sectionSobre(talk) {
 }
 
 function sectionTopicos(talk) {
+  const SVG_BULLET = `<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="4" fill="var(--color-action)"/></svg>`;
   const cards = talk.topicos.map(t => `        <div class="topic-card" role="listitem">
-          <span class="topic-card__num" aria-hidden="true">—</span>
+          <span class="topic-card__num" aria-hidden="true">${SVG_BULLET}</span>
           <span class="topic-card__text">${esc(t)}</span>
         </div>`).join('\n');
 
@@ -491,7 +493,7 @@ function sectionRelacionadas(talk) {
   if (!talk.relacionadas || !talk.relacionadas.length) return '';
 
   const related = talk.relacionadas
-    .slice(0, 3)
+    .slice(0, 6)
     .map(s => TALK_MAP[s])
     .filter(r => r && r.completo === true);
   if (!related.length) return '';
@@ -655,10 +657,228 @@ function talkCard(talk) {
   return `        <a href="/palestra-${talk.slug}/" class="talk-card" data-category="${talk.categoria}" data-theme-card="${esc(talk.slug)}" aria-label="Ver palestra: ${esc(talk.titulo)}">${inner}</a>`;
 }
 
+// ── Por que contratar (Stream 2.1) ────────────────────────────────────────
+
+function buildPorQueContratar() {
+  const SVG_BRASIL  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>`;
+  const SVG_TEMAS   = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`;
+  const SVG_CUSTOM  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>`;
+  const SVG_AGIL    = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-2 6.5h6L7 22l2-6.5H3Z"/></svg>`;
+  const SVG_NF      = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>`;
+
+  const items = [
+    { icon: SVG_BRASIL, title: 'Atendimento em todo o Brasil',    desc: 'Rede de profissionais para palestras presenciais e online.' },
+    { icon: SVG_TEMAS,  title: 'Mais de 40 temas',               desc: 'Saúde, segurança, comportamento, liderança, campanhas e desenvolvimento humano.' },
+    { icon: SVG_CUSTOM, title: 'Palestras personalizadas',        desc: 'Conteúdo adequado ao perfil, público e objetivo da empresa.' },
+    { icon: SVG_AGIL,   title: 'Agilidade no atendimento',       desc: 'Informe tema, cidade e data. Nossa equipe encontra a melhor solução.' },
+    { icon: SVG_NF,     title: 'Nota fiscal',                    desc: 'Contratação empresarial com emissão de documentação fiscal.' },
+  ];
+
+  const lis = items.map(it => `        <li class="porquecontratar__item">
+          <div class="porquecontratar__icon" aria-hidden="true">${it.icon}</div>
+          <div>
+            <h3 class="porquecontratar__title">${esc(it.title)}</h3>
+            <p class="porquecontratar__desc">${esc(it.desc)}</p>
+          </div>
+        </li>`).join('\n');
+
+  return `    <section class="section section--brand porquecontratar" id="por-que-contratar" aria-labelledby="porque-h2">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">A CENTRAL NACIONAL DE PALESTRAS</span>
+          <h2 class="section__title" id="porque-h2">Por que contratar a Palestras 360 para a sua empresa</h2>
+        </div>
+        <ul class="porquecontratar__grid" role="list">
+${lis}
+        </ul>
+        <blockquote class="porquecontratar__frase">
+          Você não precisa procurar dezenas de palestrantes. Diga o que sua empresa precisa e a Palestras 360 cuida do restante.
+        </blockquote>
+      </div>
+    </section>`;
+}
+
+// ── Como Funciona (Stream 2.2) ────────────────────────────────────────────
+
+function buildComoFunciona() {
+  const passos = [
+    { n: '01', title: 'Conte o que sua empresa precisa',   desc: 'Tema, data, cidade, público e formato.' },
+    { n: '02', title: 'Encontramos a melhor solução',      desc: 'Selecionamos o profissional e o formato adequados à necessidade da sua empresa.' },
+    { n: '03', title: 'Você recebe a proposta',            desc: 'Tudo de maneira simples e rápida.' },
+    { n: '04', title: 'Nós cuidamos da palestra',          desc: 'Presencial ou online, em qualquer região do Brasil.' },
+  ];
+
+  const lis = passos.map(p => `          <li class="comofunciona__step">
+            <span class="comofunciona__num" aria-hidden="true">${p.n}</span>
+            <div>
+              <h3 class="comofunciona__title">${esc(p.title)}</h3>
+              <p class="comofunciona__desc">${esc(p.desc)}</p>
+            </div>
+          </li>`).join('\n');
+
+  return `    <section class="section comofunciona" id="como-funciona" aria-labelledby="como-h2">
+      <div class="container--narrow">
+        <div class="section__header">
+          <span class="section__label">SIMPLES E RÁPIDO</span>
+          <h2 class="section__title" id="como-h2">Como Funciona</h2>
+        </div>
+        <ol class="comofunciona__list" role="list">
+${lis}
+        </ol>
+        <div style="text-align:center;margin-top:var(--space-8)">
+          <a href="${waLink('Palestras Corporativas')}" class="btn btn--action btn--lg" data-wa data-wa-theme="Palestras Corporativas" data-wa-location="ComoFunciona" target="_blank" rel="noopener noreferrer">
+            ${SVG_WA} Solicitar orçamento pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>`;
+}
+
+// ── Faixa prova social (Stream 2.3) ───────────────────────────────────────
+
+function buildProvaSocialStrip() {
+  const PROVA = JSON.parse(require('fs').readFileSync(
+    require('path').join(ROOT, 'assets', 'data', 'prova-social.json'), 'utf-8'));
+  const primeiros12 = PROVA.slice(0, 12);
+
+  const logos = primeiros12.map((l, i) => {
+    const loading = i < 4 ? 'eager' : 'lazy';
+    return `          <li class="prova-strip__logo">
+            <img src="/assets/img/empresas-atendidas/_raw/${esc(l.arquivo_png)}"
+                 alt="${esc(l.alt_seo)}"
+                 title="${esc(l.title_seo)}"
+                 width="240" height="80"
+                 loading="${loading}" decoding="async">
+          </li>`;
+  }).join('\n');
+
+  return `    <section class="section prova-strip" aria-labelledby="prova-strip-h2">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title" id="prova-strip-h2">Empresas que já contrataram a Palestras 360</h2>
+        </div>
+        <ul class="prova-strip__grid" role="list">
+${logos}
+        </ul>
+        <div style="text-align:center;margin-top:var(--space-6)">
+          <a href="/empresas-atendidas/" class="btn btn--ghost">Ver todas as empresas</a>
+        </div>
+      </div>
+    </section>`;
+}
+
+// ── Página /empresas-atendidas/ (Stream 3.2) ───────────────────────────────────
+
+function buildProvaSocial() {
+  const PROVA = JSON.parse(require('fs').readFileSync(
+    require('path').join(ROOT, 'assets', 'data', 'prova-social.json'), 'utf-8'));
+
+  const title = 'Empresas que confiam na Palestras 360 | Palestras Corporativas';
+  const desc  = 'Mais de 70 empresas de todo o Brasil já contrataram palestras corporativas da Palestras 360. Veja as organizações atendidas em saúde, segurança, liderança e mais.';
+  const url   = `${DOMAIN}/empresas-atendidas/`;
+
+  const logos = PROVA.map((l, i) => {
+    const loading = i < 8 ? 'eager' : 'lazy';
+    return `        <li class="prova-grid__item">
+          <figure>
+            <img src="/assets/img/empresas-atendidas/_raw/${esc(l.arquivo_png)}"
+                 alt="${esc(l.alt_seo)}"
+                 title="${esc(l.title_seo)}"
+                 width="240" height="80"
+                 loading="${loading}" decoding="async">
+            <figcaption>${esc(l.figcaption)}</figcaption>
+          </figure>
+        </li>`;
+  }).join('\n');
+
+  return `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${title}</title>
+  <meta name="description" content="${desc}">
+  <link rel="canonical" href="${url}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${url}">
+  <meta property="og:title" content="${title}">
+  <meta property="og:description" content="${desc}">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Palestras 360">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/img/logo/apple-touch-icon.png">
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script type="application/ld+json">
+${JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Empresas atendidas pela Palestras 360',
+    url,
+    numberOfItems: PROVA.length,
+    itemListElement: PROVA.slice(0, 20).map((l, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: l.marca,
+      description: l.texto_geo_ia,
+    })),
+  }, null, 2)}
+  </script>
+</head>
+<body>
+
+${buildHeader()}
+
+  <main id="main" tabindex="-1">
+
+    <section class="hero hero--short" aria-label="Prova social — empresas atendidas">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge" aria-hidden="true">Prova Social</div>
+          <h1 class="hero__h1">Empresas que confiam na Palestras 360</h1>
+          <p class="hero__subtitle">Mais de ${PROVA.length} organizações de todo o Brasil já contrataram nossas palestras corporativas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="prova-grid-h2">
+      <div class="container">
+        <h2 class="sr-only" id="prova-grid-h2">Logos das empresas atendidas</h2>
+        <ul class="prova-grid" role="list">
+${logos}
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--dark cta-section" aria-labelledby="prova-cta-h2">
+      <div class="container--narrow">
+        <h2 class="cta-section__title" id="prova-cta-h2">Leve uma palestra para sua empresa</h2>
+        <p class="cta-section__sub">Atendimento nacional, presencial ou online. Solicite seu orçamento agora.</p>
+        <a href="${waLink('Palestras Corporativas')}" class="btn btn--action btn--lg" data-wa data-wa-theme="Palestras Corporativas" data-wa-location="ProvaSocial" target="_blank" rel="noopener noreferrer">
+          ${SVG_WA} Solicitar orçamento pelo WhatsApp
+        </a>
+        <p class="cta-section__phone">WhatsApp: <a href="${waLink('Palestras Corporativas')}" target="_blank" rel="noopener noreferrer">${WA_DISPLAY}</a></p>
+      </div>
+    </section>
+
+  </main>
+
+${buildFooter()}
+
+${buildFloatWA('Palestras Corporativas')}
+
+  <script src="/assets/js/main.js" defer></script>
+  <script>document.addEventListener('DOMContentLoaded',()=>P360.init('Palestras Corporativas'));</script>
+</body>
+</html>`;
+}
+
 // ── Home ──────────────────────────────────────────────────────────────────
 
 function buildHome() {
-  const title = 'Palestras Corporativas para Empresas de Todo o Brasil | Palestras 360';
+  const title = 'Palestras Corporativas para Empresas em Todo o Brasil | Palestras 360';
   const desc  = 'Central de palestras corporativas com mais de 40 temas: saúde, segurança, diversidade, liderança e mais. Presencial ou online. Atendimento nacional.';
 
   const completoTalks = TALKS.filter(t => t.completo === true);
@@ -729,7 +949,7 @@ ${homeHeroBg}
           <div class="hero__badge" aria-hidden="true">
             Palestras Corporativas
           </div>
-          <h1 class="hero__h1">Palestras Corporativas para Empresas de Todo o Brasil</h1>
+          <h1 class="hero__h1">Palestras Corporativas para Empresas em Todo o Brasil</h1>
           <p class="hero__subtitle">Presencial ou online. Temas de saúde, segurança, campanhas e muito mais — atendimento nacional o ano inteiro.</p>
           <div class="hero__actions">
             <a href="#catalogo" class="btn btn--ghost">Ver Catálogo</a>
@@ -747,19 +967,9 @@ ${homeHeroBg}
       </div>
     </section>
 
-    <div class="value-band" role="complementary" aria-label="Destaques">
-      <div class="container">
-        <ul class="value-band__inner" role="list">
-          <li class="value-band__item">${SVG_CHECK} Mais de 40 temas</li>
-          <li class="value-band__sep" aria-hidden="true"></li>
-          <li class="value-band__item">${SVG_CHECK} Presencial ou Online</li>
-          <li class="value-band__sep" aria-hidden="true"></li>
-          <li class="value-band__item">${SVG_CHECK} O ano todo</li>
-          <li class="value-band__sep" aria-hidden="true"></li>
-          <li class="value-band__item">${SVG_CHECK} Atendimento nacional</li>
-        </ul>
-      </div>
-    </div>
+    ${buildPorQueContratar()}
+    ${buildComoFunciona()}
+    ${buildProvaSocialStrip()}
 
     <section class="catalogue" id="catalogo" aria-labelledby="catalogo-h2">
       <div class="container">
@@ -827,6 +1037,7 @@ function buildSitemap(completo) {
   const today = new Date().toISOString().split('T')[0];
   const urls  = [
     `  <url>\n    <loc>${DOMAIN}/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n    <lastmod>${today}</lastmod>\n  </url>`,
+    `  <url>\n    <loc>${DOMAIN}/empresas-atendidas/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n    <lastmod>${today}</lastmod>\n  </url>`,
     ...completo.map(t =>
       `  <url>\n    <loc>${DOMAIN}/palestra-${t.slug}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.9</priority>\n    <lastmod>${today}</lastmod>\n  </url>`
     ),
@@ -842,7 +1053,7 @@ function buildRobots() {
 
 function main() {
   const completo = TALKS.filter(t => t.completo === true);
-  console.log(`\nGerando ${completo.length} LPs + home + sitemap + robots...\n`);
+  console.log(`\nGerando ${completo.length} LPs + home + prova-social + sitemap + robots...\n`);
 
   for (const talk of completo) {
     const dir = path.join(ROOT, `palestra-${talk.slug}`);
@@ -850,6 +1061,11 @@ function main() {
     fs.writeFileSync(path.join(dir, 'index.html'), buildLP(talk), 'utf-8');
     console.log(`[ok] palestra-${talk.slug}/index.html`);
   }
+
+  const psDir = path.join(ROOT, 'empresas-atendidas');
+  fs.mkdirSync(psDir, { recursive: true });
+  fs.writeFileSync(path.join(psDir, 'index.html'), buildProvaSocial(), 'utf-8');
+  console.log('[ok] prova-social/index.html');
 
   fs.writeFileSync(path.join(ROOT, 'index.html'),   buildHome(),            'utf-8');
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),  buildSitemap(completo), 'utf-8');
