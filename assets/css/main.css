@@ -241,9 +241,13 @@ button     { cursor: pointer; border: none; background: none; font: inherit; }
   font-weight: var(--weight-bold);
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
-  color: var(--color-action);
+  color: var(--color-brand);
   margin-bottom: var(--space-4);
 }
+
+/* Em fundo escuro/marca, ciano tem contraste suficiente */
+.section--dark .section__label,
+.section--brand .section__label { color: var(--color-action); }
 
 .section__header { margin-bottom: clamp(2.5rem, 5vw, 4rem); }
 
@@ -994,8 +998,10 @@ button     { cursor: pointer; border: none; background: none; font: inherit; }
   gap: var(--space-3);
   justify-content: space-between;
   font-size: var(--text-xs);
-  color: var(--n-500);
+  color: var(--n-300);
 }
+
+.footer__bottom a { color: var(--n-200); text-decoration: underline; }
 
 /* ── 15. STICKY CTA (mobile) ─────────────────────────────────────────────────── */
 
