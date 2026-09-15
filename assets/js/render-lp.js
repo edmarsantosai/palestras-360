@@ -597,7 +597,7 @@ ${GTM_HEAD}
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
   ${preloadHero(talk.slug, imgData)}
-  <link rel="stylesheet" href="/assets/css/main.css?v=20260915">
+  <link rel="stylesheet" href="/assets/css/main-v20260915.css">
   <script type="application/ld+json">
 ${jsonLdLP(talk, imgData)}
   </script>
@@ -828,7 +828,7 @@ function buildProvaSocial() {
   <link rel="apple-touch-icon" href="/assets/img/logo/apple-touch-icon.png">
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/main.css?v=20260915">
+  <link rel="stylesheet" href="/assets/css/main-v20260915.css">
   <script type="application/ld+json">
 ${JSON.stringify({
     '@context': 'https://schema.org',
@@ -948,7 +948,7 @@ ${GTM_HEAD}
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
   ${homePreload}
-  <link rel="stylesheet" href="/assets/css/main.css?v=20260915">
+  <link rel="stylesheet" href="/assets/css/main-v20260915.css">
   <script type="application/ld+json">
 ${jsonLdHome()}
   </script>
