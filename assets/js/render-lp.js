@@ -597,7 +597,7 @@ ${GTM_HEAD}
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
   ${preloadHero(talk.slug, imgData)}
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260915">
   <script type="application/ld+json">
 ${jsonLdLP(talk, imgData)}
   </script>
@@ -624,7 +624,7 @@ ${buildFooter()}
 ${buildStickyCTA(talk.tema_whatsapp)}
 ${buildFloatWA(talk.tema_whatsapp)}
 
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v=20260915" defer></script>
   <script>document.addEventListener('DOMContentLoaded',()=>P360.init('${esc(talk.tema_whatsapp)}'));</script>
 </body>
 </html>`;
@@ -782,8 +782,8 @@ function buildProvaSocial() {
   const PROVA = JSON.parse(require('fs').readFileSync(
     require('path').join(ROOT, 'assets', 'data', 'prova-social.json'), 'utf-8'));
 
-  const title = 'Empresas que confiam na Palestras 360 | Palestras Corporativas';
-  const desc  = 'Mais de 70 empresas de todo o Brasil já contrataram palestras corporativas da Palestras 360. Veja as organizações atendidas em saúde, segurança, liderança e mais.';
+  const title = 'Empresas Atendidas | Palestras Corporativas Presenciais e Online em Todo o Brasil';
+  const desc  = `Mais de ${PROVA.length} empresas em todo o Brasil já contrataram palestras corporativas da Palestras 360 — saúde, segurança, liderança, SIPAT e campanhas temáticas. Presencial ou online, atendimento nacional.`;
   const url   = `${DOMAIN}/empresas-atendidas/`;
 
   const logos = PROVA.map((l, i) => {
@@ -818,7 +818,7 @@ function buildProvaSocial() {
   <link rel="apple-touch-icon" href="/assets/img/logo/apple-touch-icon.png">
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260915">
   <script type="application/ld+json">
 ${JSON.stringify({
     '@context': 'https://schema.org',
@@ -844,16 +844,16 @@ ${buildHeader()}
     <section class="hero hero--short" aria-label="Prova social — empresas atendidas">
       <div class="container">
         <div class="hero__content">
-          <div class="hero__badge" aria-hidden="true">Prova Social</div>
-          <h1 class="hero__h1">Empresas que confiam na Palestras 360</h1>
-          <p class="hero__subtitle">Mais de ${PROVA.length} organizações de todo o Brasil já contrataram nossas palestras corporativas.</p>
+          <div class="hero__badge" aria-hidden="true">Empresas Atendidas</div>
+          <h1 class="hero__h1">Empresas que Já Contrataram Palestras Corporativas</h1>
+          <p class="hero__subtitle">Mais de ${PROVA.length} organizações em todo o Brasil — saúde, segurança, liderança, SIPAT e campanhas temáticas.</p>
         </div>
       </div>
     </section>
 
     <section class="section" aria-labelledby="prova-grid-h2">
       <div class="container">
-        <h2 class="sr-only" id="prova-grid-h2">Logos das empresas atendidas</h2>
+        <h2 class="sr-only" id="prova-grid-h2">Empresas que contrataram palestras corporativas presenciais e online</h2>
         <ul class="prova-grid" role="list">
 ${logos}
         </ul>
@@ -877,7 +877,7 @@ ${buildFooter()}
 
 ${buildFloatWA('Palestras Corporativas')}
 
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v=20260915" defer></script>
   <script>document.addEventListener('DOMContentLoaded',()=>P360.init('Palestras Corporativas'));</script>
 </body>
 </html>`;
@@ -938,7 +938,7 @@ ${GTM_HEAD}
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-700-800-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/open-sans-400-600-latin.woff2" crossorigin>
   ${homePreload}
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css?v=20260915">
   <script type="application/ld+json">
 ${jsonLdHome()}
   </script>
@@ -1018,7 +1018,7 @@ ${buildFooter()}
   </div>
 ${buildFloatWA('Palestras Corporativas')}
 
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v=20260915" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       P360.init('Palestras Corporativas');

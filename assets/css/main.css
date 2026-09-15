@@ -385,6 +385,7 @@ button     { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .site-header.is-scrolled .logo__360 { font-size: 1.2rem; }
+.site-header.is-scrolled .logo__img  { height: 48px; }
 
 .header__inner {
   display: flex;
@@ -402,12 +403,12 @@ button     { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .logo__img {
-  height: 57px;
+  height: 66px;
   width: auto;
   display: block;
 }
 
-.footer__brand .logo__img { height: 68px; }
+.footer__brand .logo__img { height: 82px; }
 
 .logo__palestras {
   font-family: var(--font-display);
