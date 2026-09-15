@@ -85,7 +85,14 @@ const SVG_ARROW = `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" a
 
 const SVG_PLUS = `<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 2v8M2 6h8"/></svg>`;
 
-const SVG_BUILDING = `<svg class="audience-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>`;
+const PQ_ICONS = [
+  `<svg class="audience-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-4h6v4"/></svg>`,
+  `<svg class="audience-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><circle cx="15" cy="7" r="3"/><path d="M3 19c0-3 2.7-5 6-5h6c3.3 0 6 2 6 5"/></svg>`,
+  `<svg class="audience-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l9 4v6c0 4.4-3.8 8.5-9 10C6.8 20.5 3 16.4 3 12V6l9-4z"/><path d="M9 12l2 2 4-4"/></svg>`,
+  `<svg class="audience-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg>`,
+  `<svg class="audience-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>`,
+  `<svg class="audience-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>`,
+];
 
 // ── Header ────────────────────────────────────────────────────────────────
 
@@ -343,9 +350,9 @@ function sectionSobre(talk) {
 }
 
 function sectionTopicos(talk) {
-  const SVG_BULLET = `<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="4" fill="var(--color-action)"/></svg>`;
+  const SVG_CHECK = `<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6l2.8 2.8 5-5.6" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   const cards = talk.topicos.map(t => `        <div class="topic-card" role="listitem">
-          <span class="topic-card__num" aria-hidden="true">${SVG_BULLET}</span>
+          <span class="topic-card__num" aria-hidden="true">${SVG_CHECK}</span>
           <span class="topic-card__text">${esc(t)}</span>
         </div>`).join('\n');
 
@@ -363,8 +370,8 @@ ${cards}
 }
 
 function sectionParaQuem(talk) {
-  const cards = talk.para_quem.map(pq => `        <div class="audience-card" role="listitem">
-          ${SVG_BUILDING}
+  const cards = talk.para_quem.map((pq, idx) => `        <div class="audience-card" role="listitem">
+          ${PQ_ICONS[idx % PQ_ICONS.length]}
           <p class="audience-card__title">${esc(pq)}</p>
         </div>`).join('\n');
 
