@@ -747,17 +747,22 @@ ${lis}
 
 function buildProvaSocialStrip() {
   const PROVA = JSON.parse(require('fs').readFileSync(
-    require('path').join(ROOT, 'assets', 'data', 'prova-social.json'), 'utf-8'));
+    require('path').join(ROOT, 'assets', 'data', 'prova-social.json'), 'utf-8'))
+    .sort((a, b) => parseInt(a.numero_pdf) - parseInt(b.numero_pdf));
   const primeiros12 = PROVA.slice(0, 12);
 
   const logos = primeiros12.map((l, i) => {
     const loading = i < 4 ? 'eager' : 'lazy';
+    const webp = l.arquivo_png.replace(/\.png$/i, '.webp');
     return `          <li class="prova-strip__logo">
-            <img src="/assets/img/prova-social/_raw/${esc(l.arquivo_png)}"
-                 alt="${esc(l.alt_seo)}"
-                 title="${esc(l.title_seo)}"
-                 width="240" height="80"
-                 loading="${loading}" decoding="async">
+            <picture>
+              <source type="image/webp" srcset="/assets/img/prova-social/${esc(webp)}">
+              <img src="/assets/img/prova-social/${esc(l.arquivo_png)}"
+                   alt="${esc(l.alt_seo)}"
+                   title="${esc(l.title_seo)}"
+                   width="240" height="80"
+                   loading="${loading}" decoding="async">
+            </picture>
           </li>`;
   }).join('\n');
 
@@ -780,7 +785,8 @@ ${logos}
 
 function buildProvaSocial() {
   const PROVA = JSON.parse(require('fs').readFileSync(
-    require('path').join(ROOT, 'assets', 'data', 'prova-social.json'), 'utf-8'));
+    require('path').join(ROOT, 'assets', 'data', 'prova-social.json'), 'utf-8'))
+    .sort((a, b) => parseInt(a.numero_pdf) - parseInt(b.numero_pdf));
 
   const title = 'Empresas Atendidas | Palestras Corporativas Presenciais e Online em Todo o Brasil';
   const desc  = `Mais de ${PROVA.length} empresas em todo o Brasil já contrataram palestras corporativas da Palestras 360 — saúde, segurança, liderança, SIPAT e campanhas temáticas. Presencial ou online, atendimento nacional.`;
@@ -788,13 +794,17 @@ function buildProvaSocial() {
 
   const logos = PROVA.map((l, i) => {
     const loading = i < 8 ? 'eager' : 'lazy';
+    const webp = l.arquivo_png.replace(/\.png$/i, '.webp');
     return `        <li class="prova-grid__item">
           <figure>
-            <img src="/assets/img/prova-social/_raw/${esc(l.arquivo_png)}"
-                 alt="${esc(l.alt_seo)}"
-                 title="${esc(l.marca)}"
-                 width="240" height="80"
-                 loading="${loading}" decoding="async">
+            <picture>
+              <source type="image/webp" srcset="/assets/img/prova-social/${esc(webp)}">
+              <img src="/assets/img/prova-social/${esc(l.arquivo_png)}"
+                   alt="${esc(l.alt_seo)}"
+                   title="${esc(l.marca)}"
+                   width="240" height="80"
+                   loading="${loading}" decoding="async">
+            </picture>
           </figure>
         </li>`;
   }).join('\n');
